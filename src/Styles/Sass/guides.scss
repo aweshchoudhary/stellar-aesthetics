@@ -1,0 +1,67 @@
+*{
+    
+    transition: .4s all ease;
+}
+
+// Global Colors
+:root{
+    --primary: #571168;
+    --color1: var(--primary);
+    --color2: #E6DE02;
+    --color3: #00CDE7;
+    --color4: #7EC624;
+    --color5: #E600CB;
+
+    --text-heading-color: #121212;
+    --text-body-color: #646464;
+
+    --strock-color: #CDCDCD;
+}
+
+// Background Color Styles
+.bg-primary{
+    background-color: var(--primary);
+}
+
+.bg-color1{
+    background-color: var(--color1);
+}
+.bg-color2{
+    background-color: var(--color2);
+}
+.bg-color3{
+    background-color: var(--color3);
+}
+.bg-color4{
+    background-color: var(--color4);
+}
+.bg-color5{
+    background-color: var(--color5);
+}
+
+// Text Color Styles
+.text-primary{
+    color:var(--primary);
+}
+.text-h-primary:hover{
+    color:var(--primary);
+}
+.text-head{
+    color:var(--text-heading-color);
+}
+.text-body{
+    color:var(--text-body-color);
+}
+
+
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+@import "./custom";
+

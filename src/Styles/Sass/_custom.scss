@@ -1,0 +1,12 @@
+.navbar{
+    ul {
+        li{
+            > ul.sub-menu{
+                display: none;
+            }
+            &:hover > ul.sub-menu{
+                display: flex;
+            }
+        }
+    }
+}
