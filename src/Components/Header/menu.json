@@ -1,0 +1,70 @@
+[
+    {
+        "label":"Home",
+        "link":"/",
+        "active": true
+    },
+    {
+        "label":"About",
+        "link":"/about",
+        "active": false
+    },
+    {
+        "label":"Courses",
+        "link":"/courses",
+        "active": false,
+        "submenu": [
+            {
+                "heading": "Fellowships",
+                "items": [
+                    {
+                        "label":"Fellowship In Clinical Cosmetology",
+                        "link":"/courses/fellowship-in-clinical-cosmetology",
+                        "active": false 
+                    },
+                    {
+                        "label":"Fellowship In Tricology",
+                        "link":"/courses/fellowship-in-tricology",
+                        "active": false 
+                    }
+                ]
+            },
+            {
+                "heading": "Certifications",
+                "items": [
+                    {
+                        "label":"Certification In Facial Cosmetics",
+                        "link":"/courses/certification-in-facial-cosmetics",
+                        "active": false 
+                    },
+                    {
+                        "label":"Certification In Hair Restoration",
+                        "link":"/courses/certification-in-hair-restoration",
+                        "active": false 
+                    },
+                    {
+                        "label":"Certification In Micro Pigmentation & Micro Blading",
+                        "link":"/courses/certification-in-hair-restoration",
+                        "active": false 
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "label":"Procedures",
+        "link":"/procedures",
+        "active": false
+    },
+    {
+        "label":"Doctors",
+        "link":"/doctors",
+        "active": false
+    },
+    {
+        "label":"Contact",
+        "link":"/contact",
+        "active": false
+    }
+]

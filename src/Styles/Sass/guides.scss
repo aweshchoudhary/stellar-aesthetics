@@ -1,6 +1,6 @@
 *{
     
-    transition: .4s all ease;
+    transition: .2s all ease;
 }
 
 // Global Colors
@@ -64,4 +64,6 @@ body, html{
 
 
 @import "./custom";
+@import "./img-gallery";
+@import "./link-btn";
 

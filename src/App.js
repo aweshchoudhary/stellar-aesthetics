@@ -9,6 +9,7 @@ import Doctors from "./Pages/Doctors";
 import Contact from "./Pages/Contact";
 import Search from "./Pages/Search";
 import Layout from "./Pages/Layout";
+import CoursePage from "./Pages/CoursePage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:name" element={<CoursePage />} />
           <Route path="/procedures" element={<Procedures />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/contact" element={<Contact />} />

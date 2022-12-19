@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeroSection = () => {
-  return <div>HeroSection</div>;
+  return <section className="h-[550px] w-full bg-black">HeroSection</section>;
 };
 
 export default HeroSection;

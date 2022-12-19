@@ -1,5 +1,5 @@
 * {
-  transition: 0.4s all ease;
+  transition: 0.2s all ease;
 }
 
 :root {
@@ -66,4 +66,70 @@ body, html {
 }
 .navbar ul li:hover > ul.sub-menu {
   display: flex;
+}
+
+.course-director-image {
+  position: relative;
+}
+
+.course-director-image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: lightgray;
+  z-index: -1;
+}
+
+.text-effect {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(42, 42, 42) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.gallery {
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .gallery {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
+.gallery img, .gallery video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-img, .model-vid {
+  width: 100%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 0px;
 }/*# sourceMappingURL=guides.css.map */
