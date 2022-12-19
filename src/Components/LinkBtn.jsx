@@ -8,9 +8,9 @@ const LinkBtn = ({ icon, label, varaint, white }) => {
       {varaint === "filled" && (
         <Link
           to="#"
-          className={`btn w-fit py-3 px-10 rounded-full ${
+          className={`btn w-fit py-3 px-8 rounded-full ${
             white ? "bg-white text-primary" : "bg-primary text-white"
-          }  font-medium uppercase flex items-center gap-3 hover:bg-black hover:text-white`}
+          }  font-medium capitalize text-lg flex items-center gap-3 hover:bg-black hover:text-white`}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}
@@ -19,9 +19,9 @@ const LinkBtn = ({ icon, label, varaint, white }) => {
       {varaint === "outlined" && (
         <Link
           to="#"
-          className={`btn w-fit py-3 px-10 rounded-full border-2 ${
+          className={`btn w-fit py-3 px-8 rounded-full border-2 ${
             white ? "border-white text-white" : "border-primary"
-          } font-medium uppercase flex items-center gap-3 hover:bg-white text-h-primary`}
+          } font-medium capitalize text-lg flex items-center gap-3 hover:bg-white text-h-primary`}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}

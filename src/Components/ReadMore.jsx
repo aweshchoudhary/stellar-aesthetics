@@ -10,7 +10,9 @@ const ReadMore = ({ children }) => {
   return (
     <>
       <p
-        className={`text ${isMore && "h-[150px] overflow-hidden text-effect"}`}
+        className={`text text-body ${
+          isMore && "h-[150px] overflow-hidden text-effect"
+        }`}
       >
         {text}
       </p>
