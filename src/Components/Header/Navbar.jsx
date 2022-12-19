@@ -35,8 +35,8 @@ function createSubmenu(arr) {
 
 const Navbar = () => {
   return (
-    <nav className="navbar z-50 bg-white border-b sticky top-0 left-0">
-      <ul className="flex gap-10 justify-center text-md relative h-full">
+    <nav className="navbar hidden md:block z-50 bg-white border-b sticky top-0 left-0">
+      <ul className="flex gap-10 justify-center text-md relative h-full  w-screen">
         {menu.map((menuItem) => {
           return (
             <li className="text-h-primary font-medium py-3">

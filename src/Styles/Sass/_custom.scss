@@ -11,6 +11,23 @@
     }
 }
 
+
+.mobile-navbar{
+    ul{
+        li{ 
+            > ul.mobile-sub-menu{
+                display: none;
+            }
+            > .open-menu-icon:hover + ul.mobile-sub-menu{
+                display: block;
+            }
+            
+        }
+
+    }
+
+}
+
 .course-director-image{
     position: relative;
 }

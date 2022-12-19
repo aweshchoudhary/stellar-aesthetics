@@ -1,7 +1,3 @@
-* {
-  transition: 0.2s all ease;
-}
-
 :root {
   --primary: #571168;
   --color1: var(--primary);
@@ -70,6 +66,13 @@ body, html {
 }
 .navbar ul li:hover > ul.sub-menu {
   display: flex;
+}
+
+.mobile-navbar ul li > ul.mobile-sub-menu {
+  display: none;
+}
+.mobile-navbar ul li > .open-menu-icon:hover + ul.mobile-sub-menu {
+  display: block;
 }
 
 .course-director-image {

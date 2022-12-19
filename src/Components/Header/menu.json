@@ -2,17 +2,20 @@
     {
         "label":"Home",
         "link":"/",
-        "active": true
+        "active": true,
+        "icon": "ic:round-home"
     },
     {
         "label":"About",
         "link":"/about",
-        "active": false
+        "active": false,
+        "icon": "material-symbols:check-box-rounded"
     },
     {
         "label":"Courses",
         "link":"/courses",
         "active": false,
+        "icon": "bxs:category",
         "submenu": [
             {
                 "heading": "Fellowships",
@@ -55,16 +58,19 @@
     {
         "label":"Procedures",
         "link":"/procedures",
-        "active": false
+        "active": false,
+        "icon": "mdi:paper-check"
     },
     {
         "label":"Doctors",
         "link":"/doctors",
-        "active": false
+        "active": false,
+        "icon": "wpf:medical-doctor"
     },
     {
         "label":"Contact",
         "link":"/contact",
-        "active": false
+        "active": false,
+        "icon": "material-symbols:phone-in-talk-watchface-indicator"
     }
 ]

@@ -8,9 +8,9 @@ const LinkBtn = ({ icon, label, varaint, white }) => {
       {varaint === "filled" && (
         <Link
           to="#"
-          className={`btn w-fit py-3 px-8 rounded-full ${
+          className={`btn w-fit sm:py-3 sm:px-8 py-2 px-5 rounded-full font-medium capitalize md:text-lg flex items-center gap-3 hover:bg-black hover:text-white ${
             white ? "bg-white text-primary" : "bg-primary text-white"
-          }  font-medium capitalize text-lg flex items-center gap-3 hover:bg-black hover:text-white`}
+          }  `}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}
