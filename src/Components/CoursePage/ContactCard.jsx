@@ -4,7 +4,7 @@ import LinkBtn from "../LinkBtn";
 
 const ContactCard = () => {
   return (
-    <Section className=" bg-primary lg:h-[400px] text-white flex justify-between lg:p-0 lg:py-0 lg:px-0">
+    <Section className=" bg-primary lg:h-[400px] text-white flex justify-between lg:p-0 lg:py-0 lg:px-0 px-2">
       <div className="lg:w-[60%] lg:py-14 md:py-10 px-5 sm:px-10">
         <h2 className="lg:text-6xl sm:text-5xl text-3xl font-medium">
           Get Course Content,

@@ -10,7 +10,9 @@ const CourseGlimpses = () => {
         text1={"Jam-Packed With"}
         text2={"Knowledge, Experience And Goodies"}
       />
-      <h2 className="text-4xl mt-10 font-medium">Glimpses Of The Program</h2>
+      <h2 className="md:text-4xl sm:text-2xl text-xl mt-10 font-medium">
+        Glimpses Of The Program
+      </h2>
       <div className="flex flex-wrap my-10">
         <Card />
         <Card />

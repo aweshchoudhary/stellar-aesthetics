@@ -15,10 +15,10 @@
 .mobile-navbar{
     ul{
         li{ 
-            > ul.mobile-sub-menu{
+            > ul{
                 display: none;
             }
-            > .open-menu-icon:hover + ul.mobile-sub-menu{
+            > div.icon:hover + ul, > ul:hover{
                 display: block;
             }
             

@@ -3,7 +3,7 @@ import React from "react";
 
 const SearchBox = () => {
   return (
-    <div className="search bg-gray-100 py-2 rounded-full  pl-5 pr-2 shrink-0 flex items-center justify-between">
+    <div className="search bg-gray-50 py-2 rounded-full  pl-5 pr-2 shrink-0 flex items-center justify-between">
       <input
         type="search"
         placeholder="Search Courses, etc..."

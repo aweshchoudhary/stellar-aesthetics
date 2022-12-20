@@ -7,13 +7,16 @@ import LinkBtn from "../LinkBtn";
 
 const MobileMenu = ({ display, setDisplay }) => {
   const closeMenu = () => setDisplay(false);
+  const navItem =
+    "p-2 hover:bg-gray-50 my-1 rounded font-medium flex flex-wrap justify-between items-center";
+
   return (
     <div
       className={`sm:w-[400px] ${
         display ? "translate-x-0" : "-translate-x-full"
       } transition-transform md:hidden block w-screen z-50 p-5 absolute top-0 left-0 h-screen bg-white`}
     >
-      <div className="head flex items-center justify-between border-b pb-5 mb-5">
+      <div className="head flex items-center justify-between border-b pb-5 mb-3">
         <div className="logo">
           <img
             src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
@@ -30,43 +33,64 @@ const MobileMenu = ({ display, setDisplay }) => {
         <ul>
           {menu.map((e) => {
             return (
-              <li
-                className={`${
-                  e.submenu && "flex flex-wrap items-center justify-between"
-                } text-body p-2 border-y border-collapse hover:bg-gray-50 text-h-primary`}
-              >
+              <li className={navItem}>
                 <Link
                   onClick={closeMenu}
+                  className={`${e.submenu ? "w-1/2" : "w-full"} text-h-primary`}
                   to={e.link}
-                  className="flex items-center gap-5"
                 >
-                  <Icon className="text-3xl" icon={e.icon} />
                   {e.label}
                 </Link>
+
                 {e.submenu && (
-                  <div className="open-menu-icon text-h-primary">
-                    <Icon
-                      className="text-4xl"
-                      icon="material-symbols:arrow-drop-down-circle-rounded"
-                    />
-                  </div>
-                )}
-                {e.submenu && (
-                  <ul className="py-2 mobile-sub-menu w-full">
-                    <li className="text-body p-2 border-y border-collapse hover:bg-gray-100 text-h-primary">
-                      <Link
-                        onClick={closeMenu}
-                        to={e.link}
-                        className="flex items-center gap-5"
-                      >
-                        <Icon
-                          className="text-3xl"
-                          icon={"material-symbols:arrow-right-alt-rounded"}
-                        />
-                        {e.label}
-                      </Link>
-                    </li>
-                  </ul>
+                  <>
+                    <div className="icon text-h-primary w-1/2 flex items-center justify-end">
+                      <Icon
+                        className=" text-2xl shrink-0"
+                        icon="material-symbols:keyboard-arrow-down"
+                      />
+                    </div>
+                    <ul className="w-full">
+                      {e.submenu.map((item) => {
+                        return (
+                          <li className={navItem}>
+                            <Link
+                              to="#"
+                              onClick={closeMenu}
+                              className="text-h-primary"
+                            >
+                              {item.heading}
+                            </Link>
+                            {
+                              <>
+                                <div className="icon text-h-primary w-1/2 flex items-center justify-end">
+                                  <Icon
+                                    className=" text-2xl shrink-0"
+                                    icon="material-symbols:keyboard-arrow-down"
+                                  />
+                                </div>
+                                <ul className="w-full ml-2">
+                                  {item.items.map((link) => {
+                                    return (
+                                      <li className={navItem}>
+                                        <Link
+                                          onClick={closeMenu}
+                                          to={link.link}
+                                          className="text-h-primary w-full"
+                                        >
+                                          {link.label}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              </>
+                            }
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </>
                 )}
               </li>
             );

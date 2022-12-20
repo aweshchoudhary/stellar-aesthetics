@@ -8,11 +8,11 @@ const LinkBtn = ({ icon, label, varaint, white }) => {
       {varaint === "filled" && (
         <Link
           to="#"
-          className={`btn w-fit sm:py-3 sm:px-8 py-2 px-5 shrink-0 rounded-full font-medium capitalize md:text-lg flex items-center gap-3 hover:bg-black hover:text-white ${
+          className={`btn w-fit sm:py-3 sm:px-8 py-2 px-5 shrink-0 rounded-full font-medium capitalize md:text-lg text-sm flex items-center gap-3 hover:bg-black hover:text-white ${
             white ? "bg-white text-primary" : "bg-primary text-white"
           }  `}
         >
-          {icon && <Icon className="text-2xl" icon={icon} />}
+          {icon && <Icon className="sm:text-2xl text-xl" icon={icon} />}
           {label}
         </Link>
       )}
@@ -21,7 +21,7 @@ const LinkBtn = ({ icon, label, varaint, white }) => {
           to="#"
           className={`btn w-fit sm:py-3 sm:px-8 py-2 px-5 rounded-full border-2 shrink-0 ${
             white ? "border-white text-white" : "border-primary"
-          } font-medium capitalize text-lg flex items-center gap-3 hover:bg-white text-h-primary`}
+          } font-medium capitalize md:text-lg text-sm flex items-center gap-3 hover:bg-white text-h-primary`}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}

@@ -68,10 +68,10 @@ body, html {
   display: flex;
 }
 
-.mobile-navbar ul li > ul.mobile-sub-menu {
+.mobile-navbar ul li > ul {
   display: none;
 }
-.mobile-navbar ul li > .open-menu-icon:hover + ul.mobile-sub-menu {
+.mobile-navbar ul li > div.icon:hover + ul, .mobile-navbar ul li > ul:hover {
   display: block;
 }
 
