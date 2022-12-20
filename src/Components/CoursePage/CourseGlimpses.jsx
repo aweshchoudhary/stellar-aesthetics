@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../Card";
-import Heading from "../Heading";
+import Heading from "../BodyComponent/Heading";
+import Section from "../BodyComponent/Section";
 
 const CourseGlimpses = () => {
   return (
-    <section className="glimpses py-14 px-10">
+    <Section className="glimpses">
       <Heading
         text1={"Jam-Packed With"}
         text2={"Knowledge, Experience And Goodies"}
@@ -21,7 +22,7 @@ const CourseGlimpses = () => {
         <Card />
         <Card />
       </div>
-    </section>
+    </Section>
   );
 };
 

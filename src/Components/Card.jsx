@@ -4,9 +4,9 @@ const Card = ({ horizontal }) => {
   return (
     <>
       {horizontal ? (
-        <div className="w-1/3">
-          <div className="card m-4 h-[500px] shrink-0">
-            <div className="img h-[400px] w-full bg-gray-200">
+        <div className="lg:w-1/3 sm:w-1/2">
+          <div className="card sm:m-4 mb-4 sm:h-[500px] h-[400px] shrink-0">
+            <div className="img sm:h-[400px] h-[300px] w-full bg-gray-200">
               {/* <img src="" alt="" /> */}
             </div>
             <div className="caption mt-3">
@@ -18,9 +18,9 @@ const Card = ({ horizontal }) => {
           </div>
         </div>
       ) : (
-        <div className="w-1/3">
-          <div className="card m-4 h-[350px] shrink-0">
-            <div className="img h-[260px] w-full bg-gray-200">
+        <div className="lg:w-1/3 sm:w-1/2 ">
+          <div className="card sm:m-4 mb-4 sm:h-[350px] h-[300px] shrink-0">
+            <div className="img sm:h-[260px] h-[200px] w-full bg-gray-200">
               {/* <img src="" alt="" /> */}
             </div>
             <div className="caption mt-3">

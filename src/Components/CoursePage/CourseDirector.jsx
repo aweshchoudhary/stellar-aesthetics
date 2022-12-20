@@ -1,18 +1,20 @@
 import React from "react";
 import Card from "../Card";
-import Heading from "../Heading";
+import Heading from "../BodyComponent/Heading";
 import LinkBtn from "../LinkBtn";
 import ReadMore from "../ReadMore";
+import Section from "../BodyComponent/Section";
 
 const CourseDirector = () => {
   return (
-    <section className="course-director px-10 py-20">
-      <Heading text1={"meet your"} text2="Course director." />
-      <br />
-      <br />
-      <br />
-      <div className="flex">
-        <div className="w-[30%] shrink-0 grow-0">
+    <Section className="course-director py-20">
+      <Heading
+        text1={"meet your"}
+        text2="Course director."
+        className={"sm:mb-20 mb-10"}
+      />
+      <div className="md:flex">
+        <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
           <div className="course-director-image">
             <img
               src="https://stellaraesthetics.in/wp-content/uploads/2022/11/IMG_20210807_113230.jpg.webp"
@@ -20,10 +22,12 @@ const CourseDirector = () => {
             />
           </div>
         </div>
-        <div className="w-[70%]  ml-20">
+        <div className="md:w-[70%]  md:ml-20 md:mt-0 mt-14">
           <div className="header">
-            <h2 className="text-3xl font-medium">Dr. Sapnna Vaderra</h2>
-            <h3 className="text-2xl text-primary">
+            <h2 className="sm:text-3xl text-2xl font-medium">
+              Dr. Sapnna Vaderra
+            </h2>
+            <h3 className="sm:text-2xl text-xl text-primary">
               Surgeon. Researcher. Mentor.
             </h3>
           </div>
@@ -76,10 +80,10 @@ const CourseDirector = () => {
       </div>
       <div>
         <br />
-        <h2 className="text-4xl text-center text-primary font-medium my-10">
+        <h2 className="md:text-4xl  text-3xl text-center text-primary font-medium my-10">
           Awards & Achievement
         </h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center items-start">
           <Card />
           <Card />
           <Card />
@@ -91,7 +95,7 @@ const CourseDirector = () => {
           <Card />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
