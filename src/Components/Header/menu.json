@@ -51,6 +51,16 @@
                         "active": false 
                     }
                 ]
+            },
+            {
+                "label": "Why Choose Us",
+                "link": "/why-choose-us",
+                "active": false
+            },
+            {
+                "label": "Course Director",
+                "link": "/dr-sapnna-vaderra",
+                "active": false
             }
             
         ]

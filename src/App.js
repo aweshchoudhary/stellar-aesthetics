@@ -10,6 +10,8 @@ import Contact from "./Pages/Contact";
 import Search from "./Pages/Search";
 import Layout from "./Pages/Layout";
 import CoursePage from "./Pages/CoursePage";
+import WhyChooseUs from "./Pages/WhyChooseUs";
+import CourseDirector from "./Pages/CourseDirector";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/why-choose-us" element={<WhyChooseUs />} />
+          <Route path="/dr-sapnna-vaderra" element={<CourseDirector />} />
           <Route path="/courses/:name" element={<CoursePage />} />
           <Route path="/procedures" element={<Procedures />} />
           <Route path="/doctors" element={<Doctors />} />

@@ -8,27 +8,53 @@ function createSubmenu(arr) {
     <ul className="sub-menu absolute top-full z-10 bg-white py-10 shadow-xl border w-full flex gap-20 left-1/2 translate-x-[-50%] justify-center">
       {arr.map((menuItem) => {
         return (
-          <li className="shrink-0 grow-0">
-            <ul>
-              <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
-                {menuItem.heading}
-              </h1>
-              {menuItem.items.map((subMenuLink) => {
-                return (
-                  <li className="my-2">
-                    <Link
-                      to={subMenuLink.link}
-                      className="hover:font-medium text-h-primary"
-                    >
-                      {subMenuLink.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </li>
+          <>
+            {menuItem.heading && (
+              <li className="shrink-0 grow-0">
+                <ul>
+                  <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
+                    {menuItem.heading}
+                  </h1>
+                  {menuItem?.items &&
+                    menuItem?.items?.map((subMenuLink) => {
+                      return (
+                        <li className="my-2">
+                          <Link
+                            to={subMenuLink.link}
+                            className="hover:font-medium text-h-primary"
+                          >
+                            {subMenuLink.label}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </li>
+            )}
+          </>
         );
       })}
+
+      <li className="shrink-0 grow-0">
+        <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
+          Useful Links
+        </h1>
+        <ul>
+          {arr.map((links) => {
+            return (
+              <>
+                {!links.heading && (
+                  <li className="my-2">
+                    <Link className="text-h-primary" to={links.link}>
+                      {links.label}
+                    </Link>
+                  </li>
+                )}
+              </>
+            );
+          })}
+        </ul>
+      </li>
     </ul>
   );
 }

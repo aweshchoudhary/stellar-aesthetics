@@ -51,44 +51,46 @@ const MobileMenu = ({ display, setDisplay }) => {
                       />
                     </div>
                     <ul className="w-full">
-                      {e.submenu.map((item) => {
-                        return (
-                          <li className={navItem}>
-                            <Link
-                              to="#"
-                              onClick={closeMenu}
-                              className="text-h-primary"
-                            >
-                              {item.heading}
-                            </Link>
-                            {
-                              <>
-                                <div className="icon text-h-primary w-1/2 flex items-center justify-end">
-                                  <Icon
-                                    className=" text-2xl shrink-0"
-                                    icon="material-symbols:keyboard-arrow-down"
-                                  />
-                                </div>
-                                <ul className="w-full ml-2">
-                                  {item.items.map((link) => {
-                                    return (
-                                      <li className={navItem}>
-                                        <Link
-                                          onClick={closeMenu}
-                                          to={link.link}
-                                          className="text-h-primary w-full"
-                                        >
-                                          {link.label}
-                                        </Link>
-                                      </li>
-                                    );
-                                  })}
-                                </ul>
-                              </>
-                            }
-                          </li>
-                        );
-                      })}
+                      {e.submenu &&
+                        e.submenu.map((item) => {
+                          return (
+                            <li className={navItem}>
+                              <Link
+                                to="#"
+                                onClick={closeMenu}
+                                className="text-h-primary"
+                              >
+                                {item.heading}
+                              </Link>
+                              {
+                                <>
+                                  <div className="icon text-h-primary w-1/2 flex items-center justify-end">
+                                    <Icon
+                                      className=" text-2xl shrink-0"
+                                      icon="material-symbols:keyboard-arrow-down"
+                                    />
+                                  </div>
+                                  <ul className="w-full ml-2">
+                                    {item.items &&
+                                      item.items.map((link) => {
+                                        return (
+                                          <li className={navItem}>
+                                            <Link
+                                              onClick={closeMenu}
+                                              to={link.link}
+                                              className="text-h-primary w-full"
+                                            >
+                                              {link.label}
+                                            </Link>
+                                          </li>
+                                        );
+                                      })}
+                                  </ul>
+                                </>
+                              }
+                            </li>
+                          );
+                        })}
                     </ul>
                   </>
                 )}

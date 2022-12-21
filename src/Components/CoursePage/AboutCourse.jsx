@@ -29,7 +29,7 @@ const AboutCourse = () => {
             <div className="md:flex hidden shrink-0">
               <Img
                 src={
-                  "https://stellaraesthetics.in/wp-content/uploads/2022/11/1-300x300.png.webp"
+                  "https://stellaraesthetics.in/wp-content/uploads/2022/11/6-300x300.png.webp"
                 }
                 caption="Award"
                 className={"w-[100px]"}
