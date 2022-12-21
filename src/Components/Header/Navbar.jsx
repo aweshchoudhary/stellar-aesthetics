@@ -39,8 +39,11 @@ const Navbar = () => {
       <ul className="flex gap-10 justify-center text-md relative h-full  w-screen">
         {menu.map((menuItem) => {
           return (
-            <li className="text-h-primary font-medium py-3">
-              <Link to={menuItem.link} className="flex items-center gap-1">
+            <li className="font-medium py-3">
+              <Link
+                to={menuItem.link}
+                className="flex items-center gap-1 text-h-primary"
+              >
                 {menuItem.label}
                 {menuItem.submenu && (
                   <Icon
