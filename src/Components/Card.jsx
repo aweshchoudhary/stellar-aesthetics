@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ horizontal }) => {
+const Card = ({ horizontal, img, title, subtitle }) => {
   return (
     <>
       {horizontal ? (
@@ -10,10 +10,8 @@ const Card = ({ horizontal }) => {
               {/* <img src="" alt="" /> */}
             </div>
             <div className="caption mt-3">
-              <h5 className="text-lg">Award by IHPA 2019</h5>
-              <p className="text-body">
-                Excellence In Facial Cosmetics by IIHPA 2019
-              </p>
+              <h5 className="text-lg">{title}</h5>
+              {subtitle && <p className="text-body">{subtitle}</p>}
             </div>
           </div>
         </div>
@@ -24,10 +22,8 @@ const Card = ({ horizontal }) => {
               {/* <img src="" alt="" /> */}
             </div>
             <div className="caption mt-3">
-              <h5 className="text-lg">Award by IHPA 2019</h5>
-              <p className="text-body">
-                Excellence In Facial Cosmetics by IIHPA 2019
-              </p>
+              <h5 className="text-md font-medium">{title}</h5>
+              {subtitle && <p className="text-body">{subtitle}</p>}
             </div>
           </div>
         </div>

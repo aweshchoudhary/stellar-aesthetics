@@ -1,13 +1,9 @@
 import React from "react";
 
-const ImgGallery = () => {
+const ImgGallery = ({ img }) => {
   return (
     <div className="gallery w-full">
-      <img
-        src="https://stellaraesthetics.in/wp-content/uploads/2022/11/group-image.jpg.webp"
-        className="img-responsive md:h-auto h-full"
-        alt=""
-      />
+      <img src={img} className="img-responsive md:h-auto h-full" alt="" />
     </div>
   );
 };

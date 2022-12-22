@@ -2,8 +2,11 @@ import React from "react";
 import Card from "../Card";
 import Heading from "../BodyComponent/Heading";
 import Section from "../BodyComponent/Section";
+import useData from "../../Hooks/useContext";
+import { BASE_URL } from "../../config";
 
 const CourseGlimpses = () => {
+  const { coursePage } = useData();
   return (
     <Section className="glimpses">
       <Heading
@@ -14,15 +17,16 @@ const CourseGlimpses = () => {
         Glimpses Of The Program
       </h2>
       <div className="flex flex-wrap my-10">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {coursePage.attributes.glimpse.map((item) => {
+          return (
+            <Card
+              key={item.id}
+              // img={BASE_URL + item.attributes.img.data.attributes.url}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          );
+        })}
       </div>
     </Section>
   );

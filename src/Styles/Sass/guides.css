@@ -61,6 +61,15 @@ body, html {
   font-family: "Poppins", sans-serif;
 }
 
+li {
+  list-style: disc;
+}
+
+.list-none {
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
 .navbar ul li > ul.sub-menu {
   display: none;
 }
@@ -96,6 +105,23 @@ body, html {
   -webkit-background-clip: text;
 }
 
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .gallery {
   -moz-column-count: 1;
        column-count: 1;

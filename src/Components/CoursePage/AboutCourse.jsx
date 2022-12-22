@@ -3,20 +3,28 @@ import Heading from "../BodyComponent/Heading";
 import ReadMore from "../ReadMore";
 import Img from "../BodyComponent/Img";
 import Section from "../BodyComponent/Section";
+import useData from "../../Hooks/useContext";
+import { BASE_URL } from "../../config";
 
 const AboutCourse = () => {
+  const { coursePage } = useData();
   return (
     <Section className="about-course">
       <Heading
-        text1={"About Fellowship In"}
-        text2={"Clincal Cosmetology."}
+        text1={
+          coursePage.attributes.type === "fellowships"
+            ? "About Fellowship In"
+            : "About Certification In"
+        }
+        text2={coursePage.attributes.title}
         className="md:mb-20 mb-10"
       />
       <div className="md:flex">
         <div className="md:w-1/3 shrink-0">
           <Img
             src={
-              "https://stellaraesthetics.in/wp-content/uploads/2022/11/DSC01691.jpg.webp"
+              BASE_URL +
+              coursePage.attributes.courseAboutImg.data.attributes.url
             }
             caption={"Participant getting certificate"}
           />
@@ -47,54 +55,11 @@ const AboutCourse = () => {
             </h3>
           </div>
           <ReadMore>
-            <p>
-              An International Education UK Board Certified, 3-month
-              comprehensive fellowship program conceptualized for aestheticians
-              & doctors to build an 8-figure practice and be recognized as an
-              expert in the field of clinical cosmetology. Our fellows are
-              amongst the most successful cosmetology practitioners in the
-              country and abroad.
-            </p>
-            <br />
-            <p>
-              The fellowship is tailor-fit with the prime objective of achieving
-              a successful practice. It is designed keeping in mind the
-              business, professional and practical approach toward cosmetology
-              giving you have the ultimate edge over any competition, present or
-              future. The exhaustive Hands-on format, a large variety of
-              patients, multiple mentoring sessions, strategic business
-              development, and patient acquisition and retention strategies
-              empower the fellows to have a stellar cosmetology practice.
-            </p>
-            <br />
-            <p>
-              Module 1 & 2 begins with us giving you the building blocks to
-              immediately start your cosmetology practice. You will be trained
-              on real-time patients and learn to formulate your own treatment
-              plans and perform hands-on for all procedures on those patients.
-              During the program, you will find an extensive display of
-              innovative products & equipment of all the major brands complete
-              with product guides and dealer guides that are up-to-date with
-              market trends, economically viable, and safe for the patients.
-              With the ever-updated list of cosmetology procedures, you will be
-              trained with the latest advances in cosmetology with the best and
-              most renowned names in the industry.
-            </p>
-            <br />
-            <p>
-              Module 3 will be completely dedicated to getting one-on-one
-              business mentoring & patient acquisition sessions in all aspects
-              of the practice. This will help you in understanding your roads
-              blocks and stabilizing your practice.
-            </p>
-            <br />
-            <p>
-              Being a fellow gives you an added privilege to join us again for
-              Module 4. Here you will perform Hands-on training for your
-              identified areas of weakness. With this complete program, we
-              ensure that your practice is a roaring success. And we secure your
-              journey with our lifetime mentor-ship and support.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: coursePage.attributes.courseAbout,
+              }}
+            ></p>
           </ReadMore>
 
           <div className="mt-10">

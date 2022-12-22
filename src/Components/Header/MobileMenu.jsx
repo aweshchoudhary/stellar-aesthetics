@@ -8,7 +8,7 @@ import LinkBtn from "../LinkBtn";
 const MobileMenu = ({ display, setDisplay }) => {
   const closeMenu = () => setDisplay(false);
   const navItem =
-    "p-2 hover:bg-gray-50 my-1 rounded font-medium flex flex-wrap justify-between items-center";
+    "p-2 list-none hover:bg-gray-50 my-1 rounded font-medium flex flex-wrap justify-between items-center";
 
   return (
     <div

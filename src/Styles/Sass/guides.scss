@@ -60,7 +60,13 @@ body, html{
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
-
+li{
+    list-style: disc;
+}
+.list-none{
+    list-style: none !important;
+    list-style-type: none !important;
+}
 
 @import "./custom";
 @import "./img-gallery";

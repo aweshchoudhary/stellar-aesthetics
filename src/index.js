@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { DataProvider } from "./Context/DataContext";
 import reportWebVitals from "./reportWebVitals";
 import "./Styles/output.css"; // tailwind css style
 import "./Styles/Sass/guides.css"; // Custom css style
@@ -8,7 +9,9 @@ import "./Styles/Sass/guides.css"; // Custom css style
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <DataProvider>
+      <App />
+    </DataProvider>
   </React.StrictMode>
 );
 

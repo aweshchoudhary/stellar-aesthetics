@@ -10,7 +10,7 @@ function createSubmenu(arr) {
         return (
           <>
             {menuItem.heading && (
-              <li className="shrink-0 grow-0">
+              <li className="shrink-0 grow-0 list-none">
                 <ul>
                   <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
                     {menuItem.heading}
@@ -18,7 +18,7 @@ function createSubmenu(arr) {
                   {menuItem?.items &&
                     menuItem?.items?.map((subMenuLink) => {
                       return (
-                        <li className="my-2">
+                        <li className="my-2 list-none">
                           <Link
                             to={subMenuLink.link}
                             className="hover:font-medium text-h-primary"
@@ -35,7 +35,7 @@ function createSubmenu(arr) {
         );
       })}
 
-      <li className="shrink-0 grow-0">
+      <li className="shrink-0 grow-0 list-none">
         <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
           Useful Links
         </h1>
@@ -44,7 +44,7 @@ function createSubmenu(arr) {
             return (
               <>
                 {!links.heading && (
-                  <li className="my-2">
+                  <li className="my-2 list-none">
                     <Link className="text-h-primary" to={links.link}>
                       {links.label}
                     </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
       <ul className="flex gap-10 justify-center text-md relative h-full  w-screen">
         {menu.map((menuItem) => {
           return (
-            <li className="font-medium py-3">
+            <li className="font-medium py-3 list-none">
               <Link
                 to={menuItem.link}
                 className="flex items-center gap-1 text-h-primary"
