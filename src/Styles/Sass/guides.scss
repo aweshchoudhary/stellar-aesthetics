@@ -62,10 +62,12 @@ body, html{
 }
 li{
     list-style: disc;
+    margin-left: 20px;
 }
 .list-none{
     list-style: none !important;
     list-style-type: none !important;
+    margin-left: 0 !important;
 }
 
 @import "./custom";

@@ -15,6 +15,7 @@ const CourseDirector = () => {
       try {
         const res = await api.get("/course-director?populate=*");
         setData(res.data.data);
+        console.log(res.data.data);
       } catch (err) {
         console.log(err);
       }
@@ -41,21 +42,24 @@ const CourseDirector = () => {
               </div>
             </div>
             <div className="md:w-[70%]  md:ml-20 md:mt-0 mt-14">
-              <div className="header">
-                <h2 className="sm:text-3xl text-2xl font-medium">
-                  Dr. Sapnna Vaderra
-                </h2>
-                <h3 className="sm:text-2xl text-xl text-primary">
-                  Surgeon. Researcher. Mentor.
-                </h3>
-              </div>
+              <div
+                className="header"
+                dangerouslySetInnerHTML={{ __html: data.attributes.heading }}
+              ></div>
               <br />
               <ReadMore className="text-justify text-body text-effect">
-                {data.attributes.description}
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: data.attributes.description,
+                  }}
+                ></p>
               </ReadMore>
               {/* <LinkBtn label={"Read More"} /> */}
               <br />
-              <h3 className="text-2xl font-medium">Awards & Recognition</h3>
+              <div
+                dangerouslySetInnerHTML={{ __html: data.attributes.awards }}
+              ></div>
+              {/* <h3 className="text-2xl font-medium">Awards & Recognition</h3>
               <ul className="my-3 ml-5 text-body text-md">
                 <li className="list-disc">
                   Awarded for Excellence in Cosmetology, 2022 - Molarip
@@ -74,7 +78,7 @@ const CourseDirector = () => {
                 <li className="list-disc">
                   Winner of Youth Icon of the year, 2019 - IADS
                 </li>
-              </ul>
+              </ul> */}
               <br />
               <LinkBtn varaint={"filled"} label={"Know More"} />
             </div>
@@ -85,18 +89,9 @@ const CourseDirector = () => {
               Awards & Achievement
             </h2>
             <div className="flex flex-wrap justify-center items-start">
-              {/* {data.attributes.images.map((card) => {
-                return <Card title={card.attributes.title} />;
-              })} */}
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
-              <Card title={"This is a title"} subtitle={"this is a subtitle"} />
+              {data.attributes.imgs.map((card) => {
+                return <Card title={card.title} subtitle={card.subtitle} />;
+              })}
             </div>
           </div>
         </Section>

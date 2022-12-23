@@ -27,7 +27,7 @@ const CourseHero = () => {
             </h3>
             <br />
             <div
-              className="list-disc pl-5"
+              className="list-disc pl-5 text-body"
               dangerouslySetInnerHTML={{
                 __html: coursePage.attributes.shortDescription,
               }}
