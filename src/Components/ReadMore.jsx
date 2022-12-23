@@ -3,17 +3,18 @@ import LinkBtn from "./LinkBtn";
 
 const ReadMore = ({ children }) => {
   let text = children;
-  let scrollValue;
   const [isMore, setIsMore] = useState(true);
+  const [scrollValue, setScrollValue] = useState(null);
   function toggleIsMore() {
     setIsMore(!isMore);
     if (isMore) {
-      scrollValue = document.body.scrollTop;
+      setScrollValue(document.body.scrollTop);
       console.log(scrollValue);
     } else {
-      document.body.scrollTo(scrollValue, 0);
+      document.body.scrollTop = scrollValue;
     }
   }
+
   return (
     <>
       <p

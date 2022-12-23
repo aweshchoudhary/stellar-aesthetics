@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Heading from "../BodyComponent/Heading";
 import Section from "../BodyComponent/Section";
 import TestimonailCard from "./TestimonailCard";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";
+import api from "../../Api/api";
 
 const Testimonials = () => {
+  const [testimonails, setTestimonials] = useState([]);
   const settings = {
     dots: true,
     infinite: true,
@@ -23,6 +25,19 @@ const Testimonials = () => {
       document.querySelector(".slick-next").click();
     }
   }
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const { data } = await api.get("/testimonials?populate=*");
+        setTestimonials(data.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchTestimonials();
+  }, []);
+
   return (
     <Section className="testimonails">
       <Heading text1={"They Loved It."} text2={"So Will You."} brNone={true} />
@@ -43,18 +58,13 @@ const Testimonials = () => {
           </button>
         </div>
         <Slider {...settings}>
-          <div>
-            <TestimonailCard />
-          </div>
-          <div>
-            <TestimonailCard />
-          </div>
-          <div>
-            <TestimonailCard />
-          </div>
-          <div>
-            <TestimonailCard />
-          </div>
+          {testimonails.map((item) => {
+            return (
+              <div>
+                <TestimonailCard data={item} />
+              </div>
+            );
+          })}
         </Slider>
       </div>
     </Section>

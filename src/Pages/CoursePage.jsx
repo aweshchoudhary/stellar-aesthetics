@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AboutCourse from "../Components/CoursePage/AboutCourse";
 import ContactCard from "../Components/CoursePage/ContactCard";
@@ -24,12 +24,10 @@ const CoursePage = () => {
       try {
         // Get All Courses
         const { data } = await api.get("/courses?populate=*");
-        console.log(data);
         // Filter One Course
         await data.data.map((course) => {
           if (course.attributes.slug === name) {
             setCoursePage(course);
-            // console.log(course);
           }
           return null;
         });
@@ -44,6 +42,17 @@ const CoursePage = () => {
     };
     getCoursePage();
   }, [name]);
+
+  useEffect(() => {
+    const changePrimaryColor = () => {
+      coursePage?.attributes?.primaryColor &&
+        document.documentElement.style.setProperty(
+          "--primary",
+          coursePage.attributes.primaryColor
+        );
+    };
+    changePrimaryColor();
+  }, [coursePage]);
 
   return (
     <>

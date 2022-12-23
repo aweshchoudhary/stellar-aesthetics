@@ -15,7 +15,6 @@ const CourseDirector = () => {
       try {
         const res = await api.get("/course-director?populate=*");
         setData(res.data.data);
-        console.log(res.data.data);
       } catch (err) {
         console.log(err);
       }
