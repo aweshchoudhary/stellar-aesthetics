@@ -58,9 +58,9 @@ const Testimonials = () => {
           </button>
         </div>
         <Slider {...settings}>
-          {testimonails.map((item) => {
+          {testimonails.map((item, i) => {
             return (
-              <div>
+              <div key={i}>
                 <TestimonailCard data={item} />
               </div>
             );

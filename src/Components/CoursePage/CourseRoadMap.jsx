@@ -21,7 +21,7 @@ const CourseRoadMap = () => {
       <div className="maps sm:p-20 p-5 py-20">
         {coursePage.attributes.roadmap.map((roadmap, index) => {
           return (
-            <div className={wrapperStyle}>
+            <div className={wrapperStyle} key={index}>
               <div className="absolute flex items-center gap-5 md:-top-[30px] -top-[15px] -left-[18px] md:-left-[30px]">
                 <div className="circle circle sm:h-[50px] sm:w-[50px] h-[30px] w-[30px] rounded-full bg-primary"></div>
                 <h2 className="md:text-4xl text-2xl font-medium mb-2 ml-5">
@@ -35,24 +35,7 @@ const CourseRoadMap = () => {
                 <p
                   className="text-body"
                   dangerouslySetInnerHTML={{ __html: roadmap.description }}
-                >
-                  {/* <ul className="ml-5 text-justify flex flex-col gap-3">
-                    <li className="list-disc">
-                      6 days- 6 online activities before the Hands-On Module
-                      Startp
-                    </li>
-                    <li className="list-disc">
-                      {" "}
-                      1 Online Live Interactive Lecture Session (webinar
-                    </li>
-                    <li className="list-disc">
-                      Lectures Series Part 1 (8 Prerecorded Lectures), covers
-                      various aspects of Clinical Cosmetology, to help you
-                      understand the intricacies before coming for Hands-On
-                      modules.
-                    </li>
-                  </ul> */}
-                </p>
+                ></p>
               </div>
             </div>
           );

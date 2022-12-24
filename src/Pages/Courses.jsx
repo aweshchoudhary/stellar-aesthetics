@@ -1,7 +1,12 @@
 import React from "react";
+import PageHeader from "../Components/PageHeader";
 
 const Courses = () => {
-  return <div>Courses</div>;
+  return (
+    <>
+      <PageHeader>Courses</PageHeader>
+    </>
+  );
 };
 
 export default Courses;

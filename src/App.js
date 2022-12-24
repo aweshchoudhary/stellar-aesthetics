@@ -1,17 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { lazy } from "react";
 
 // Pages Import
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Courses from "./Pages/Courses";
-import Procedures from "./Pages/Procedures";
-import Doctors from "./Pages/Doctors";
-import Contact from "./Pages/Contact";
-import Search from "./Pages/Search";
-import Layout from "./Pages/Layout";
-import CoursePage from "./Pages/CoursePage";
-import WhyChooseUs from "./Pages/WhyChooseUs";
-import CourseDirector from "./Pages/CourseDirector";
+const Home = lazy(() => import("./Pages/Home"));
+const About = lazy(() => import("./Pages/About"));
+const Courses = lazy(() => import("./Pages/Courses"));
+const Procedures = lazy(() => import("./Pages/Procedures"));
+const Doctors = lazy(() => import("./Pages/Doctors"));
+const Contact = lazy(() => import("./Pages/Contact"));
+const Search = lazy(() => import("./Pages/Search"));
+const Layout = lazy(() => import("./Pages/Layout"));
+const CoursePage = lazy(() => import("./Pages/CoursePage"));
+const WhyChooseUs = lazy(() => import("./Pages/WhyChooseUs"));
+const CourseDirector = lazy(() => import("./Pages/CourseDirector"));
 
 function App() {
   return (

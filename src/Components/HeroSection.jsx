@@ -19,8 +19,17 @@ const HeroSection = () => {
           accusamus ipsa repudiandae!
         </p>
         <div className="flex items-center mt-5 gap-5 justify-center">
-          <LinkBtn varaint={"filled"} label={"I'm Patient"} />
-          <LinkBtn varaint={"filled"} white={true} label={"I'm Doctor"} />
+          <LinkBtn
+            others={{ to: "/procedures" }}
+            varaint={"filled"}
+            label={"I'm Patient"}
+          />
+          <LinkBtn
+            others={{ to: "/courses" }}
+            varaint={"filled"}
+            white={true}
+            label={"I'm Doctor"}
+          />
         </div>
       </div>
     </Section>

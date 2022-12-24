@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import useData from "../Hooks/useContext";
+import useFetch from "../Hooks/useFetch";
+
 import AboutCourse from "../Components/CoursePage/AboutCourse";
 import ContactCard from "../Components/CoursePage/ContactCard";
 import CourseDirector from "../Components/CoursePage/CourseDirector";
@@ -7,41 +10,27 @@ import CourseGlimpses from "../Components/CoursePage/CourseGlimpses";
 import CourseHero from "../Components/CoursePage/CourseHero";
 import CourseRoadMap from "../Components/CoursePage/CourseRoadMap";
 import Testimonials from "../Components/Testimonials/Testimonials";
-import api from "../Api/api";
-import useData from "../Hooks/useContext";
 
 const CoursePage = () => {
-  // const [course, setCourse] = useState({});
   const { name } = useParams();
-  const { setLoading, setCoursePage, coursePage } = useData();
+  const { setCoursePage, coursePage } = useData();
+  const { data } = useFetch("/courses?populate=*");
 
   useEffect(() => {
-    const getCoursePage = async () => {
-      setLoading((prevState) => ({
-        isAnimating: !prevState.isAnimating,
-        key: prevState.isAnimating ? prevState.key : prevState.key ^ 1,
-      }));
-      try {
-        // Get All Courses
-        const { data } = await api.get("/courses?populate=*");
-        // Filter One Course
-        await data.data.map((course) => {
-          if (course.attributes.slug === name) {
-            setCoursePage(course);
-          }
-          return null;
-        });
-      } catch (error) {
-        console.log(error);
-      }
-      // console.log("Finished");
-      setLoading((prevState) => ({
-        isAnimating: !prevState.isAnimating,
-        key: 1000,
-      }));
+    let isCancel = false;
+    const filterCourse = async () => {
+      const course = await data?.filter((item) => {
+        return item.attributes.slug === name;
+      });
+      course && setCoursePage(...course);
     };
-    getCoursePage();
-  }, [name]);
+
+    !isCancel && filterCourse();
+
+    return () => {
+      isCancel = true;
+    };
+  }, [data, name, setCoursePage]);
 
   useEffect(() => {
     const changePrimaryColor = () => {

@@ -17,13 +17,13 @@ const ReadMore = ({ children }) => {
 
   return (
     <>
-      <p
+      <div
         className={`text text-body ${
           isMore && "h-[150px] overflow-hidden text-effect"
         }`}
       >
         {text}
-      </p>
+      </div>
       <br />
       <span onClick={toggleIsMore} className="read-or-hide">
         {isMore ? (

@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { BASE_URL } from "../../config";
 import ReadMore from "../ReadMore";
+import parser from "html-react-parser";
 
 const TestimonailCard = ({ data }) => {
   return (
@@ -46,13 +47,7 @@ const TestimonailCard = ({ data }) => {
                 />
               </h3>
 
-              <ReadMore>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: data.attributes.quoteDescription,
-                  }}
-                ></p>
-              </ReadMore>
+              <ReadMore>{parser(data.attributes.quoteDescription)}</ReadMore>
             </div>
           </div>
         </div>

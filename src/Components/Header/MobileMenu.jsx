@@ -31,9 +31,9 @@ const MobileMenu = ({ display, setDisplay }) => {
       <SearchBox />
       <nav className="mt-5 mobile-navbar">
         <ul>
-          {menu.map((e) => {
+          {menu.map((e, i) => {
             return (
-              <li className={navItem}>
+              <li className={navItem} key={i}>
                 <Link
                   onClick={closeMenu}
                   className={`${e.submenu ? "w-1/2" : "w-full"} text-h-primary`}
@@ -52,9 +52,9 @@ const MobileMenu = ({ display, setDisplay }) => {
                     </div>
                     <ul className="w-full">
                       {e.submenu &&
-                        e.submenu.map((item) => {
+                        e.submenu.map((item, i) => {
                           return (
-                            <li className={navItem}>
+                            <li className={navItem} key={i}>
                               <Link
                                 to="#"
                                 onClick={closeMenu}
@@ -72,9 +72,9 @@ const MobileMenu = ({ display, setDisplay }) => {
                                   </div>
                                   <ul className="w-full ml-2">
                                     {item.items &&
-                                      item.items.map((link) => {
+                                      item.items.map((link, i) => {
                                         return (
-                                          <li className={navItem}>
+                                          <li className={navItem} key={i}>
                                             <Link
                                               onClick={closeMenu}
                                               to={link.link}

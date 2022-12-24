@@ -5,6 +5,7 @@ import Img from "../BodyComponent/Img";
 import Section from "../BodyComponent/Section";
 import useData from "../../Hooks/useContext";
 import { BASE_URL } from "../../config";
+import parser from "html-react-parser";
 
 const AboutCourse = () => {
   const { coursePage } = useData();
@@ -54,13 +55,7 @@ const AboutCourse = () => {
               Get International Fellowship In Clinical Cosmetology
             </h3>
           </div>
-          <ReadMore>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: coursePage.attributes.courseAbout,
-              }}
-            ></p>
-          </ReadMore>
+          <ReadMore>{parser(coursePage.attributes.courseAbout)}</ReadMore>
 
           <div className="mt-10">
             <img

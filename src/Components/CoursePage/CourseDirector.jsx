@@ -6,6 +6,7 @@ import ReadMore from "../ReadMore";
 import Section from "../BodyComponent/Section";
 import api from "../../Api/api";
 import { BASE_URL } from "../../config";
+import parser from "html-react-parser";
 
 const CourseDirector = () => {
   const [data, setData] = useState({});
@@ -41,43 +42,12 @@ const CourseDirector = () => {
               </div>
             </div>
             <div className="md:w-[70%]  md:ml-20 md:mt-0 mt-14">
-              <div
-                className="header"
-                dangerouslySetInnerHTML={{ __html: data.attributes.heading }}
-              ></div>
+              <div className="header">{parser(data.attributes.heading)}</div>
               <br />
               <ReadMore className="text-justify text-body text-effect">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: data.attributes.description,
-                  }}
-                ></p>
+                {parser(data.attributes.description)}
               </ReadMore>
-              {/* <LinkBtn label={"Read More"} /> */}
-              <br />
-              <div
-                dangerouslySetInnerHTML={{ __html: data.attributes.awards }}
-              ></div>
-              {/* <h3 className="text-2xl font-medium">Awards & Recognition</h3>
-              <ul className="my-3 ml-5 text-body text-md">
-                <li className="list-disc">
-                  Awarded for Excellence in Cosmetology, 2022 - Molarip
-                </li>
-                <li className="list-disc">
-                  Awarded Best South Asian Paper for her pioneering research
-                  paper on Aging of IndianFace 202+
-                </li>
-                <li className="list-disc">
-                  Awarded Excellence in Facial Cosmetics, 2019 - Indian Health
-                  Professional Awardp
-                </li>
-                <li className="list-disc">
-                  Winner of Young Achiever in Facial Cosmetics, 2019 - IADI
-                </li>
-                <li className="list-disc">
-                  Winner of Youth Icon of the year, 2019 - IADS
-                </li>
-              </ul> */}
+              <div>{parser(data.attributes.awards)}</div>
               <br />
               <LinkBtn varaint={"filled"} label={"Know More"} />
             </div>
@@ -88,8 +58,10 @@ const CourseDirector = () => {
               Awards & Achievement
             </h2>
             <div className="flex flex-wrap justify-center items-start">
-              {data.attributes.imgs.map((card) => {
-                return <Card title={card.title} subtitle={card.subtitle} />;
+              {data.attributes.imgs.map((card, i) => {
+                return (
+                  <Card key={i} title={card.title} subtitle={card.subtitle} />
+                );
               })}
             </div>
           </div>
