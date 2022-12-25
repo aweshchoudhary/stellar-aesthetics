@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react";
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import menu from "./menu.json";
 
-function createSubmenu(arr) {
-  const handleScroll = () => {
+function CreateSubmenu({ arr }) {
+  const navigate = useNavigate();
+  const handleScroll = (url) => {
+    navigate(url, { replace: true });
     document.body.scrollTop(0);
   };
   return (
@@ -21,13 +22,12 @@ function createSubmenu(arr) {
                   menuItem?.items?.map((subMenuLink, i) => {
                     return (
                       <li className="my-2 list-none" key={i}>
-                        <Link
-                          to={subMenuLink.link}
-                          onClick={handleScroll}
-                          className="hover:font-medium text-h-primary"
+                        <button
+                          onClick={() => handleScroll(subMenuLink.link)}
+                          className="text-h-primary"
                         >
                           {subMenuLink.label}
-                        </Link>
+                        </button>
                       </li>
                     );
                   })}
@@ -62,7 +62,9 @@ function createSubmenu(arr) {
 }
 
 const Navbar = () => {
-  const handleScroll = () => {
+  const navigate = useNavigate();
+  const handleScroll = (url) => {
+    navigate(url, { replace: true });
     document.body.scrollTop(0);
   };
   return (
@@ -71,9 +73,8 @@ const Navbar = () => {
         {menu.map((menuItem, i) => {
           return (
             <li className="font-medium py-3 list-none" key={i}>
-              <Link
-                to={menuItem.link}
-                onClick={handleScroll}
+              <button
+                onClick={() => handleScroll(menuItem.link)}
                 className="flex items-center gap-1 text-h-primary"
               >
                 {menuItem.label}
@@ -83,8 +84,8 @@ const Navbar = () => {
                     icon="ic:baseline-keyboard-arrow-down"
                   />
                 )}
-              </Link>
-              {menuItem.submenu && createSubmenu(menuItem.submenu)}
+              </button>{" "}
+              {menuItem.submenu && <CreateSubmenu arr={menuItem.submenu} />}
             </li>
           );
         })}

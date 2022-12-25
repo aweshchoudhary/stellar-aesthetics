@@ -1,8 +1,6 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Header/Header";
-import Progress from "../Components/Loader/Progress";
-import useData from "../Hooks/useContext";
 
 const Layout = () => {
   return (
@@ -11,7 +9,7 @@ const Layout = () => {
       {/* <Progress isAnimating={loading.isAnimating} key={loading.key} /> */}
       <main>
         <article>
-          <Suspense fallback={<h1>Loading</h1>}>
+          <Suspense fallback={<h1>Loading...</h1>}>
             <Outlet />
           </Suspense>
         </article>

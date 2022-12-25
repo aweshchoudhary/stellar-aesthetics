@@ -22,15 +22,15 @@ function App() {
         {/* Public Main Page Url */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/why-choose-us" element={<WhyChooseUs />} />
-          <Route path="/dr-sapnna-vaderra" element={<CourseDirector />} />
-          <Route path="/courses/:name" element={<CoursePage />} />
-          <Route path="/procedures" element={<Procedures />} />
-          <Route path="/doctors" element={<Doctors />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="about" element={<About />} />
+          <Route path="courses" element={<Courses />} />
+          <Route path="why-choose-us" element={<WhyChooseUs />} />
+          <Route path="dr-sapnna-vaderra" element={<CourseDirector />} />
+          <Route path="courses/:name" element={<CoursePage />} />
+          <Route path="procedures" element={<Procedures />} />
+          <Route path="doctors" element={<Doctors />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="search" element={<Search />} />
         </Route>
       </Routes>
     </Router>
