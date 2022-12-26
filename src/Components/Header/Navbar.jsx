@@ -6,57 +6,87 @@ function CreateSubmenu({ arr }) {
   const navigate = useNavigate();
   const handleScroll = (url) => {
     navigate(url, { replace: true });
-    document.body.scrollTop(0);
+    document?.body?.scrollTop(0);
   };
   return (
-    <ul className="sub-menu absolute top-full z-10 bg-white py-10 shadow-xl border w-full flex gap-20 left-1/2 translate-x-[-50%] justify-center">
-      {arr.map((menuItem, i) => {
-        return (
-          menuItem.heading && (
-            <li className="shrink-0 grow-0 list-none" key={i}>
-              <ul>
-                <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
-                  {menuItem.heading}
-                </h1>
-                {menuItem?.items &&
-                  menuItem?.items?.map((subMenuLink, i) => {
-                    return (
-                      <li className="my-2 list-none" key={i}>
-                        <button
-                          onClick={() => handleScroll(subMenuLink.link)}
-                          className="text-h-primary"
-                        >
-                          {subMenuLink.label}
-                        </button>
-                      </li>
-                    );
-                  })}
-              </ul>
-            </li>
-          )
-        );
-      })}
-
+    <ul
+      className={
+        "sub-menu absolute top-full w-full z-10 bg-white py-10 shadow-xl border flex gap-20 left-1/2 translate-x-[-50%] justify-center"
+      }
+    >
+      {arr &&
+        arr.map((menuItem, i) => {
+          return (
+            menuItem.heading && (
+              <li className="shrink-0 grow-0 list-none" key={i}>
+                <ul>
+                  <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
+                    {menuItem.heading}
+                  </h1>
+                  {menuItem?.items &&
+                    menuItem?.items?.map((subMenuLink, i) => {
+                      return (
+                        <li className="my-2 list-none" key={i}>
+                          <button
+                            onClick={() => handleScroll(subMenuLink.link)}
+                            className="text-h-primary"
+                          >
+                            {subMenuLink.label}
+                          </button>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </li>
+            )
+          );
+        })}
       <li className="shrink-0 grow-0 list-none" key={Date.now()}>
         <h1 className="font-medium text-lg border-b-4 border-gray-200 pb-2 mb-5">
           Useful Links
         </h1>
         <ul>
-          {arr.map((links, i) => {
-            return (
-              <>
-                {!links.heading && (
-                  <li className="my-2 list-none" key={i}>
-                    <Link className="text-h-primary" to={links.link}>
-                      {links.label}
-                    </Link>
-                  </li>
-                )}
-              </>
-            );
-          })}
+          {arr &&
+            arr.map((links, i) => {
+              return (
+                <>
+                  {!links.heading && (
+                    <li className="my-2 list-none" key={i}>
+                      <Link className="text-h-primary" to={links.link}>
+                        {links.label}
+                      </Link>
+                    </li>
+                  )}
+                </>
+              );
+            })}
         </ul>
       </li>
+    </ul>
+  );
+}
+function CreateSubmenu2({ arr, w }) {
+  const navigate = useNavigate();
+  const handleScroll = (url) => {
+    navigate(url, { replace: true });
+    document?.body?.scrollTop(0);
+  };
+  return (
+    <ul
+      className={
+        "sub-menu absolute top-full min-w-[200px] z-10 bg-white py-5 shadow-xl border flex flex-col px-5 left-1/2 translate-x-[-50%] justify-center"
+      }
+    >
+      {arr &&
+        arr.map((menuItem, i) => {
+          return (
+            <li key={i} className="list-none py-2 text-h-primary">
+              <Link onClick={handleScroll} to={menuItem.link}>
+                {menuItem.label}
+              </Link>
+            </li>
+          );
+        })}
     </ul>
   );
 }
@@ -84,8 +114,14 @@ const Navbar = () => {
                     icon="ic:baseline-keyboard-arrow-down"
                   />
                 )}
-              </button>{" "}
-              {menuItem.submenu && <CreateSubmenu arr={menuItem.submenu} />}
+              </button>
+              {menuItem.submenu ? (
+                !menuItem.type ? (
+                  <CreateSubmenu arr={menuItem.submenu} />
+                ) : (
+                  <CreateSubmenu2 arr={menuItem.submenu} />
+                )
+              ) : null}
             </li>
           );
         })}

@@ -1,19 +1,18 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
-import menu from "./menu.json";
+import menuItems from "./menu.json";
 import SearchBox from "./SearchBox";
 import LinkBtn from "../LinkBtn";
+import MenuItem from "./MenuItem";
+import useData from "../../Hooks/useContext";
 
-const MobileMenu = ({ display, setDisplay }) => {
-  const closeMenu = () => setDisplay(false);
-  const navItem =
-    "p-2 list-none hover:bg-gray-50 my-1 rounded font-medium flex flex-wrap justify-between items-center";
-
+const MobileMenu = () => {
+  const { toggleMobileMenu, setToggleMobileMenu } = useData();
+  const closeMenu = () => setToggleMobileMenu(false);
   return (
     <div
       className={`sm:w-[400px] ${
-        display ? "translate-x-0" : "-translate-x-full"
+        toggleMobileMenu ? "translate-x-0" : "-translate-x-full"
       } transition-transform md:hidden block w-screen z-50 p-5 absolute top-0 left-0 h-screen bg-white`}
     >
       <div className="head flex items-center justify-between border-b pb-5 mb-3">
@@ -30,72 +29,9 @@ const MobileMenu = ({ display, setDisplay }) => {
       </div>
       <SearchBox />
       <nav className="mt-5 mobile-navbar">
-        <ul>
-          {menu.map((e, i) => {
-            return (
-              <li className={navItem} key={i}>
-                <Link
-                  onClick={closeMenu}
-                  className={`${e.submenu ? "w-1/2" : "w-full"} text-h-primary`}
-                  to={e.link}
-                >
-                  {e.label}
-                </Link>
-
-                {e.submenu && (
-                  <>
-                    <div className="icon text-h-primary w-1/2 flex items-center justify-end">
-                      <Icon
-                        className=" text-2xl shrink-0"
-                        icon="material-symbols:keyboard-arrow-down"
-                      />
-                    </div>
-                    <ul className="w-full">
-                      {e.submenu &&
-                        e.submenu.map((item, i) => {
-                          return (
-                            <li className={navItem} key={i}>
-                              <Link
-                                to="#"
-                                onClick={closeMenu}
-                                className="text-h-primary"
-                              >
-                                {item.heading}
-                              </Link>
-                              {
-                                <>
-                                  <div className="icon text-h-primary w-1/2 flex items-center justify-end">
-                                    <Icon
-                                      className=" text-2xl shrink-0"
-                                      icon="material-symbols:keyboard-arrow-down"
-                                    />
-                                  </div>
-                                  <ul className="w-full ml-2">
-                                    {item.items &&
-                                      item.items.map((link, i) => {
-                                        return (
-                                          <li className={navItem} key={i}>
-                                            <Link
-                                              onClick={closeMenu}
-                                              to={link.link}
-                                              className="text-h-primary w-full"
-                                            >
-                                              {link.label}
-                                            </Link>
-                                          </li>
-                                        );
-                                      })}
-                                  </ul>
-                                </>
-                              }
-                            </li>
-                          );
-                        })}
-                    </ul>
-                  </>
-                )}
-              </li>
-            );
+        <ul className="menus">
+          {menuItems.map((menu, index) => {
+            return <MenuItem items={menu} key={index} />;
           })}
         </ul>
       </nav>
@@ -116,3 +52,15 @@ const MobileMenu = ({ display, setDisplay }) => {
 };
 
 export default MobileMenu;
+
+// import React from "react";
+// import menuItems from "./menu.json";
+// import MenuItem from "./MenuItem";
+
+// const MobileMenu = () => {
+//   return (
+
+//   );
+// };
+
+// export default MobileMenu;

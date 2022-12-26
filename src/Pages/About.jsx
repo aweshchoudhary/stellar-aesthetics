@@ -68,11 +68,11 @@ const About = () => {
           brNone={true}
         />
         <div className="text-white">
-          <div className="flex gap-5">
+          <div className="md:flex gap-5">
             <img
               src="https://stellaraesthetics.in/wp-content/uploads/2022/11/cropped.jpg.webp"
               alt=""
-              className="h-[350px] shrink-0"
+              className="h-[350px] shrink-0 md:mb-0 mb-5"
             />
             <p>
               The philosophy of Stellar Aesthetics is not just giving skills and

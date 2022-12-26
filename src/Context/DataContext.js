@@ -7,11 +7,19 @@ export const DataProvider = ({ children }) => {
     isAnimating: false,
     key: 0,
   });
+  const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
   const [coursePage, setCoursePage] = useState({});
 
   return (
     <dataContext.Provider
-      value={{ loading, setLoading, coursePage, setCoursePage }}
+      value={{
+        loading,
+        setLoading,
+        coursePage,
+        setCoursePage,
+        toggleMobileMenu,
+        setToggleMobileMenu,
+      }}
     >
       {children}
     </dataContext.Provider>

@@ -1,27 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Section from "../Components/BodyComponent/Section";
+import PageHeader from "../Components/PageHeader";
+import { BASE_URL } from "../config";
+
+const Card = ({ img, title }) => {
+  return (
+    <div className=" sm:w-1/2 w-full">
+      <div className="card sm:m-4 mb-4 sm:h-[500px] h-[300px] shrink-0">
+        <Link to={"/procedures/name"}>
+          <div className="img sm:h-[400px] h-[200px] w-full bg-gray-200">
+            {img && (
+              <img
+                src={BASE_URL + img}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            )}
+          </div>
+          <div className="caption mt-3">
+            <h5 className="text-xl capitalize font-medium">
+              {title} Procedures
+            </h5>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
 const Procedures = () => {
   return (
     <>
-      <Section className={"h-[500px] bg-gray-200"}>procedures sliders</Section>
-      <Section className={"whitespace-pre"}>
-        <ul>
-          <li className="list-disc ml-10 text-xl my-3">Face Consultation</li>
-          <li className="list-disc ml-10 text-xl my-3">Anti-Aging Treatment</li>
-          <li className="list-disc ml-10 text-xl my-3">
-            Fine Lines &amp; Wrinkles
-          </li>
-          <li className="list-disc ml-10 text-xl my-3">Face Lifting</li>
-          <li className="list-disc ml-10 text-xl my-3">Liquid Face Lift</li>
-          <li className="list-disc ml-10 text-xl my-3">Thread Face Lift</li>
-          <li className="list-disc ml-10 text-xl my-3">Vampire Face Lift</li>
-          <li className="list-disc ml-10 text-xl my-3">Brow Lift</li>
-          <li className="list-disc ml-10 text-xl my-3">Neck Lifting</li>
-          <li className="list-disc ml-10 text-xl my-3">HIFU</li>
-          <li className="list-disc ml-10 text-xl my-3">Jaw Line Contouring</li>
-          <li className="list-disc ml-10 text-xl my-3">Chin Enhancement</li>
-        </ul>
+      <PageHeader>Procedures</PageHeader>
+      <Section className={"Cards"}>
+        <div className="flex flex-wrap">
+          <Card title={"face"} />
+          <Card title={"Hair"} />
+          <Card title={"Skin"} />
+          <Card title={"Body"} />
+        </div>
       </Section>
     </>
   );

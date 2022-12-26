@@ -5,7 +5,6 @@ import Topbar from "./Topbar";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     const screenWidth = window.screen.width;
@@ -15,10 +14,8 @@ const Header = () => {
     <>
       <header>
         <Topbar />
-        <Middlebar setDisplayMenu={setIsMenuOpen} />
-        {toggle && (
-          <MobileMenu display={isMenuOpen} setDisplay={setIsMenuOpen} />
-        )}
+        <Middlebar />
+        {toggle && <MobileMenu />}
       </header>
       <Navbar />
     </>

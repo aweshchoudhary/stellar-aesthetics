@@ -20,7 +20,6 @@ const CourseHero = () => {
               className="opacity-20 blur w-full h-full object-cover"
               alt=""
             />
-            {/* <div className="overlay bg-primary h-full w-full"></div> */}
           </div>
           <div className="sticky inset-0 gap-5 md:flex-row flex-col-reverse h-full w-full flex justify-between ">
             <div className="content shrink-0 md:w-1/2 text-white">
@@ -51,12 +50,14 @@ const CourseHero = () => {
                 label={"Call Us"}
               />
             </div>
-            <div className="shrink-0 md:w-1/2 flex gap-5">
-              <ImgGallery
-                img={
+            <div className="shrink-0 md:w-1/2 w-full">
+              <img
+                src={
                   BASE_URL +
                   coursePage.attributes.courseHeaderImg.data.attributes.url
                 }
+                alt=""
+                className="w-full object-contain"
               />
             </div>
           </div>

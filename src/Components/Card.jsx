@@ -1,5 +1,6 @@
 import React from "react";
 import { BASE_URL } from "../config";
+import parser from "html-react-parser";
 
 const Card = ({ horizontal, img, title, title2, subtitle }) => {
   return (
@@ -12,12 +13,7 @@ const Card = ({ horizontal, img, title, title2, subtitle }) => {
             </div>
             <div className="caption mt-3">
               <h5 className="text-lg">{title}</h5>
-              {subtitle && (
-                <p
-                  className="text-body"
-                  dangerouslySetInnerHTML={{ __html: subtitle }}
-                ></p>
-              )}
+              {subtitle && <p className="text-body">{parser(subtitle)}</p>}
             </div>
           </div>
         </div>
@@ -36,12 +32,7 @@ const Card = ({ horizontal, img, title, title2, subtitle }) => {
             <div className="caption mt-3">
               <h5 className="text-md font-medium">{title}</h5>
               {title2 && <h5 className="text-md font-medium">{title2}</h5>}
-              {subtitle && (
-                <p
-                  className="text-body"
-                  dangerouslySetInnerHTML={{ __html: subtitle }}
-                ></p>
-              )}
+              {subtitle && <p className="text-body">{parser(subtitle)}</p>}
             </div>
           </div>
         </div>

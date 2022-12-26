@@ -5,6 +5,7 @@ import { lazy } from "react";
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const Courses = lazy(() => import("./Pages/Courses"));
+const Procedure = lazy(() => import("./Pages/Procedure"));
 const Procedures = lazy(() => import("./Pages/Procedures"));
 const Doctors = lazy(() => import("./Pages/Doctors"));
 const Contact = lazy(() => import("./Pages/Contact"));
@@ -27,6 +28,7 @@ function App() {
           <Route path="why-choose-us" element={<WhyChooseUs />} />
           <Route path="dr-sapnna-vaderra" element={<CourseDirector />} />
           <Route path="courses/:name" element={<CoursePage />} />
+          <Route path="procedures/:name" element={<Procedure />} />
           <Route path="procedures" element={<Procedures />} />
           <Route path="doctors" element={<Doctors />} />
           <Route path="contact" element={<Contact />} />

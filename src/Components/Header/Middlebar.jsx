@@ -1,9 +1,10 @@
 import { Icon } from "@iconify/react";
-import React, { useState } from "react";
+import useData from "../../Hooks/useContext";
 import LinkBtn from "../LinkBtn";
 import SearchBox from "./SearchBox";
 
-const Middlebar = ({ setDisplayMenu }) => {
+const Middlebar = () => {
+  const { setToggleMobileMenu } = useData();
   return (
     <>
       <div className="middlebar flex items-center justify-between px-10 py-3 border-b ">
@@ -16,7 +17,9 @@ const Middlebar = ({ setDisplayMenu }) => {
         </div>
         <div
           className="menu-btn md:hidden"
-          onClick={() => setDisplayMenu(true)}
+          onClick={() => {
+            setToggleMobileMenu(true);
+          }}
         >
           <Icon
             className="text-3xl text-body"

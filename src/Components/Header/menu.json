@@ -69,7 +69,32 @@
         "label":"Procedures",
         "link":"/procedures",
         "active": false,
-        "icon": "mdi:paper-check"
+        "icon": "mdi:paper-check",
+        "type": "normal",
+        "submenu":[
+                    {
+                        "label": "Face",
+                        "link": "/procedures/face",
+                        "active": false
+                    },
+                    {
+                        "label": "Hair",
+                        "link": "/procedures/hair",
+                        "active": false
+                    },
+                    {
+                        "label": "Skin",
+                        "link": "/procedures/skin",
+                        "active": false
+                    },
+                    {
+                        "label": "Body",
+                        "link": "/procedures/body",
+                        "active": false
+                    }
+                ]
+            
+        
     },
     {
         "label":"Doctors",

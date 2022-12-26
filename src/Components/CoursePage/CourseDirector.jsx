@@ -1,31 +1,17 @@
-import React, { useEffect, useState } from "react";
 import Card from "../Card";
 import Heading from "../BodyComponent/Heading";
 import LinkBtn from "../LinkBtn";
 import ReadMore from "../ReadMore";
 import Section from "../BodyComponent/Section";
-import api from "../../Api/api";
+import useFetch from "../../Hooks/useFetch";
 import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
 
 const CourseDirector = () => {
-  const [data, setData] = useState({});
-
-  useEffect(() => {
-    const fetchCourseDirectorData = async () => {
-      try {
-        const res = await api.get("/course-director?populate=*");
-        setData(res.data.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchCourseDirectorData();
-  }, []);
-
+  const { data } = useFetch("/course-director?populate=*");
   return (
     <>
-      {data.attributes && (
+      {data?.attributes && (
         <Section className="course-director py-20">
           <Heading
             text1={"meet your"}
