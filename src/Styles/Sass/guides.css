@@ -164,4 +164,83 @@ li {
 
 .modal-body {
   padding: 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  font-family: Poppins;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.title-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-svg {
+  width: 300px;
+  max-width: 10rem;
+  -webkit-animation: rotate 3.6s linear infinite;
+          animation: rotate 3.6s linear infinite;
+}
+
+.loading-svg circle {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 8px;
+  stroke-dasharray: 300;
+  -webkit-animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+          animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+}
+
+@-webkit-keyframes outline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+
+@keyframes outline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
 }/*# sourceMappingURL=guides.css.map */

@@ -23,16 +23,24 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-primary">Company</h4>
           <ul className="my-5">
             <li className="list-none my-1">
-              <Link className="text-h-primary">About Us</Link>
+              <Link className="text-h-primary" to={"/about"}>
+                About Us
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Course Director</Link>
+              <Link className="text-h-primary" to={"/dr-sapnna-vaderra"}>
+                Course Director
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Vision</Link>
+              <Link className="text-h-primary" to={"/about#vision"}>
+                Vision
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Director</Link>
+              <Link className="text-h-primary" to={"/about#director"}>
+                Director
+              </Link>
             </li>
           </ul>
         </li>
@@ -40,23 +48,44 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-primary">Courses</h4>
           <ul className="my-5">
             <li className="list-none my-1">
-              <Link className="text-h-primary">
+              <Link
+                className="text-h-primary"
+                to={"/courses/fellowship-in-clinical-cosmetology"}
+              >
                 Fellowship In Clinical Cosmetology
               </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Fellowship In Trichology</Link>
+              <Link
+                className="text-h-primary"
+                to={"/courses/fellowship-in-tricology"}
+              >
+                Fellowship In Trichology
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">
+              <Link
+                className="text-h-primary"
+                to={"/courses/certification-in-facial-cosmetics"}
+              >
                 Certification In Facial Cosmetics
               </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">
+              <Link
+                className="text-h-primary"
+                to={"/courses/certification-in-hair-restoration"}
+              >
                 Certification In Hair Restoration
               </Link>
-              <Link className="text-h-primary">
+            </li>
+            <li className="list-none my-1">
+              <Link
+                className="text-h-primary"
+                to={
+                  "/courses/certification-in-micro-pigmentation-micro-blading"
+                }
+              >
                 Certification In Micro Pigmentation & Micro Blading
               </Link>
             </li>
@@ -73,6 +102,8 @@ const Footer = () => {
             </li>
             <li className="list-none my-1">
               <Link className="text-h-primary">Skin</Link>
+            </li>
+            <li className="list-none my-1">
               <Link className="text-h-primary">Body</Link>
             </li>
           </ul>

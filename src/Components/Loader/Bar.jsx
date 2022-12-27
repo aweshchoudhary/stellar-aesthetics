@@ -1,32 +1,18 @@
 import React from "react";
 
-const Bar = ({ progress, animationDuration }) => {
+const Bar = () => {
   return (
-    <div
-      style={{
-        background: "#29d",
-        height: 2,
-        left: 0,
-        marginLeft: `${(-1 + progress) * 100}%`,
-        position: "fixed",
-        top: 0,
-        transition: `margin-left ${animationDuration}ms linear`,
-        width: "100%",
-        zIndex: 1031,
-      }}
-    >
-      <div
-        style={{
-          boxShadow: "0 0 10px #29d, 0 0 5px #29d",
-          display: "block",
-          height: "100%",
-          opacity: 1,
-          position: "absolute",
-          right: 0,
-          transform: "rotate(3deg) translate(0px, -4px)",
-          width: 100,
-        }}
-      />
+    <div className="title-container md:py-[200px] py-10">
+      <div className="spinner">
+        <svg
+          className="loading-svg"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="50" cy="50" r="46" />
+        </svg>
+      </div>
+      <h1 className="title text-3xl mt-5">loading...</h1>
     </div>
   );
 };

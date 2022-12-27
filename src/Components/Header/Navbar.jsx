@@ -1,17 +1,19 @@
 import { Icon } from "@iconify/react";
 import { Link, useNavigate } from "react-router-dom";
+import Bar from "../Loader/Bar";
 import menu from "./menu.json";
+import useData from "../../Hooks/useContext";
 
 function CreateSubmenu({ arr }) {
   const navigate = useNavigate();
   const handleScroll = (url) => {
     navigate(url, { replace: true });
-    document?.body?.scrollTop(0);
+    document.body.scrollTop = 0;
   };
   return (
     <ul
       className={
-        "sub-menu absolute top-full w-full z-10 bg-white py-10 shadow-xl border flex gap-20 left-1/2 translate-x-[-50%] justify-center"
+        "sub-menu absolute top-full w-screen z-10 bg-white py-10 shadow-xl border flex gap-20 left-1/2 translate-x-[-50%] justify-center"
       }
     >
       {arr &&
@@ -69,7 +71,7 @@ function CreateSubmenu2({ arr, w }) {
   const navigate = useNavigate();
   const handleScroll = (url) => {
     navigate(url, { replace: true });
-    document?.body?.scrollTop(0);
+    document.body.scrollTop = 0;
   };
   return (
     <ul
@@ -81,8 +83,8 @@ function CreateSubmenu2({ arr, w }) {
         arr.map((menuItem, i) => {
           return (
             <li key={i} className="list-none py-2 text-h-primary">
-              <Link onClick={handleScroll} to={menuItem.link}>
-                {menuItem.label}
+              <Link to={menuItem.link}>
+                <div onClick={handleScroll}>{menuItem.label}</div>
               </Link>
             </li>
           );
@@ -97,6 +99,9 @@ const Navbar = () => {
     navigate(url, { replace: true });
     document.body.scrollTop(0);
   };
+
+  const { loading } = useData();
+
   return (
     <nav className="navbar hidden md:block z-50 bg-white border-b sticky top-0 left-0">
       <ul className="flex gap-10 justify-center text-md relative h-full  w-screen">
@@ -126,6 +131,7 @@ const Navbar = () => {
           );
         })}
       </ul>
+      {loading && <Bar />}
     </nav>
   );
 };

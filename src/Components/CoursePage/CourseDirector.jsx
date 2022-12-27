@@ -6,12 +6,14 @@ import Section from "../BodyComponent/Section";
 import useFetch from "../../Hooks/useFetch";
 import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
+import Bar from "../Loader/Bar";
 
 const CourseDirector = () => {
-  const { data } = useFetch("/course-director?populate=*");
+  const { data, loading } = useFetch("/course-director?populate=*");
+  console.log(data);
   return (
     <>
-      {data?.attributes && (
+      {data?.attributes && !loading ? (
         <Section className="course-director py-20">
           <Heading
             text1={"meet your"}
@@ -35,7 +37,11 @@ const CourseDirector = () => {
               </ReadMore>
               <div>{parser(data.attributes.awards)}</div>
               <br />
-              <LinkBtn varaint={"filled"} label={"Know More"} />
+              <LinkBtn
+                varaint={"filled"}
+                label={"Know More"}
+                others={{ to: "/dr-sapnna-vaderra" }}
+              />
             </div>
           </div>
           <div>
@@ -52,6 +58,8 @@ const CourseDirector = () => {
             </div>
           </div>
         </Section>
+      ) : (
+        <Bar />
       )}
     </>
   );

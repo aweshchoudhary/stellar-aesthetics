@@ -8,11 +8,11 @@ const PageHeader = ({ children }) => {
       <h1 className="lg:text-6xl md:text-5xl text-4xl font-medium text-white">
         {children}
       </h1>
-      <div className="mt-5 text-white flex gap-2 capitalize">
+      <div className="mt-5 text-white flex gap-2">
         {location.map((item, i) => {
           return i !== location.length - 1 ? (
             <>
-              <Link to={"/"}>Home</Link> <Link to={"/" + item}>{item}</Link> /
+              <Link to={"/"}>home</Link> <Link to={"/" + item}>{item}</Link> /
             </>
           ) : (
             <Link to={"/" + item}>{item}</Link>

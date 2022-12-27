@@ -1,7 +1,232 @@
-import React from "react";
+import React, { useState } from "react";
+import PageHeader from "../Components/PageHeader";
+import Section from "../Components/BodyComponent/Section";
+import Heading from "../Components/BodyComponent/Heading";
+import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  const [addressList, setAddressList] = useState([
+    {
+      title: "mumbai",
+      list: [
+        {
+          address:
+            "Andheri: 9/1, Verma Nagar, Azad Road, Laxmi Estate, Andheri East, Mumbai – 400069",
+          map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.672341956893!2d72.852817!3d19.122025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75106e610d886b1b!2sLaxmi%20Estate%20Co-operative%20Housing%20Society!5e0!3m2!1sen!2sin!4v1672071625136!5m2!1sen!2sin",
+        },
+        {
+          address:
+            "Nerul: Shop Number 2, Niru Niketan, Sector 18A, Nerul, Navi Mumbai, Maharashtra – 400706",
+          map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3771.6722202778997!2d73.012397!3d19.03416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95b941c9149eec83!2sDr.%20Abhijit%20Shirodkar!5e0!3m2!1sen!2sin!4v1672071807685!5m2!1sen!2sin",
+        },
+        {
+          address:
+            "Parel: Southbay Clinic, 15 Orbit Grnd Building, NM Joshi Marg, Near Lodha The Park, opp BMC G South Office, Lower Parel West, Mumbai, 400013",
+          map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3772.3086572710267!2d72.828836!3d19.006116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9534deb9c44d23a7!2sLodha%20Park!5e0!3m2!1sen!2sin!4v1672071843079!5m2!1sen!2sin",
+        },
+      ],
+    },
+    {
+      title: "Nagpur",
+      list: [
+        {
+          address:
+            "201-202 Honey Arjun Kaushalya Complex, Besides HDFC BANK, Telephone exchange sqaure CA road Nagpur 440008",
+          map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d930.2845798555343!2d79.116252!3d21.146893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91eacc758636eea2!2s7JHX44W8%2BPFW!5e0!3m2!1sen!2sin!4v1672071980227!5m2!1sen!2sin",
+        },
+      ],
+    },
+    {
+      title: "Jodhpur",
+      list: [
+        {
+          address:
+            "629, 12th B Rd, behind MAAN MANHUAR RESTURANT, Sardarpura, Jodhpur, Rajasthan 342001",
+          map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d229.9585072157036!2d75.90451309018643!3d22.752904386232586!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1672072046000!5m2!1sen!2sin",
+        },
+      ],
+    },
+    {
+      title: "Indore",
+      list: [
+        {
+          address:
+            "202, EC 66, Scheme No. 94 Near Murliwala Sweets, Opposite Bombay Hospital Service Road, Indire, Madhya Pradesh, 452010",
+          map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d229.9585072157036!2d75.90451309018643!3d22.752904386232586!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1672072046000!5m2!1sen!2sin",
+        },
+      ],
+    },
+    {
+      title: "Bhopal",
+      list: [
+        {
+          address:
+            "B-16, Kamla nagar, Near Bank of Baroda, Kotra Sultanabad, Bhopal",
+          map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d916.6763397776459!2d77.39326!3d23.217406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb9fdac5c5904078!2sNIRA%20Multispeciality%20Care%20Center!5e0!3m2!1sen!2sin!4v1672072096122!5m2!1sen!2sin",
+        },
+      ],
+    },
+    {
+      title: "Raipur",
+      list: [
+        {
+          address:
+            "1st floor, above Shri Krishna Medical, Devendra Nagar, Raipur, Chhattisgarh492001",
+        },
+      ],
+    },
+    {
+      title: "Channai",
+      list: [
+        {
+          address: "1434 ,17th main road, H-Block, anna nagar west, chennai-40",
+        },
+      ],
+    },
+    {
+      title: "Kolkatta",
+      list: [
+        {
+          address:
+            "86 khetra mitra lane salkia howrah Near Howrah railway station West Bengal",
+        },
+      ],
+    },
+    {
+      title: "Delhi",
+      list: [
+        {
+          address: "B -0004 LUXURIA ESTATE, ADITYA WORLD CITY, NH24 GHAZIABAD.",
+        },
+      ],
+    },
+  ]);
+  return (
+    <>
+      <PageHeader>Contact Us</PageHeader>
+      <Section>
+        <Heading text1={"Connect with us"} className="mb-10" />
+        <div className="my-5 md:flex gap-10">
+          <div className="w-[40%] shrink-0">
+            <header className="mb-10">
+              <p className="text-lg">Our Services Are Available At</p>
+              <h3 className="text-2xl font-bold text-primary">
+                15+ Cities Across INDIA
+              </h3>
+            </header>
+            <img
+              src="https://stellaraesthetics.in/wp-content/uploads/2022/11/Group-3.png.webp"
+              alt=""
+              className="w-full"
+            />
+            <h1 className="flex items-center font-medium md:text-3xl text-xl mt-5">
+              Locations{" "}
+              <Icon
+                className="md:text-6xl text-3xl text-primary"
+                icon="ep:location-information"
+              ></Icon>{" "}
+              IN INDIA
+            </h1>
+          </div>
+          <div>
+            <h3 className="text-4xl font-bold">Contact Us</h3>
+            <div>
+              <p className="flex items-center gap-5 my-5">
+                <Icon icon="ri:whatsapp-fill" className="text-3xl" />
+                <Link
+                  to={"https://stellaraesthetics.in/courses"}
+                  className="text-xl"
+                >
+                  +91 79995-06817
+                </Link>
+              </p>
+              <div className="my-3">
+                <h3 className="text-3xl font-medium">Social Media Platforms</h3>
+                <p className="flex items-center gap-5 my-5">
+                  <Icon icon="ph:globe" className="text-3xl" />
+                  <Link
+                    to={"https://www.instagram.com/stellaraesthetics.india/"}
+                    className="text-xl"
+                  >
+                    www.stellaraesthetics.in
+                  </Link>
+                </p>
+                <p className="flex items-center gap-5 my-5">
+                  <Icon icon="ph:instagram-logo-fill" className="text-3xl" />
+                  <Link
+                    to={"https://www.instagram.com/stellaraesthetics.india/"}
+                    className="text-xl"
+                  >
+                    stellaraesthetics.india
+                  </Link>
+                </p>
+                <p className="flex items-center gap-5 my-5">
+                  <Icon icon="ic:baseline-facebook" className="text-3xl" />
+                  <Link
+                    to={"https://www.linkedin.com/company/stellar-aesthetics/"}
+                    className="text-xl"
+                  >
+                    Stellar Aesthetics
+                  </Link>
+                </p>
+                <p className="flex items-center gap-5 my-5">
+                  <Icon icon="mdi:linkedin" className="text-3xl" />
+                  <Link
+                    to={
+                      "https://api.whatsapp.com/send/?phone=917999506817&text=Hello+Team+Stellar+Aesthetics.+I+would+like+to+get+more+info+about+*Best+Cosmetics+Courses+in+India*"
+                    }
+                    className="text-xl"
+                  >
+                    Stellar Aesthetics
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="md:my-10 my-5">
+          <Heading
+            text1={"Our"}
+            brNone={true}
+            text2={"Locations"}
+            className="my-5"
+          />
+          <div>
+            {addressList.map((item, i) => {
+              return (
+                <div className="my-5" key={i}>
+                  <h3 className="flex items-center md:text-2xl text-xl gap-3 mb-5 font-medium">
+                    <Icon
+                      icon="ic:round-location-on"
+                      className="md:text-3xl text-2xl text-red-600"
+                    />
+                    {item.title}
+                  </h3>
+                  {item.list.map((add, index) => {
+                    return (
+                      <>
+                        {add.map && (
+                          <iframe
+                            src={add.map}
+                            className="w-full h-[200px]"
+                            loading="lazy"
+                            title={"Address" + index}
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        )}
+                        <address className="my-3">{add.address}</address>
+                      </>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </Section>
+    </>
+  );
 };
 
 export default Contact;

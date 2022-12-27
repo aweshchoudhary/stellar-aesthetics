@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Heading from "../Components/BodyComponent/Heading";
 import Section from "../Components/BodyComponent/Section";
 import LinkBtn from "../Components/LinkBtn";
+import useFetch from "../Hooks/useFetch";
+import parser from "html-react-parser";
+import Bar from "../Components/Loader/Bar";
 
 const Procedure = () => {
-  return (
+  const [procedure, setProcedure] = useState();
+  const { data, loading } = useFetch("/procedures?populate=*");
+  const { name } = useParams();
+  console.count(procedure);
+  useEffect(() => {
+    data &&
+      data.forEach((item) => {
+        if (item.attributes.title === name) {
+          setProcedure(item);
+        }
+      });
+  }, [data, setProcedure, name]);
+
+  return procedure?.attributes && !loading ? (
     <>
       <section className="hero-slider relative flex items-center justify-center md:min-h-[500px] w-full">
         <div className="bg h-full w-full absolute inset-0 -z-10 bg-primary">
@@ -39,22 +56,16 @@ const Procedure = () => {
         </div>
       </section>
       <Section>
-        <Heading text1={"Face"} text2="Procedures" brNone={true} />
-        <div className="mt-5">
-          <ul>
-            <li>
-              Face Consultation Anti-Aging Treatment Fine Lines & Wrinkles Face
-              Lifting Liquid Face Lift Thread Face Lift Vampire Face Lift Brow
-              Lift Neck Lifting HIFU Jaw Line Contouring Chin Enhancement Chin
-              Lipolysis Chin Implant Rhinoplasty Liquid Rhinoplasty Dermal
-              Fillers Fat Grafting Nano-Fat Grafting Facial Scar Treatment
-              Revision Facial Surgery Cleft Lip Repair Cleft Palate Repair
-              Facial Feminisation
-            </li>
-          </ul>
-        </div>
+        <Heading
+          text1={procedure?.attributes?.title}
+          text2="Procedures"
+          brNone={true}
+        />
+        <div className="mt-5">{parser(procedure?.attributes?.description)}</div>
       </Section>
     </>
+  ) : (
+    <Bar />
   );
 };
 

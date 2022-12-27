@@ -10,13 +10,15 @@ import CourseGlimpses from "../Components/CoursePage/CourseGlimpses";
 import CourseHero from "../Components/CoursePage/CourseHero";
 import CourseRoadMap from "../Components/CoursePage/CourseRoadMap";
 import Testimonials from "../Components/Testimonials/Testimonials";
+import Bar from "../Components/Loader/Bar";
 
 const CoursePage = () => {
   const { name } = useParams();
-  const { setCoursePage, coursePage } = useData();
-  const { data } = useFetch("/courses?populate=*");
+  const { setCoursePage, coursePage, setLoading } = useData();
+  const { data, loading } = useFetch("/courses?populate=*");
 
   useEffect(() => {
+    setLoading(loading);
     let isCancel = false;
     const filterCourse = async () => {
       const course = await data?.filter((item) => {
@@ -26,11 +28,10 @@ const CoursePage = () => {
     };
 
     !isCancel && filterCourse();
-
     return () => {
       isCancel = true;
     };
-  }, [data, name, setCoursePage]);
+  }, [data, name, setCoursePage, setLoading, loading]);
 
   useEffect(() => {
     const changePrimaryColor = () => {
@@ -45,7 +46,7 @@ const CoursePage = () => {
 
   return (
     <>
-      {coursePage.attributes && (
+      {coursePage?.attributes && !loading ? (
         <>
           <CourseHero />
           <CourseDirector />
@@ -58,6 +59,8 @@ const CoursePage = () => {
           <ContactCard />
           <Testimonials />
         </>
+      ) : (
+        <Bar />
       )}
     </>
   );
