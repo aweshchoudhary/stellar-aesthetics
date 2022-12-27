@@ -12,7 +12,7 @@ const Bar = () => {
           <circle cx="50" cy="50" r="46" />
         </svg>
       </div>
-      <h1 className="title text-3xl mt-5">loading...</h1>
+      <h1 className="title text-3xl mt-5">Loading...</h1>
     </div>
   );
 };

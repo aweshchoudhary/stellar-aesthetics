@@ -58,10 +58,11 @@ const AboutCourse = () => {
           <ReadMore>{parser(coursePage.attributes.courseAbout)}</ReadMore>
 
           <div className="mt-10">
-            <img
-              src="https://stellaraesthetics.in/wp-content/uploads/2022/11/11-1.png.webp"
-              alt=""
+            <Img
               className="w-[200px] mb-4"
+              src={
+                "https://stellaraesthetics.in/wp-content/uploads/2022/11/11-1.png.webp"
+              }
             />
             <p>
               <strong>Dr. Sapnna Vaderra</strong>

@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 import useData from "../../Hooks/useContext";
-import LinkBtn from "../LinkBtn";
 import SearchBox from "./SearchBox";
 
 const Middlebar = () => {
@@ -8,13 +8,15 @@ const Middlebar = () => {
   return (
     <>
       <div className="middlebar flex items-center justify-between px-10 py-3 border-b ">
-        <div className="logo">
-          <img
-            src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
-            alt="stellar aesthetics brand logo dark"
-            className="w-[120px]"
-          />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img
+              src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
+              alt="stellar aesthetics brand logo dark"
+              className="w-[120px]"
+            />
+          </div>
+        </Link>
         <div
           className="menu-btn md:hidden"
           onClick={() => {

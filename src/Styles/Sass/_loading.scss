@@ -23,15 +23,15 @@
 }
 
 .loading-svg {
-	width: 300px;
-	max-width: 10rem;
+	width: 100px;
+	// max-width: 10rem;
 	animation: rotate 3.6s linear infinite;
 }
 
 .loading-svg circle {
 	fill: none;
 	stroke: var(--primary);
-	stroke-width: 8px;
+	stroke-width: 6px;
 	stroke-dasharray: 300;
 	animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
 }

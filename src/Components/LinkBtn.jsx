@@ -3,10 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const LinkBtn = ({ icon, label, varaint, white, others }) => {
+  const handleScroll = () => (document.body.scrollTop = 0);
   return (
     <>
       {varaint === "filled" && (
         <Link
+          onClick={handleScroll}
           className={`btn w-fit sm:px-8 py-3 px-5 shrink-0 rounded-full font-medium capitalize md:text-lg text-sm flex items-center gap-3 hover:bg-black hover:text-white ${
             white ? "bg-white text-primary" : "bg-primary text-white"
           }  `}

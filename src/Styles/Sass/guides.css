@@ -190,8 +190,7 @@ li {
 }
 
 .loading-svg {
-  width: 300px;
-  max-width: 10rem;
+  width: 100px;
   -webkit-animation: rotate 3.6s linear infinite;
           animation: rotate 3.6s linear infinite;
 }
@@ -199,7 +198,7 @@ li {
 .loading-svg circle {
   fill: none;
   stroke: var(--primary);
-  stroke-width: 8px;
+  stroke-width: 6px;
   stroke-dasharray: 300;
   -webkit-animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
           animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;

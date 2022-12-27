@@ -1,9 +1,14 @@
 import React from "react";
 
-const Img = ({ src, alt, caption, className }) => {
+const Img = ({ src, alt, caption, className, imgClass }) => {
   return (
-    <figure>
-      <img src={src} alt={alt || ""} className={className} />
+    <figure className={className}>
+      <img
+        loading="lazy"
+        src={src}
+        alt={alt || ""}
+        className={imgClass || "w-full h-full object-cover"}
+      />
       <figcaption className="hidden">{caption}</figcaption>
     </figure>
   );

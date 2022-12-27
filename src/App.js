@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
+import NoPage from "./Pages/NoPage";
 
 // Pages Import
 const Home = lazy(() => import("./Pages/Home"));
@@ -33,6 +34,9 @@ function App() {
           <Route path="doctors" element={<Doctors />} />
           <Route path="contact" element={<Contact />} />
           <Route path="search" element={<Search />} />
+
+          {/* No Page */}
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </Router>

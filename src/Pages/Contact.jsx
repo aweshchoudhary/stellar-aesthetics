@@ -108,7 +108,7 @@ const Contact = () => {
       <Section>
         <Heading text1={"Connect with us"} className="mb-10" />
         <div className="my-5 md:flex gap-10">
-          <div className="w-[40%] shrink-0">
+          <div className="md:w-[40%] shrink-0 w-full">
             <header className="mb-10">
               <p className="text-lg">Our Services Are Available At</p>
               <h3 className="text-2xl font-bold text-primary">
@@ -129,8 +129,8 @@ const Contact = () => {
               IN INDIA
             </h1>
           </div>
-          <div>
-            <h3 className="text-4xl font-bold">Contact Us</h3>
+          <div className="my-5">
+            <h3 className="md:text-4xl text-3xl font-semibold">Contact Us</h3>
             <div>
               <p className="flex items-center gap-5 my-5">
                 <Icon icon="ri:whatsapp-fill" className="text-3xl" />

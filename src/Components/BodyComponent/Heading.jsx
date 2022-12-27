@@ -5,9 +5,9 @@ const Heading = ({ text1, text2, className, brNone, white }) => {
     <h2
       className={`${
         white && "text-white "
-      }lg:text-5xl md:text-4xl text-2xl font-medium capitalize lg:w-[70%] ${className}`}
+      } lg:text-5xl md:text-4xl text-3xl md:border-b-0 md:pb-0 border-b-4 pb-5 capitalize lg:w-[70%] ${className}`}
     >
-      {text1} {!brNone && <br />}
+      <span className="font-semibold"> {text1}</span> {!brNone && <br />}
       <span className={`capitalize ${white ? "text-white" : "text-primary"}`}>
         <strong>{text2}</strong>
       </span>

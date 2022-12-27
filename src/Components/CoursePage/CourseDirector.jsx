@@ -7,13 +7,16 @@ import useFetch from "../../Hooks/useFetch";
 import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
 import Bar from "../Loader/Bar";
+import Img from "../BodyComponent/Img";
 
 const CourseDirector = () => {
+  const cards = useFetch(
+    "/cards?filters[parentComponent][$eq]=course-director&populate=*"
+  );
   const { data, loading } = useFetch("/course-director?populate=*");
-  console.log(data);
   return (
     <>
-      {data?.attributes && !loading ? (
+      {cards.data && !cards.loading && !loading ? (
         <Section className="course-director py-20">
           <Heading
             text1={"meet your"}
@@ -23,7 +26,7 @@ const CourseDirector = () => {
           <div className="md:flex">
             <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
               <div className="course-director-image">
-                <img
+                <Img
                   src={BASE_URL + data.attributes.img.data.attributes.url}
                   alt={data.attributes.img.data.attributes.alternativeText}
                 />
@@ -50,9 +53,30 @@ const CourseDirector = () => {
               Awards & Achievement
             </h2>
             <div className="flex flex-wrap justify-center items-start">
-              {data.attributes.imgs.map((card, i) => {
+              {cards.data.map((card, i) => {
                 return (
-                  <Card key={i} title={card.title} subtitle={card.subtitle} />
+                  !card.attributes.horizontal && (
+                    <Card
+                      key={i}
+                      img={card.attributes.img.data.attributes.url}
+                      title={card.attributes.title}
+                      horizontal={card.attributes.horizontal}
+                      subtitle={card.attributes.subtitle}
+                    />
+                  )
+                );
+              })}
+              {cards.data.map((card, i) => {
+                return (
+                  card.attributes.horizontal && (
+                    <Card
+                      key={i}
+                      img={card.attributes.img.data.attributes.url}
+                      title={card.attributes.title}
+                      horizontal={card.attributes.horizontal}
+                      subtitle={card.attributes.subtitle}
+                    />
+                  )
                 );
               })}
             </div>

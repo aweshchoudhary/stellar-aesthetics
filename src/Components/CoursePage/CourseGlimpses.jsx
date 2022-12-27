@@ -1,13 +1,17 @@
-import React from "react";
 import Card from "../Card";
 import Heading from "../BodyComponent/Heading";
 import Section from "../BodyComponent/Section";
-import useData from "../../Hooks/useContext";
-import { BASE_URL } from "../../config";
+import { useParams } from "react-router-dom";
+import useFetch from "../../Hooks/useFetch";
+import Bar from "../Loader/Bar";
 
 const CourseGlimpses = () => {
-  const { coursePage } = useData();
-  return (
+  const { name } = useParams();
+  const { data, loading } = useFetch(
+    `/cards?filters[parentComponent][$eq]=${name}&populate=*`
+  );
+
+  return data && !loading ? (
     <Section className="glimpses">
       <Heading
         text1={"Jam-Packed With"}
@@ -17,18 +21,19 @@ const CourseGlimpses = () => {
         Glimpses Of The Program
       </h2>
       <div className="flex flex-wrap my-10">
-        {coursePage.attributes.glimpse.map((item) => {
+        {data.map((item) => {
           return (
             <Card
               key={item.id}
-              // img={BASE_URL + item.attributes.img.data.attributes.url}
-              title={item.title}
-              subtitle={item.subtitle}
+              img={item.attributes.img.data.attributes.url}
+              title={item.attributes.title}
             />
           );
         })}
       </div>
     </Section>
+  ) : (
+    <Bar />
   );
 };
 

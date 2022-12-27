@@ -2,38 +2,33 @@ import React, { useEffect, useState } from "react";
 import LinkBtn from "../LinkBtn";
 import api from "../../Api/api";
 import { BASE_URL } from "../../config";
-import useFetch from "../../Hooks/useFetch";
+import Bar from "../Loader/Bar";
+import Img from "../BodyComponent/Img";
 
 const ContactCard = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(null);
-  const [error, setError] = useState(null);
-
   useEffect(() => {
     const query = [71, 72, 73, 74];
-    setLoading("loading...");
     const controller = new AbortController();
     query.forEach((e) => {
       api
         .get("/upload/files/" + e, { signal: controller.signal })
         .then((res) => {
-          setLoading(false);
-          // res.data.content && setData(res.data.content);
           res.data &&
             setData((prev) => {
               return [...prev, res.data.url];
             });
         })
         .catch((err) => {
-          setLoading(false);
-          setError("An error occurred. Awkward..");
+          console.log(err);
         });
     });
     return () => {
       controller.abort();
     };
   }, []);
-  return (
+
+  return data ? (
     <section className="bg-primary lg:h-[400px] text-white flex justify-between md:py-0 py-10">
       <div className="lg:w-[55%] lg:py-14 md:py-10 px-5 sm:px-10">
         <h2 className="lg:text-6xl sm:text-5xl text-3xl font-medium">
@@ -64,17 +59,18 @@ const ContactCard = () => {
           {data &&
             data.map((item, i) => {
               return (
-                <img
+                <Img
                   key={i}
                   className="w-[200px] shrink-0"
                   src={BASE_URL + item}
-                  alt=""
                 />
               );
             })}
         </div>
       </div>
     </section>
+  ) : (
+    <Bar />
   );
 };
 

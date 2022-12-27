@@ -11,12 +11,12 @@ export const Content = () => {
         text2={"Stellar Aesthetics."}
         brNone={true}
       />
-      <h3 className="text-3xl mt-10 text-primary">
+      <h3 className="md:text-3xl text-xl mt-10 text-primary">
         It’s THE ULTIMATE SUCCESS PACKAGE for your{" "}
         <strong>Successful Cosmetology Practice.</strong>
       </h3>
       <div>
-        <h3 className="text-2xl font-bold mt-10 mb-4">
+        <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
           Big Names. Train Under Absolute Experts.
         </h3>
         <p>
@@ -32,7 +32,7 @@ export const Content = () => {
         </p>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-10 mb-4">
+        <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
           Big Names. Train Under Absolute Experts.
         </h3>
         <p>
@@ -48,11 +48,11 @@ export const Content = () => {
         </p>
       </div>
 
-      <h3 className="text-3xl mt-10 text-primary">
+      <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
         Even more reasons to love <strong>Stellar Aesthetics</strong>
       </h3>
       <div>
-        <h3 className="text-2xl font-bold mt-10 mb-4">
+        <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
           Big Names. Train Under Absolute Experts.
         </h3>
         <p>
@@ -68,7 +68,7 @@ export const Content = () => {
         </p>
       </div>
       <div>
-        <h3 className="text-2xl font-bold mt-10 mb-4">
+        <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
           Big Names. Train Under Absolute Experts.
         </h3>
         <p>

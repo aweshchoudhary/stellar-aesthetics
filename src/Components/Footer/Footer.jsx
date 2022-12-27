@@ -7,12 +7,12 @@ const Footer = () => {
   };
   return (
     <footer className="border-t">
-      <div className="border-b flex items-center justify-between p-5">
+      <div className="border-b gap-2 flex items-center justify-between p-5">
         <h2 className="text-2xl font-semibold text-primary">
           Stellar Aesthetics
         </h2>
         <button
-          className="border-2 border-primary rounded-full py-2 px-5 text-primary hover:text-black hover:border-black transition"
+          className="border-2 border-primary rounded-full py-2 md:px-5 px-3 text-primary hover:text-black hover:border-black transition"
           onClick={handleTop}
         >
           Back Top

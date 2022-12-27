@@ -4,6 +4,7 @@ import ImgGallery from "../ImgGallery";
 import LinkBtn from "../LinkBtn";
 import useData from "../../Hooks/useContext";
 import { BASE_URL } from "../../config";
+import Img from "../BodyComponent/Img";
 
 const CourseHero = () => {
   const { coursePage } = useData();
@@ -51,13 +52,12 @@ const CourseHero = () => {
               />
             </div>
             <div className="shrink-0 md:w-1/2 w-full">
-              <img
+              <Img
+                className={"w-full"}
                 src={
                   BASE_URL +
                   coursePage.attributes.courseHeaderImg.data.attributes.url
                 }
-                alt=""
-                className="w-full object-contain"
               />
             </div>
           </div>

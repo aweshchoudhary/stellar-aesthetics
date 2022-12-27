@@ -31,11 +31,11 @@ const Courses = () => {
             muted
           ></video>
         </div>
-        <div className="text-white text-center w-1/2">
+        <div className="text-white text-center md:w-1/2">
           <h2 className="lg:text-5xl text-3xl font-bold text-white">
             Join Our Internationally Certified Courses
           </h2>
-          <p className="text-lg">
+          <p className="md:text-lg">
             The career of your dreams is one click away.
           </p>
           <div className="btns flex items-center gap-5 justify-center my-5">
@@ -56,12 +56,12 @@ const Courses = () => {
           brNone={true}
           text2={" Certified"}
         />
-        <h3 className=" mt-5 text-2xl">
+        <h3 className=" mt-5 text-lg">
           <strong>Our Courses</strong>, Click To Know More
         </h3>
         <div className="flex items-start flex-wrap md:my-10 my-5">
           <div className="md:w-1/2 w-full">
-            <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold">
+            <h2 className="md:text-3xl text-2xl font-bold">
               <em>International Fellowships</em>
             </h2>
 
@@ -70,7 +70,7 @@ const Courses = () => {
               <li>Fellowship In Trichology</li>
             </ul>
             <ul>
-              <h2 className="text-2xl font-medium mb-4">
+              <h2 className="md:text-2xl text-lg font-medium mb-4">
                 Extremely Insightful. Exceptionally Personal.
               </h2>
               <li>Complete Hands-On All Procedures (Basic to Advance)</li>
@@ -114,7 +114,7 @@ const Courses = () => {
         </div>
         <div className="flex flex-wrap md:my-10 my-5">
           <div className="md:w-[40%] grow-0 w-full">
-            <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold">
+            <h2 className="md:text-3xl text-2xl font-bold">
               <em>International Certifications</em>
             </h2>
 
@@ -124,7 +124,7 @@ const Courses = () => {
               <li>Certification In Micro Pigmentation & Micro Blading</li>
             </ul>
             <ul>
-              <h2 className="text-2xl font-medium mb-4">
+              <h2 className="md:text-2xl text-lg font-medium mb-4">
                 Level Up Your Practice.
               </h2>
               <li>Complete Hands-On</li>
