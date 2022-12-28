@@ -4,9 +4,11 @@ import api from "../../Api/api";
 import { BASE_URL } from "../../config";
 import Bar from "../Loader/Bar";
 import Img from "../BodyComponent/Img";
+import useData from "../../Hooks/useContext";
 
 const ContactCard = () => {
   const [data, setData] = useState([]);
+  const { coursePage } = useData();
   useEffect(() => {
     const query = [71, 72, 73, 74];
     const controller = new AbortController();
@@ -41,14 +43,24 @@ const ContactCard = () => {
         <div className="flex sm:gap-3 gap-2 mt-5">
           <LinkBtn
             varaint={"filled"}
-            icon="ic:baseline-whatsapp"
-            label={"Whatsapp Us"}
             white={true}
+            icon={"ic:baseline-whatsapp"}
+            label={"GET BROCHURE"}
+            redirect={true}
+            others={{
+              to: `https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${
+                coursePage?.attributes?.type === "fellowships"
+                  ? "Fellowship"
+                  : "Certification"
+              }%20in%20${coursePage.attributes.title.split(" ").join("%20")}*`,
+            }}
           />
           <LinkBtn
             icon="material-symbols:call-sharp"
             varaint={"outlined"}
-            label={"Call Us"}
+            label={"CALL US"}
+            redirect={true}
+            other={{ to: "tel:+91-799-950-6817" }}
             white={true}
           />
         </div>

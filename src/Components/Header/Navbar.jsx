@@ -7,8 +7,8 @@ import useData from "../../Hooks/useContext";
 function CreateSubmenu({ arr }) {
   const navigate = useNavigate();
   const handleScroll = (url) => {
-    navigate(url, { replace: true });
     document.body.scrollTop = 0;
+    navigate(url, { replace: true });
   };
   return (
     <ul
@@ -97,7 +97,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const handleScroll = (url) => {
     navigate(url, { replace: true });
-    document.body.scrollTop(0);
+    document.body.scrollTop = 0;
   };
 
   const { loading } = useData();

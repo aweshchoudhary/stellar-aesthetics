@@ -23,30 +23,32 @@ const CourseDirector = () => {
             text2="Course director."
             className={"sm:mb-20 mb-10"}
           />
-          <div className="md:flex">
-            <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
-              <div className="course-director-image">
-                <Img
-                  src={BASE_URL + data.attributes.img.data.attributes.url}
-                  alt={data.attributes.img.data.attributes.alternativeText}
+          {data.attributes && (
+            <div className="md:flex">
+              <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
+                <div className="course-director-image">
+                  <Img
+                    src={BASE_URL + data.attributes.img.data.attributes.url}
+                    alt={data.attributes.img.data.attributes.alternativeText}
+                  />
+                </div>
+              </div>
+              <div className="md:w-[70%]  md:ml-20 md:mt-0 mt-14">
+                <div className="header">{parser(data.attributes.heading)}</div>
+                <br />
+                <ReadMore className="text-justify text-body text-effect">
+                  {parser(data.attributes.description)}
+                </ReadMore>
+                <div>{parser(data.attributes.awards)}</div>
+                <br />
+                <LinkBtn
+                  varaint={"filled"}
+                  label={"Know More"}
+                  others={{ to: "/dr-sapnna-vaderra" }}
                 />
               </div>
             </div>
-            <div className="md:w-[70%]  md:ml-20 md:mt-0 mt-14">
-              <div className="header">{parser(data.attributes.heading)}</div>
-              <br />
-              <ReadMore className="text-justify text-body text-effect">
-                {parser(data.attributes.description)}
-              </ReadMore>
-              <div>{parser(data.attributes.awards)}</div>
-              <br />
-              <LinkBtn
-                varaint={"filled"}
-                label={"Know More"}
-                others={{ to: "/dr-sapnna-vaderra" }}
-              />
-            </div>
-          </div>
+          )}
           <div>
             <br />
             <h2 className="md:text-4xl  text-3xl text-center text-primary font-medium my-10">

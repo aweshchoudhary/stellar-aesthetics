@@ -1,18 +1,33 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const LinkBtn = ({ icon, label, varaint, white, others }) => {
-  const handleScroll = () => (document.body.scrollTop = 0);
+const LinkBtn = ({ icon, label, varaint, white, others, redirect }) => {
+  const navigate = useNavigate();
+  const handleScroll = () => {
+    document.body.scrollTop = 0;
+    if (redirect) {
+      window.open(others?.to, "_blank");
+    } else {
+      navigate(others?.to, { replace: true });
+    }
+  };
+
+  const btnStyle =
+    "btn w-fit sm:px-8 py-3 rounded-full shrink-0 font-medium capitalize md:text-lg text-sm flex items-center gap-3 transition";
+
   return (
     <>
       {varaint === "filled" && (
         <Link
           onClick={handleScroll}
-          className={`btn w-fit sm:px-8 py-3 px-5 shrink-0 rounded-full font-medium capitalize md:text-lg text-sm flex items-center gap-3 hover:bg-black hover:text-white ${
-            white ? "bg-white text-primary" : "bg-primary text-white"
-          }  `}
-          {...others}
+          className={
+            btnStyle +
+            ` px-5 hover:bg-black hover:text-white ${
+              white ? "bg-white text-primary" : "bg-primary text-white"
+            }  `
+          }
+          to={!redirect ? others?.to : "#"}
         >
           {icon && <Icon className="sm:text-2xl text-xl" icon={icon} />}
           {label}
@@ -20,10 +35,13 @@ const LinkBtn = ({ icon, label, varaint, white, others }) => {
       )}
       {varaint === "outlined" && (
         <Link
-          className={`btn w-fit sm:py-3 sm:px-8 py-2 px-4 rounded-full border-2 shrink-0 ${
-            white ? "border-white text-white" : "border-primary text-primary"
-          } font-medium capitalize md:text-lg text-sm flex items-center gap-3 transition hover:border-black hover:bg-white hover:text-black`}
-          {...others}
+          className={
+            btnStyle +
+            ` px-4 border-2 ${
+              white ? "border-white text-white" : "border-primary text-primary"
+            }  hover:border-white hover:bg-white text-h-primary`
+          }
+          to={!redirect ? others?.to : "#"}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}
@@ -31,8 +49,8 @@ const LinkBtn = ({ icon, label, varaint, white, others }) => {
       )}
       {!varaint && (
         <Link
-          className="btn2  w-fit  rounded-full text-primary font-medium capitalize hover:text-black flex items-center gap-3"
-          {...others}
+          className={btnStyle + " text-primary hover:text-black"}
+          to={!redirect ? others?.to : "#"}
         >
           {icon && <Icon className="text-2xl" icon={icon} />}
           {label}
