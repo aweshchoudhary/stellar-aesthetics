@@ -22,7 +22,7 @@ const About = () => {
           deserves the best possible care, thus we aim to provide a complete
           portfolio of innovative products that are up-to-date with market
           trends, economically viable, and safe for our precious patients.
-        </p>{" "}
+        </p>
         <br />
         <p>
           At Stellar Aesthetics, we believe that top-notch treatments can only

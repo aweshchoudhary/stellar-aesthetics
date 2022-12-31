@@ -103,7 +103,7 @@ const Navbar = () => {
   const { loading } = useData();
 
   return (
-    <nav className="navbar hidden md:block z-50 bg-white border-b sticky top-0 left-0">
+    <nav className="navbar hidden md:block z-40 bg-white border-b sticky top-0 left-0">
       <ul className="flex gap-10 justify-center text-md relative h-full  w-screen">
         {menu.map((menuItem, i) => {
           return (

@@ -52,7 +52,7 @@ const Procedure = () => {
                       src={BASE_URL + item.attributes.img.data.attributes.url}
                     />
                   </div>
-                  <div className="flex lg:px-10 px-4 py-14 items-center justify-center h-full w-full">
+                  <div className="lg:px-10 px-4 py-14 md:min-h-[500px]">
                     <div className="content text-center  text-white">
                       <h2 className="md:text-7xl sm:text-5xl text-3xl font-semibold mb-3">
                         Be YOUR BEST Version

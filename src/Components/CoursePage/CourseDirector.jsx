@@ -23,7 +23,7 @@ const CourseDirector = () => {
             text2="Course director."
             className={"sm:mb-20 mb-10"}
           />
-          {data.attributes && (
+          {data?.attributes && (
             <div className="md:flex">
               <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
                 <div className="course-director-image">

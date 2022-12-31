@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 import NoPage from "./Pages/NoPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 // Pages Import
 const Home = lazy(() => import("./Pages/Home"));
@@ -20,6 +21,7 @@ function App() {
   return (
     // Routes Config
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Public Main Page Url */}
         <Route path="/" element={<Layout />}>
