@@ -1,10 +1,10 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import menuItems from "./menu.json";
-import SearchBox from "./SearchBox";
-import LinkBtn from "../LinkBtn";
+import menuItems from "../menu.json";
+import SearchBox from "../SearchBox";
+import LinkBtn from "../../LinkBtn";
 import MenuItem from "./MenuItem";
-import useData from "../../Hooks/useContext";
+import useData from "../../../Hooks/useContext";
 
 const MobileMenu = () => {
   const { toggleMobileMenu, setToggleMobileMenu } = useData();

@@ -72,11 +72,11 @@ li {
   margin-left: 0 !important;
 }
 
-.navbar ul li > ul.sub-menu {
+.navbar ul li > ul {
   display: none;
 }
-.navbar ul li:hover > ul.sub-menu {
-  display: flex;
+.navbar ul li:hover > ul {
+  display: block;
 }
 
 .course-director-image {

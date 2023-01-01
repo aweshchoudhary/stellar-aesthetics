@@ -1,7 +1,7 @@
 import React from "react";
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
-import Img from "./BodyComponent/Img";
+import Img from "./Img";
 
 const Card = ({ horizontal, img, title, title2, subtitle }) => {
   const containerStyle = "lg:w-1/3 sm:w-1/2 w-full ";

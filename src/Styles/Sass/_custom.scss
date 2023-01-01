@@ -1,32 +1,15 @@
 .navbar{
     ul {
         li{
-            > ul.sub-menu{
+            > ul{
                 display: none;
             }
-            &:hover > ul.sub-menu{
-                display: flex;
+            &:hover > ul{
+                display: block;
             }
         }
     }
 }
-
-
-// .mobile-navbar{
-//     ul{
-//         li{ 
-//             > ul{
-//                 display: none;
-//             }
-//             > div.icon:hover + ul, > ul:hover{
-//                 display: block;
-//             }
-            
-//         }
-
-//     }
-
-// }
 
 .course-director-image{
     position: relative;

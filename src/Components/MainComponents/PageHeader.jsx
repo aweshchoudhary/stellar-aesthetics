@@ -11,11 +11,16 @@ const PageHeader = ({ children }) => {
       <div className="mt-5 text-white flex gap-2">
         {location.map((item, i) => {
           return i !== location.length - 1 ? (
-            <>
-              <Link to={"/"}>home</Link> <Link to={"/" + item}>{item}</Link> /
-            </>
+            <span key={i}>
+              <Link key={i} to={"/"}>
+                home
+              </Link>{" "}
+              <Link to={"/" + item}>{item}</Link> /
+            </span>
           ) : (
-            <Link to={"/" + item}>{item}</Link>
+            <Link key={i} to={"/" + item}>
+              {item}
+            </Link>
           );
         })}
       </div>

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Middlebar from "./Middlebar";
-import Navbar from "./Navbar";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import Navbar from "./Navbar/Navbar";
 import Topbar from "./Topbar";
-import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);

@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import React, { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import menuLink from "./menu.json";
 
 const SearchBox = () => {
@@ -9,7 +9,6 @@ const SearchBox = () => {
   const [suggestionIndex, setSuggestionIndex] = useState(0);
   const [suggestionsActive, setSuggestionsActive] = useState(false);
   const [value, setValue] = useState("");
-  const [inputFocus, setInputFocus] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -67,7 +66,7 @@ const SearchBox = () => {
               <li
                 className={`${
                   index === suggestionIndex
-                    ? "active text-primary bg-gray-50"
+                    ? "active text-primary   bg-gray-50"
                     : ""
                 } list-none p-2 md:text-lg w-full capitalize text-h-primary hover:bg-gray-50 block cursor-pointer`}
                 key={index}
@@ -125,8 +124,6 @@ const SearchBox = () => {
           value={value}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
-          onFocus={() => setInputFocus(true)}
-          onBlur={() => setInputFocus(false)}
         />
         <div className="icon p-2 text-2xl bg-primary text-white rounded-full">
           <Icon icon="tabler:search" />
