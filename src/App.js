@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 import NoPage from "./Pages/NoPage";
-import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from "./Components/Main/ScrollToTop";
 
 // Pages Import
 const Home = lazy(() => import("./Pages/Home"));

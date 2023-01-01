@@ -1,9 +1,8 @@
 import { Icon } from "@iconify/react";
-import React from "react";
 import { BASE_URL } from "../../config";
-import ReadMore from "../ReadMore";
+import ReadMore from "../Main/ReadMore";
 import parser from "html-react-parser";
-import Img from "../BodyComponent/Img";
+import Img from "../Main/Img";
 
 const TestimonailCard = ({ data }) => {
   return (

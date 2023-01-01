@@ -1,6 +1,6 @@
-import Card from "../Card";
-import Heading from "../BodyComponent/Heading";
-import Section from "../BodyComponent/Section";
+import Card from "../Main/Card";
+import Heading from "../Main/Heading";
+import Section from "../Main/Section";
 import { useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
 import Bar from "../Loader/Bar";

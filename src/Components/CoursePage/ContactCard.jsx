@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import LinkBtn from "../LinkBtn";
+import LinkBtn from "../Main/LinkBtn";
 import api from "../../Api/api";
 import { BASE_URL } from "../../config";
 import Bar from "../Loader/Bar";
-import Img from "../BodyComponent/Img";
+import Img from "../Main/Img";
 import useData from "../../Hooks/useContext";
 
 const ContactCard = () => {

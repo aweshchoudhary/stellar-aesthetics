@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import menuItems from "../menu.json";
 import SearchBox from "../SearchBox";
-import LinkBtn from "../../LinkBtn";
+import LinkBtn from "../../Main/LinkBtn";
 import MenuItem from "./MenuItem";
 import useData from "../../../Hooks/useContext";
 

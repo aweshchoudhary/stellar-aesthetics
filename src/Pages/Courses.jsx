@@ -1,7 +1,6 @@
-import React from "react";
-import Section from "../Components/BodyComponent/Section";
-import Heading from "../Components/BodyComponent/Heading";
-import LinkBtn from "../Components/LinkBtn";
+import Section from "../Components/Main/Section";
+import Heading from "../Components/Main/Heading";
+import LinkBtn from "../Components/Main/LinkBtn";
 import { Content } from "../Pages/WhyChooseUs";
 import { Link } from "react-router-dom";
 

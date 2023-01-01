@@ -1,7 +1,7 @@
 import React from "react";
-import PageHeader from "../Components/PageHeader";
-import Section from "../Components/BodyComponent/Section";
-import Heading from "../Components/BodyComponent/Heading";
+import PageHeader from "../Components/Main/PageHeader";
+import Section from "../Components/Main/Section";
+import Heading from "../Components/Main/Heading";
 
 const About = () => {
   return (

@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Heading from "../Components/BodyComponent/Heading";
-import Section from "../Components/BodyComponent/Section";
-import LinkBtn from "../Components/LinkBtn";
+import Heading from "../Components/Main/Heading";
+import Section from "../Components/Main/Section";
+import LinkBtn from "../Components/Main/LinkBtn";
 import useFetch from "../Hooks/useFetch";
 import parser from "html-react-parser";
 import Bar from "../Components/Loader/Bar";
 import Slider from "react-slick";
-import Img from "../Components/BodyComponent/Img";
+import Img from "../Components/Main/Img";
 import { BASE_URL } from "../config";
 
 const Procedure = () => {

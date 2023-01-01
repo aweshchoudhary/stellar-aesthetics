@@ -1,6 +1,5 @@
-import React from "react";
-import Section from "./MainComponents/Section";
-import LinkBtn from "./MainComponents/LinkBtn";
+import Section from "./Section";
+import LinkBtn from "./LinkBtn";
 
 const HeroSection = () => {
   return (

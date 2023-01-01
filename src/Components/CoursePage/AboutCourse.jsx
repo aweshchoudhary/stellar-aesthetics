@@ -1,8 +1,8 @@
 import React from "react";
-import Heading from "../BodyComponent/Heading";
-import ReadMore from "../ReadMore";
-import Img from "../BodyComponent/Img";
-import Section from "../BodyComponent/Section";
+import Heading from "../Main/Heading";
+import ReadMore from "../Main/ReadMore";
+import Img from "../Main/Img";
+import Section from "../Main/Section";
 import useData from "../../Hooks/useContext";
 import { BASE_URL } from "../../config";
 import parser from "html-react-parser";

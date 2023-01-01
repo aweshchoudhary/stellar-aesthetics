@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Heading from "../BodyComponent/Heading";
-import Section from "../BodyComponent/Section";
+import { useEffect, useState } from "react";
+import Heading from "../Main/Heading";
+import Section from "../Main/Section";
 import TestimonailCard from "./TestimonailCard";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";

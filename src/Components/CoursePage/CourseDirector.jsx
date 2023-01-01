@@ -1,13 +1,13 @@
-import Card from "../Card";
-import Heading from "../BodyComponent/Heading";
-import LinkBtn from "../LinkBtn";
-import ReadMore from "../ReadMore";
-import Section from "../BodyComponent/Section";
+import Card from "../Main/Card";
+import Heading from "../Main/Heading";
+import LinkBtn from "../Main/LinkBtn";
+import ReadMore from "../Main/ReadMore";
+import Section from "../Main/Section";
 import useFetch from "../../Hooks/useFetch";
 import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
 import Bar from "../Loader/Bar";
-import Img from "../BodyComponent/Img";
+import Img from "../Main/Img";
 
 const CourseDirector = () => {
   const cards = useFetch(

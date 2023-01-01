@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Section from "../Components/BodyComponent/Section";
-import PageHeader from "../Components/PageHeader";
+import Section from "../Components/Main/Section";
+import PageHeader from "../Components/Main/PageHeader";
 import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
 

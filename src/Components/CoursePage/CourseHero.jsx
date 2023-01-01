@@ -1,10 +1,8 @@
 import React from "react";
-import Section from "../BodyComponent/Section";
-import ImgGallery from "../ImgGallery";
-import LinkBtn from "../LinkBtn";
+import LinkBtn from "../Main/LinkBtn";
 import useData from "../../Hooks/useContext";
 import { BASE_URL } from "../../config";
-import Img from "../BodyComponent/Img";
+import Img from "../Main/Img";
 
 const CourseHero = () => {
   const { coursePage } = useData();
