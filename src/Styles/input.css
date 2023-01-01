@@ -1,4 +1,22 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
+.btn {
+  @apply w-fit sm:px-8 py-3 rounded-full shrink-0 font-medium capitalize md:text-lg text-sm flex items-center gap-2 transition hover:text-black;
+}
+
+.filled {
+  @apply hover:bg-black hover:text-white text-white;
+}
+.filled.white {
+  @apply bg-white hover:bg-black;
+}
+
+.outlined {
+  @apply border-2 hover:border-white hover:bg-white;
+}
+.outlined .white {
+  @apply border-white text-white;
+}
+
+@tailwind utilities;

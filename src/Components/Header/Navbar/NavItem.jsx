@@ -46,7 +46,12 @@ const NavItem = ({ item, depthLevel }) => {
             />
           </>
         ) : (
-          <Link to={item.link}>{item.label}</Link>
+          <Link
+            to={item.link}
+            className="text-h-primary hover:bg-gray-50 py-2 px-3 hover:bg-gray-50 transition"
+          >
+            {item.label}
+          </Link>
         )}
       </li>
     )

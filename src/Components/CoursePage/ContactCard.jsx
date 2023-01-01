@@ -5,6 +5,7 @@ import { BASE_URL } from "../../config";
 import Bar from "../Loader/Bar";
 import Img from "../Main/Img";
 import useData from "../../Hooks/useContext";
+import { Icon } from "@iconify/react";
 
 const ContactCard = () => {
   const [data, setData] = useState([]);
@@ -41,28 +42,28 @@ const ContactCard = () => {
           Book call or Whatsapp us to reserve your seat.
         </p>
         <div className="flex sm:gap-3 gap-2 mt-5">
-          <LinkBtn
-            varaint={"filled"}
-            white={true}
-            icon={"ic:baseline-whatsapp"}
-            label={"GET BROCHURE"}
-            redirect={true}
-            others={{
-              to: `https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${
-                coursePage?.attributes?.type === "fellowships"
-                  ? "Fellowship"
-                  : "Certification"
-              }%20in%20${coursePage.attributes.title.split(" ").join("%20")}*`,
-            }}
-          />
-          <LinkBtn
-            icon="material-symbols:call-sharp"
-            varaint={"outlined"}
-            label={"CALL US"}
-            redirect={true}
-            other={{ to: "tel:+91-799-950-6817" }}
-            white={true}
-          />
+          <a
+            href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${
+              coursePage?.attributes?.type === "fellowships"
+                ? "Fellowship"
+                : "Certification"
+            }%20in%20${coursePage.attributes.title.split(" ").join("%20")}*`}
+            className="btn filled white text-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon className="text-2xl" icon="ic:baseline-whatsapp" />
+            Get Brochure
+          </a>
+          <a
+            href={"tel:+91-799-950-6817"}
+            className="btn outlined white text-h-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon className="text-2xl" icon="ic:baseline-phone" />
+            Book Call
+          </a>
         </div>
         <p className="text-sm mt-4 font-light">*Terms & Conditions Apply</p>
       </div>

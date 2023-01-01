@@ -1,5 +1,6 @@
 import Section from "./Section";
 import LinkBtn from "./LinkBtn";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -16,17 +17,12 @@ const HeroSection = () => {
           Start Your Journey
         </h2>
         <div className="flex items-center mt-5 gap-5 justify-center">
-          <LinkBtn
-            others={{ to: "/procedures" }}
-            varaint={"filled"}
-            label={"I'm Patient"}
-          />
-          <LinkBtn
-            others={{ to: "/courses" }}
-            varaint={"filled"}
-            white={true}
-            label={"I'm Doctor"}
-          />
+          <Link className="btn filled bg-primary" to={"/procedures"}>
+            I'm Patient
+          </Link>
+          <Link className="btn filled white text-primary" to={"/courses"}>
+            I'm Doctor
+          </Link>
         </div>
       </div>
     </Section>

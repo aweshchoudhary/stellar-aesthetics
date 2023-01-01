@@ -3,7 +3,7 @@ import PageHeader from "../Components/Main/PageHeader";
 import Section from "../Components/Main/Section";
 import Heading from "../Components/Main/Heading";
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
+import Img from "../Components/Main/Img";
 
 const Contact = () => {
   const [addressList, setAddressList] = useState([
@@ -115,7 +115,7 @@ const Contact = () => {
                 15+ Cities Across INDIA
               </h3>
             </header>
-            <img
+            <Img
               src="https://stellaraesthetics.in/wp-content/uploads/2022/11/Group-3.png.webp"
               alt=""
               className="w-full"
@@ -134,52 +134,64 @@ const Contact = () => {
             <div>
               <p className="flex items-center gap-5 my-5">
                 <Icon icon="ri:whatsapp-fill" className="text-3xl" />
-                <Link
-                  to={"https://stellaraesthetics.in/courses"}
+                <a
+                  target={"_blank"}
+                  rel="noreferrer"
+                  href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*Contact Us Page*`}
                   className="text-xl"
                 >
                   +91 79995-06817
-                </Link>
+                </a>
               </p>
               <div className="my-3">
                 <h3 className="text-3xl font-medium">Social Media Platforms</h3>
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ph:globe" className="text-3xl" />
-                  <Link
-                    to={"https://www.instagram.com/stellaraesthetics.india/"}
+                  <a
+                    target={"_blank"}
+                    rel="noreferrer"
+                    href={"https://www.instagram.com/stellaraesthetics.india/"}
                     className="text-xl"
                   >
                     www.stellaraesthetics.in
-                  </Link>
+                  </a>
                 </p>
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ph:instagram-logo-fill" className="text-3xl" />
-                  <Link
-                    to={"https://www.instagram.com/stellaraesthetics.india/"}
+                  <a
+                    target={"_blank"}
+                    rel="noreferrer"
+                    href={"https://www.instagram.com/stellaraesthetics.india/"}
                     className="text-xl"
                   >
                     stellaraesthetics.india
-                  </Link>
+                  </a>
                 </p>
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ic:baseline-facebook" className="text-3xl" />
-                  <Link
-                    to={"https://www.linkedin.com/company/stellar-aesthetics/"}
+                  <a
+                    target={"_blank"}
+                    rel="noreferrer"
+                    href={
+                      "https://www.linkedin.com/company/stellar-aesthetics/"
+                    }
                     className="text-xl"
                   >
                     Stellar Aesthetics
-                  </Link>
+                  </a>
                 </p>
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="mdi:linkedin" className="text-3xl" />
-                  <Link
-                    to={
+                  <a
+                    target={"_blank"}
+                    rel="noreferrer"
+                    href={
                       "https://api.whatsapp.com/send/?phone=917999506817&text=Hello+Team+Stellar+Aesthetics.+I+would+like+to+get+more+info+about+*Best+Cosmetics+Courses+in+India*"
                     }
                     className="text-xl"
                   >
                     Stellar Aesthetics
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>
@@ -192,33 +204,35 @@ const Contact = () => {
             text2={"Locations"}
             className="my-5"
           />
-          <div>
+          <div className="flex flex-wrap gap-5">
             {addressList.map((item, i) => {
               return (
-                <div className="my-5" key={i}>
-                  <h3 className="flex items-center md:text-2xl text-xl gap-3 mb-5 font-medium">
+                <div className="my-5 shrink-0 w-[45%]" key={i}>
+                  <h3 className="flex capitalize items-center md:text-2xl text-xl gap-3 mb-5 font-semibold">
                     <Icon
                       icon="ic:round-location-on"
                       className="md:text-3xl text-2xl text-red-600"
                     />
                     {item.title}
                   </h3>
-                  {item.list.map((add, index) => {
-                    return (
-                      <>
-                        {add.map && (
-                          <iframe
-                            src={add.map}
-                            className="w-full h-[200px]"
-                            loading="lazy"
-                            title={"Address" + index}
-                            referrerpolicy="no-referrer-when-downgrade"
-                          ></iframe>
-                        )}
-                        <address className="my-3">{add.address}</address>
-                      </>
-                    );
-                  })}
+                  <div className="flex flex-wrap gap-5">
+                    {item.list.map((add, index) => {
+                      return (
+                        <div className="w-[45%]">
+                          {add.map && (
+                            <iframe
+                              src={add.map}
+                              className="w-full h-[200px]"
+                              loading="lazy"
+                              title={"Address" + index}
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          )}
+                          <address className="my-3">{add.address}</address>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               );
             })}

@@ -1,17 +1,18 @@
 import React from "react";
-import LinkBtn from "../Main/LinkBtn";
 import useData from "../../Hooks/useContext";
 import { BASE_URL } from "../../config";
 import Img from "../Main/Img";
+import { Icon } from "@iconify/react";
 
 const CourseHero = () => {
   const { coursePage } = useData();
+
   return (
     <>
       {coursePage.attributes && (
         <section className="hero-slider relative md:min-h-[500px] w-full lg:py-10 md:px-10 p-5">
           <div className="bg h-full w-full absolute inset-0 z-0 bg-primary">
-            <img
+            <Img
               src={
                 BASE_URL +
                 coursePage.attributes.courseHeaderImg.data.attributes.url
@@ -42,22 +43,21 @@ const CourseHero = () => {
                 }}
               ></div>
               <br />
-              <LinkBtn
-                varaint={"filled"}
-                white={true}
-                icon={"ic:baseline-whatsapp"}
-                label={"GET BROCHURE"}
-                redirect={true}
-                others={{
-                  to: `https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${
-                    coursePage?.attributes?.type === "fellowships"
-                      ? "Fellowship"
-                      : "Certification"
-                  }%20in%20${coursePage.attributes.title
-                    .split(" ")
-                    .join("%20")}*`,
-                }}
-              />
+              <a
+                href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${
+                  coursePage?.attributes?.type === "fellowships"
+                    ? "Fellowship"
+                    : "Certification"
+                }%20in%20${coursePage.attributes.title
+                  .split(" ")
+                  .join("%20")}*`}
+                className="btn filled white text-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon className="text-2xl" icon="ic:baseline-whatsapp" />
+                Get Brochure
+              </a>
             </div>
             <div className="shrink-0 md:w-1/2 w-full">
               <Img

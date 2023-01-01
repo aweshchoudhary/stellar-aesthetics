@@ -31,14 +31,16 @@ const Middlebar = () => {
         <div className="right md:flex hidden gap-3">
           <SearchBox />
           <a
-            className={`btn w-fit sm:px-8 py-3 px-5 shrink-0 rounded-full font-medium capitalize md:text-lg text-sm flex items-center gap-3 hover:bg-black hover:text-white bg-primary text-white`}
+            className="btn filled bg-primary px-6"
             href="tel:+91-799-950-6817"
+            target={"_blank"}
+            rel="noreferrer"
           >
             <Icon
               className="sm:text-2xl text-xl"
               icon={"ic:baseline-local-phone"}
             />
-            BOOK CALL
+            Book Call
           </a>
         </div>
       </div>

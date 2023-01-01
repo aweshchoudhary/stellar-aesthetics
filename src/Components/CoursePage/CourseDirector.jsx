@@ -8,6 +8,7 @@ import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
 import Bar from "../Loader/Bar";
 import Img from "../Main/Img";
+import { Link } from "react-router-dom";
 
 const CourseDirector = () => {
   const cards = useFetch(
@@ -41,11 +42,12 @@ const CourseDirector = () => {
                 </ReadMore>
                 <div>{parser(data.attributes.awards)}</div>
                 <br />
-                <LinkBtn
-                  varaint={"filled"}
-                  label={"Know More"}
-                  others={{ to: "/dr-sapnna-vaderra" }}
-                />
+                <Link
+                  className="btn filled bg-primary"
+                  to={"/dr-sapnna-vaderra"}
+                >
+                  Know More
+                </Link>
               </div>
             </div>
           )}

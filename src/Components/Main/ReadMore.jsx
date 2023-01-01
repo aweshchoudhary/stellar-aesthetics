@@ -24,14 +24,12 @@ const ReadMore = ({ children }) => {
       >
         {text}
       </div>
-      <br />
-      <span onClick={toggleIsMore} className="read-or-hide">
-        {isMore ? (
-          <LinkBtn label={"Show More"} />
-        ) : (
-          <LinkBtn label={"Show Less"} />
-        )}
-      </span>
+      <button
+        onClick={toggleIsMore}
+        className="read-or-hide btn px-0 text-primary"
+      >
+        {isMore ? "Read More" : "Show Less"}
+      </button>
     </>
   );
 };
