@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Heading from "../Components/Main/Heading";
 import Section from "../Components/Main/Section";
 import LinkBtn from "../Components/Main/LinkBtn";
@@ -9,6 +9,7 @@ import Bar from "../Components/Loader/Bar";
 import Slider from "react-slick";
 import Img from "../Components/Main/Img";
 import { BASE_URL } from "../config";
+import { Icon } from "@iconify/react";
 
 const Procedure = () => {
   const [procedure, setProcedure] = useState({});
@@ -21,14 +22,20 @@ const Procedure = () => {
   );
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nav: true,
-    // autoplay: true,
   };
+
+  function slide(dir) {
+    if (dir === "prev") {
+      document.querySelector(".slick-prev").click();
+    } else {
+      document.querySelector(".slick-next").click();
+    }
+  }
 
   useEffect(() => {
     data && setProcedure(...data);
@@ -36,45 +43,70 @@ const Procedure = () => {
 
   return procedure?.attributes && !procedure.loading ? (
     <>
-      <section className="hero-slider">
-        <Slider {...settings} className="w-full">
+      <section className="hero-slider relative">
+        {sliders?.data?.length > 1 && (
+          <>
+            <button
+              onClick={() => slide("prev")}
+              className="absolute z-20 text-5xl left-3 text-white top-1/2 -translate-y-1/2"
+            >
+              <Icon icon="material-symbols:arrow-back-ios" />
+            </button>
+            <button
+              onClick={slide}
+              className="absolute z-20 text-5xl right-3 text-white top-1/2 -translate-y-1/2"
+            >
+              <Icon icon="material-symbols:arrow-forward-ios" />
+            </button>
+          </>
+        )}
+        <Slider {...settings}>
           {sliders.data &&
-            sliders.data.map((item, i) => {
+            sliders.data.map((item) => {
               return (
-                <div
-                  key={i}
-                  className="relative w-full md:min-h-[500px] flex items-center justify-center"
-                >
-                  <div className="bg h-full w-full absolute inset-0 -z-10 bg-primary">
-                    <Img
-                      className={"w-full h-full"}
-                      imgClass={"opacity-50 w-full h-full object-cover"}
-                      src={BASE_URL + item.attributes.img.data.attributes.url}
-                    />
-                  </div>
-                  <div className="lg:px-10 px-4 py-14 md:min-h-[500px]">
-                    <div className="content text-center  text-white">
-                      <h2 className="md:text-7xl sm:text-5xl text-3xl font-semibold mb-3">
-                        Be YOUR BEST Version
+                <div>
+                  <div className="w-full h-[500px] relative flex items-center justify-center">
+                    <div className="content text-white text-center md:px-10">
+                      <h2 className="md:text-6xl sm:text-5xl text-3xl font-semibold mb-3">
+                        {item.attributes.title}
                       </h2>
                       <p className="text-lg">
-                        With Stellar Aesthetics’ Facial Cosmetic Procedures you
-                        can bring out your true beauty, for the world to see.
+                        {parser(item.attributes.description)}
                       </p>
                       <div>
                         <div className="flex gap-5 justify-center mt-4">
-                          <LinkBtn
-                            varaint={"filled"}
-                            white={true}
-                            label={"Book Call"}
-                          />
-                          <LinkBtn
-                            varaint={"outlined"}
-                            white={true}
-                            label={"Whatsapp Us"}
-                          />
+                          <a
+                            href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${document.title}*`}
+                            className="btn filled white text-primary"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <Icon
+                              className="text-2xl"
+                              icon="ic:baseline-whatsapp"
+                            />
+                            Get Brochure
+                          </a>
+                          <a
+                            href={"tel:+91-799-950-6817"}
+                            className="btn outlined white text-h-primary"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <Icon
+                              className="text-2xl"
+                              icon="ic:baseline-phone"
+                            />
+                            Book Call
+                          </a>
                         </div>
                       </div>
+                    </div>
+                    <div className="background absolute bg-primary inset-0 w-full h-full -z-10">
+                      <Img
+                        src={BASE_URL + item.attributes.img.data.attributes.url}
+                        className="w-full h-full opacity-50"
+                      />
                     </div>
                   </div>
                 </div>

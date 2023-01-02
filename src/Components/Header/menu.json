@@ -3,19 +3,22 @@
         "label":"Home",
         "link":"/",
         "active": true,
-        "icon": "ic:round-home"
+        "icon": "ic:round-home",
+        "search": "home"
     },
     {
         "label":"About",
         "link":"/about",
         "active": false,
-        "icon": "material-symbols:check-box-rounded"
+        "icon": "material-symbols:check-box-rounded",
+        "search": "about"
     },
     {
         "label":"Courses",
         "link":"/courses",
         "active": false,
         "icon": "bxs:category",
+        "search": "courses",
         "submenu": [
             {
                 "heading": "Fellowships",
@@ -23,6 +26,7 @@
                     {
                         "label":"Fellowship In Clinical Cosmetology",
                         "link":"/courses/fellowship-in-clinical-cosmetology",
+                        "search": "fellowship",
                         "active": false 
                     },
                     {

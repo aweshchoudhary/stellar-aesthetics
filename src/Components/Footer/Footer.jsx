@@ -18,13 +18,28 @@ const Footer = () => {
           Back Top
         </button>
       </div>
-      <ul className="sm:p-10 p-4 sm:flex justify-evenly">
-        <li className="list-none lg:w-[25%] sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Company</h4>
+      <ul className="sm:p-10 p-4 sm:flex justify-between">
+        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+          <h4 className="text-lg font-semibold text-primary">Useful Links</h4>
           <ul className="my-5">
+            <li className="list-none my-1">
+              <Link className="text-h-primary" to={"/"}>
+                Home
+              </Link>
+            </li>
             <li className="list-none my-1">
               <Link className="text-h-primary" to={"/about"}>
                 About Us
+              </Link>
+            </li>
+            <li className="list-none my-1">
+              <Link className="text-h-primary" to={"/courses"}>
+                Courses
+              </Link>
+            </li>
+            <li className="list-none my-1">
+              <Link className="text-h-primary" to={"/procedures"}>
+                Procedures
               </Link>
             </li>
             <li className="list-none my-1">
@@ -33,9 +48,9 @@ const Footer = () => {
               </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/about#vision"}>
+              <a className="text-h-primary" href="/about#vision">
                 Vision
-              </Link>
+              </a>
             </li>
             <li className="list-none my-1">
               <Link className="text-h-primary" to={"/about#director"}>
@@ -44,7 +59,7 @@ const Footer = () => {
             </li>
           </ul>
         </li>
-        <li className="list-none lg:w-[25%] sm:w-1/2 w-full">
+        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Courses</h4>
           <ul className="my-5">
             <li className="list-none my-1">
@@ -91,8 +106,8 @@ const Footer = () => {
             </li>
           </ul>
         </li>
-        <li className="list-none lg:w-[25%] sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Courses</h4>
+        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+          <h4 className="text-lg font-semibold text-primary">Procedures</h4>
           <ul className="my-5">
             <li className="list-none my-1">
               <Link className="text-h-primary">Face</Link>
@@ -105,20 +120,6 @@ const Footer = () => {
             </li>
             <li className="list-none my-1">
               <Link className="text-h-primary">Body</Link>
-            </li>
-          </ul>
-        </li>
-        <li className="list-none lg:w-[25%] sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Contact</h4>
-          <ul className="my-5">
-            <li className="list-none my-1">
-              <Link className="text-h-primary">+91 917999506817</Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary">facebook</Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary">Instagram</Link>
             </li>
           </ul>
         </li>

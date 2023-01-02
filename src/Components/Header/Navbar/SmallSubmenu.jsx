@@ -9,7 +9,7 @@ function SmallSubmenu({ arr, w }) {
   return (
     <ul
       className={
-        "sub-menu absolute top-full min-w-[200px] z-10 bg-white py-5 shadow-xl border flex flex-col px-5 left-1/2 translate-x-[-50%] justify-center"
+        "sub-menu absolute top-full min-w-[200px] z-10 bg-white shadow-xl border flex flex-col left-1/2 translate-x-[-50%] justify-center"
       }
     >
       {arr &&

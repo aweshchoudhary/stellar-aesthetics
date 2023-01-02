@@ -3,53 +3,19 @@ import Heading from "../Components/Main/Heading";
 import LinkBtn from "../Components/Main/LinkBtn";
 import { Content } from "../Pages/WhyChooseUs";
 import { Link } from "react-router-dom";
-
-const CourseCard = ({ w, img, link }) => {
-  return (
-    <div className={"relative p-2 " + w}>
-      <Link className="w-full h-full" to={link}>
-        <img src={img} alt="" className=" object-contain w-full" />
-      </Link>
-    </div>
-  );
-};
+import { useEffect } from "react";
 
 const Courses = () => {
+  useEffect(() => {
+    var el =
+      window.location.hash && document.querySelector(window.location.hash);
+    el && el.scrollIntoView(true);
+  }, []);
   return (
     <>
-      <section
-        className={
-          "md:h-[500px] relative h-[400px] w-full flex items-center justify-center"
-        }
-      >
-        <div className="w-full h-full absolute inset-0 -z-10 bg-black">
-          <video
-            src="https://stellaraesthetics.in/wp-content/uploads/2021/12/stellar-courses-1mbps.mp4"
-            className="w-full h-full object-cover opacity-60"
-            autoPlay
-            muted
-          ></video>
-        </div>
-        <div className="text-white text-center md:w-1/2">
-          <h2 className="lg:text-5xl text-3xl font-bold text-white">
-            Join Our Internationally Certified Courses
-          </h2>
-          <p className="md:text-lg">
-            The career of your dreams is one click away.
-          </p>
-          <div className="btns flex items-center gap-5 justify-center my-5">
-            <LinkBtn
-              label={"Get Certified"}
-              others={{ to: "#getcertified" }}
-              varaint="filled"
-              white={true}
-            />
-            <LinkBtn label={"Why Us?"} varaint="outlined" white={true} />
-          </div>
-        </div>
-      </section>
+      <CourseHero />
+      <div id="getcertified"></div>
       <Section>
-        <div id="getcertified"></div>
         <Heading
           text1={"Get Internationally"}
           brNone={true}
@@ -171,10 +137,55 @@ const Courses = () => {
           />
         </div>
       </Section>
-      <section>
+      <section id="whyus">
         <Content />
       </section>
     </>
+  );
+};
+
+const CourseHero = () => {
+  return (
+    <section
+      className={
+        "md:h-[500px] relative h-[400px] w-full flex items-center justify-center"
+      }
+    >
+      <div className="w-full h-full absolute inset-0 -z-10 bg-black">
+        <video
+          src="https://stellaraesthetics.in/wp-content/uploads/2021/12/stellar-courses-1mbps.mp4"
+          className="w-full h-full object-cover opacity-60"
+          autoPlay
+          muted
+        ></video>
+      </div>
+      <div className="text-white text-center md:w-1/2">
+        <h2 className="lg:text-5xl text-3xl font-bold text-white">
+          Join Our Internationally Certified Courses
+        </h2>
+        <p className="md:text-lg">
+          The career of your dreams is one click away.
+        </p>
+        <div className="btns flex items-center gap-5 justify-center my-5">
+          <a href="#getcertified" className="btn filled white text-primary">
+            Get Certified
+          </a>
+          <a href="#whyus" className="btn outlined white text-h-primary">
+            why Us
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const CourseCard = ({ w, img, link }) => {
+  return (
+    <div className={"relative p-2 " + w}>
+      <Link className="w-full h-full" to={link}>
+        <img src={img} alt="" className=" object-contain w-full" />
+      </Link>
+    </div>
   );
 };
 

@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageHeader from "../Components/Main/PageHeader";
 import Section from "../Components/Main/Section";
 import Heading from "../Components/Main/Heading";
 
 const About = () => {
+  useEffect(() => {
+    var el =
+      window.location.hash && document.querySelector(window.location.hash);
+    el && el.scrollIntoView(true);
+  }, []);
   return (
     <>
       <PageHeader>About Us</PageHeader>
+      <div id="company"></div>
       <Section>
         <Heading
           text1={"a better you"}
@@ -35,6 +41,7 @@ const About = () => {
           “A Better Us for A Better You”.
         </p>
       </Section>
+      <div id="vision"></div>
       <Section>
         <Heading text1={"aiming for"} text2={"the stars"} brNone={true} />
         <h3 className="text-3xl my-10 font-medium">Our Vision</h3>
@@ -59,6 +66,7 @@ const About = () => {
           technological research.
         </p>
       </Section>
+      <div id="director"></div>
       <Section className={"bg-primary"}>
         <Heading
           text1={"Director's"}

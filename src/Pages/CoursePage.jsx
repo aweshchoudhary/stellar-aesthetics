@@ -15,24 +15,9 @@ import Bar from "../Components/Loader/Bar";
 const CoursePage = () => {
   const { name } = useParams();
   const { setCoursePage, coursePage, setLoading } = useData();
-  const { data, loading } = useFetch("/courses?populate=*");
-
-  useEffect(() => {
-    setLoading(loading);
-    let isCancel = false;
-    const filterCourse = async () => {
-      const course = await data?.filter((item) => {
-        return item.attributes.slug === name;
-      });
-      course && setCoursePage(...course);
-    };
-
-    !isCancel && filterCourse();
-    return () => {
-      isCancel = true;
-    };
-  }, [data, name, setCoursePage, setLoading, loading]);
-
+  const { data, loading } = useFetch(
+    `/courses?filters[slug][$eq]=${name}&populate=*`
+  );
   useEffect(() => {
     const changePrimaryColor = () => {
       coursePage?.attributes?.primaryColor &&
@@ -43,6 +28,12 @@ const CoursePage = () => {
     };
     changePrimaryColor();
   }, [coursePage]);
+  useEffect(() => {
+    const setData = () => {
+      data && setCoursePage(...data);
+    };
+    setData();
+  }, [data, setCoursePage]);
 
   return (
     <>

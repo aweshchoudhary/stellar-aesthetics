@@ -218,14 +218,14 @@ const Contact = () => {
                   <div className="flex flex-wrap gap-5">
                     {item.list.map((add, index) => {
                       return (
-                        <div className="w-[45%]">
+                        <div className="w-[45%]" key={index}>
                           {add.map && (
                             <iframe
                               src={add.map}
                               className="w-full h-[200px]"
                               loading="lazy"
                               title={"Address" + index}
-                              referrerpolicy="no-referrer-when-downgrade"
+                              referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                           )}
                           <address className="my-3">{add.address}</address>

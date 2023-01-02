@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <Section className="md:h-[600px] sm:h-[400px] h-[400px] lg:px-0 lg:py-0 w-full bg-black relative">
+    <Section className="md:h-[600px] sm:h-[400px] h-screen lg:px-0 lg:py-0 w-full bg-black relative">
       <video
         className="w-full h-full object-cover opacity-80"
         autoPlay
+        loop
         muted={true}
         src="https://stellaraesthetics.in/wp-content/uploads/2022/01/stellar-hero-bg-1mbps.webm"
       ></video>
