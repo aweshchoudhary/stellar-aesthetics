@@ -5,12 +5,15 @@ import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { Helmet } from "react-helmet";
+import PageTitle from "../Components/Main/PageTitle";
 
 const Doctors = () => {
   const { data } = useFetch("/doctors?populate=*");
 
   return (
     <>
+      <PageTitle>Doctors</PageTitle>
       <PageHeader>Doctors</PageHeader>
       <Section>
         <Heading text1={"Doctors"} className={"mb-10"} />

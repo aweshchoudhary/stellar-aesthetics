@@ -59,6 +59,8 @@ body, html {
   width: 100vw;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease !important;
+  scroll-behavior: smooth !important;
 }
 
 li {

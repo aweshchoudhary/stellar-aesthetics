@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Heading from "../Main/Heading";
-import Section from "../Main/Section";
 import TestimonailCard from "./TestimonailCard";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";
@@ -9,6 +8,7 @@ import api from "../../Api/api";
 const Testimonials = () => {
   const [testimonails, setTestimonials] = useState([]);
   const settings = {
+    centerMode: true,
     dots: true,
     infinite: true,
     speed: 1000,
@@ -16,6 +16,14 @@ const Testimonials = () => {
     slidesToScroll: 1,
     nav: true,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: false,
+        },
+      },
+    ],
   };
 
   function slide(dir) {
@@ -39,11 +47,17 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <Section className="testimonails">
-      <Heading text1={"They Loved It."} text2={"So Will You."} brNone={true} />
-      <h2 className="text-4xl font-medium mt-5">Testimonials</h2>
+    <section className="testimonails w-full md:py-16 py-10">
+      <div className="md:px-10 px-5">
+        <Heading
+          text1={"They Loved It."}
+          text2={"So Will You."}
+          brNone={true}
+        />
+        <h2 className="text-4xl font-medium mt-5">Testimonials</h2>
+      </div>
       <div className="my-10">
-        <div className="btns mb-5">
+        <div className="btns mb-5 md:px-10 px-5">
           <button onClick={() => slide("prev")}>
             <Icon
               className="text-5xl text-body text-h-primary transition-all"
@@ -57,7 +71,7 @@ const Testimonials = () => {
             />
           </button>
         </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="w-full">
           {testimonails.map((item, i) => {
             return (
               <div key={i}>
@@ -67,7 +81,7 @@ const Testimonials = () => {
           })}
         </Slider>
       </div>
-    </Section>
+    </section>
   );
 };
 

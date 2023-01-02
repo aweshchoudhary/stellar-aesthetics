@@ -10,6 +10,8 @@ import Slider from "react-slick";
 import Img from "../Components/Main/Img";
 import { BASE_URL } from "../config";
 import { Icon } from "@iconify/react";
+import { Helmet } from "react-helmet";
+import PageTitle from "../Components/Main/PageTitle";
 
 const Procedure = () => {
   const [procedure, setProcedure] = useState({});
@@ -43,6 +45,9 @@ const Procedure = () => {
 
   return procedure?.attributes && !procedure.loading ? (
     <>
+      <PageTitle>
+        {procedure.attributes.title.toUpperCase() + " Procedure"}
+      </PageTitle>
       <section className="hero-slider relative">
         {sliders?.data?.length > 1 && (
           <>

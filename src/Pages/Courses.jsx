@@ -4,6 +4,8 @@ import LinkBtn from "../Components/Main/LinkBtn";
 import { Content } from "../Pages/WhyChooseUs";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
+import PageTitle from "../Components/Main/PageTitle";
 
 const Courses = () => {
   useEffect(() => {
@@ -13,6 +15,7 @@ const Courses = () => {
   }, []);
   return (
     <>
+      <PageTitle>International Courses</PageTitle>
       <CourseHero />
       <div id="getcertified"></div>
       <Section>

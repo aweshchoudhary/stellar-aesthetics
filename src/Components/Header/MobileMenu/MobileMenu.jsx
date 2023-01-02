@@ -27,7 +27,7 @@ const MobileMenu = () => {
           <Icon className="text-4xl" icon="ion:close" />
         </div>
       </div>
-      <SearchBox />
+      <SearchBox setToggle={setToggleMobileMenu} />
       <nav className="mt-5 mobile-navbar">
         <ul className="menus">
           {menuItems.map((menu, index) => {

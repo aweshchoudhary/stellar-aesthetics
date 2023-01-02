@@ -26,12 +26,13 @@
                     {
                         "label":"Fellowship In Clinical Cosmetology",
                         "link":"/courses/fellowship-in-clinical-cosmetology",
-                        "search": "fellowship",
+                        "search": "awesh",
                         "active": false 
                     },
                     {
                         "label":"Fellowship In Tricology",
                         "link":"/courses/fellowship-in-tricology",
+                        "search": "hair",
                         "active": false 
                     }
                 ]

@@ -11,6 +11,8 @@ import CourseHero from "../Components/CoursePage/CourseHero";
 import CourseRoadMap from "../Components/CoursePage/CourseRoadMap";
 import Testimonials from "../Components/Testimonials/Testimonials";
 import Bar from "../Components/Loader/Bar";
+import { Helmet } from "react-helmet";
+import PageTitle from "../Components/Main/PageTitle";
 
 const CoursePage = () => {
   const { name } = useParams();
@@ -39,6 +41,13 @@ const CoursePage = () => {
     <>
       {coursePage?.attributes && !loading ? (
         <>
+          <PageTitle>
+            {` ${
+              coursePage.attributes.type === "fellowships"
+                ? "FELLOWSHIP IN "
+                : "CERTIFICATION IN "
+            } ${coursePage.attributes.title.toUpperCase()} `}
+          </PageTitle>
           <CourseHero />
           <CourseDirector />
           <ContactCard />

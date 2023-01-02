@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const handleTop = () => {
@@ -19,7 +20,7 @@ const Footer = () => {
         </button>
       </div>
       <ul className="sm:p-10 p-4 sm:flex justify-between">
-        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+        <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Useful Links</h4>
           <ul className="my-5">
             <li className="list-none my-1">
@@ -43,23 +44,47 @@ const Footer = () => {
               </Link>
             </li>
             <li className="list-none my-1">
+              <Link className="text-h-primary" to={"/doctors"}>
+                Doctors
+              </Link>
+            </li>
+            <li className="list-none my-1">
+              <a className="text-h-primary" href="/contact">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+          <h4 className="text-lg font-semibold text-primary">Company</h4>
+          <ul className="my-5">
+            <li className="list-none my-1">
+              <Link className="text-h-primary" to={"/about"}>
+                About
+              </Link>
+            </li>
+            <li className="list-none my-1">
+              <HashLink smooth className="text-h-primary" to={"/about#vision"}>
+                Vision
+              </HashLink>
+            </li>
+            <li className="list-none my-1">
               <Link className="text-h-primary" to={"/dr-sapnna-vaderra"}>
                 Course Director
               </Link>
             </li>
             <li className="list-none my-1">
-              <a className="text-h-primary" href="/about#vision">
-                Vision
-              </a>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/about#director"}>
+              <HashLink
+                smooth
+                className="text-h-primary"
+                to={"/about#director"}
+              >
                 Director
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </li>
-        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+        <li className="list-none lg:w-[40%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Courses</h4>
           <ul className="my-5">
             <li className="list-none my-1">
@@ -106,7 +131,7 @@ const Footer = () => {
             </li>
           </ul>
         </li>
-        <li className="list-none lg:w-[33%] shrink-0 sm:px-10 sm:w-1/2 w-full">
+        <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Procedures</h4>
           <ul className="my-5">
             <li className="list-none my-1">

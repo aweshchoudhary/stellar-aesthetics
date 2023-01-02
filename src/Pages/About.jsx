@@ -1,16 +1,22 @@
-import React, { useEffect } from "react";
 import PageHeader from "../Components/Main/PageHeader";
 import Section from "../Components/Main/Section";
 import Heading from "../Components/Main/Heading";
+import PageTitle from "../Components/Main/PageTitle";
+import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    var el =
-      window.location.hash && document.querySelector(window.location.hash);
-    el && el.scrollIntoView(true);
+    const scrollToHash = () => {
+      let el =
+        window.location.hash && document.querySelector(window.location.hash);
+      el && el.scrollIntoView(true);
+    };
+
+    scrollToHash();
   }, []);
   return (
     <>
+      <PageTitle>About Us | Stellar Aesthetics</PageTitle>
       <PageHeader>About Us</PageHeader>
       <div id="company"></div>
       <Section>

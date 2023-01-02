@@ -8,7 +8,7 @@ const TestimonailCard = ({ data }) => {
   return (
     <>
       {data && (
-        <div className="md:flex md:w-[80%] md:h-[400px] gap-5 mx-auto">
+        <div className="md:flex mx-3 md:mx-8 md:h-[400px] gap-5">
           <div className="md:w-[30%] md:h-full h-[400px] shrink-0 bg-gray-50">
             <Img
               className={"w-full h-full"}

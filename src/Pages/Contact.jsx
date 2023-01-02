@@ -4,6 +4,7 @@ import Section from "../Components/Main/Section";
 import Heading from "../Components/Main/Heading";
 import { Icon } from "@iconify/react";
 import Img from "../Components/Main/Img";
+import PageTitle from "../Components/Main/PageTitle";
 
 const Contact = () => {
   const [addressList, setAddressList] = useState([
@@ -104,6 +105,7 @@ const Contact = () => {
   ]);
   return (
     <>
+      <PageTitle>Contact Us</PageTitle>
       <PageHeader>Contact Us</PageHeader>
       <Section>
         <Heading text1={"Connect with us"} className="mb-10" />
@@ -121,11 +123,11 @@ const Contact = () => {
               className="w-full"
             />
             <h1 className="flex items-center font-medium md:text-3xl text-xl mt-5">
-              Locations{" "}
+              Locations
               <Icon
                 className="md:text-6xl text-3xl text-primary"
                 icon="ep:location-information"
-              ></Icon>{" "}
+              ></Icon>
               IN INDIA
             </h1>
           </div>
@@ -204,31 +206,40 @@ const Contact = () => {
             text2={"Locations"}
             className="my-5"
           />
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-5 w-full">
             {addressList.map((item, i) => {
               return (
-                <div className="my-5 shrink-0 w-[45%]" key={i}>
-                  <h3 className="flex capitalize items-center md:text-2xl text-xl gap-3 mb-5 font-semibold">
+                <div
+                  className="my-5 shrink-0 w-full border-b-4 md:pb-10"
+                  key={i}
+                >
+                  <h3 className="flex capitalize items-center md:text-4xl text-3xl gap-3 mb-5 font-semibold">
                     <Icon
                       icon="ic:round-location-on"
-                      className="md:text-3xl text-2xl text-red-600"
+                      className="text-3xl text-red-600"
                     />
                     {item.title}
                   </h3>
                   <div className="flex flex-wrap gap-5">
                     {item.list.map((add, index) => {
                       return (
-                        <div className="w-[45%]" key={index}>
+                        <div
+                          className="w-full md:flex gap-5 items-center"
+                          key={index}
+                        >
                           {add.map && (
                             <iframe
                               src={add.map}
-                              className="w-full h-[200px]"
+                              className="md:w-[500px] w-full md:mb-0 mb-5 h-[200px] shrink-0"
                               loading="lazy"
                               title={"Address" + index}
                               referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                           )}
-                          <address className="my-3">{add.address}</address>
+                          <address className="lg:text-3xl md:text-2xl text-xl">
+                            <strong className="text-primary">Address:</strong>{" "}
+                            {add.address}
+                          </address>
                         </div>
                       );
                     })}

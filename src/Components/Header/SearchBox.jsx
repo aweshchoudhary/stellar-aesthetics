@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import menuLink from "./menu.json";
 
-const SearchBox = () => {
+const SearchBox = ({ setToggle }) => {
   const [data, setData] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
   const [suggestionIndex, setSuggestionIndex] = useState(0);
@@ -15,9 +15,12 @@ const SearchBox = () => {
     const query = e.target.value.toLowerCase();
     setValue(query);
     if (query.length > 0) {
-      const filterSuggestions = data.filter(
-        (suggestion) => suggestion.label.toLowerCase().indexOf(query) > -1
-      );
+      const filterSuggestions = data.filter((suggestion) => {
+        return (
+          suggestion?.search?.toLowerCase()?.indexOf(query) > -1 ||
+          suggestion.label.toLowerCase().indexOf(query) > -1
+        );
+      });
       setSuggestions(filterSuggestions);
       setSuggestionsActive(true);
     } else {
@@ -30,7 +33,7 @@ const SearchBox = () => {
     navigate(link);
     setValue("");
     setSuggestionsActive(false);
-    console.log("clicked");
+    setToggle && setToggle(false);
   };
 
   const handleKeyDown = (e) => {
@@ -54,12 +57,16 @@ const SearchBox = () => {
       navigate(suggestions[suggestionIndex].link);
       setSuggestionIndex(0);
       setSuggestionsActive(false);
+      setToggle && setToggle(false);
     }
   };
 
   const Suggestions = () => {
     return (
       <ul className="suggestions border absolute bg-white top-full mt-1 shadow-md md:shadow-xl z-50 p-3  md:w-[400px]">
+        {suggestions.length ? (
+          <p className="text-gray-500">Search Term Match</p>
+        ) : null}
         {suggestions.length ? (
           suggestions.map((suggestion, index) => {
             return (
@@ -87,21 +94,15 @@ const SearchBox = () => {
   useEffect(() => {
     const planeArr = () => {
       menuLink.forEach((item) => {
-        setData((prev) => [...prev, { label: item.label, link: item.link }]);
+        setData((prev) => [...prev, item]);
         if (item.submenu) {
           item.submenu.forEach((subItem) => {
             if (subItem.label) {
-              setData((prev) => [
-                ...prev,
-                { label: subItem.label, link: subItem.link },
-              ]);
+              setData((prev) => [...prev, subItem]);
             }
             if (subItem.items) {
               subItem.items.forEach((subsubItem) => {
-                setData((prev) => [
-                  ...prev,
-                  { label: subsubItem.label, link: subsubItem.link },
-                ]);
+                setData((prev) => [...prev, subsubItem]);
               });
             }
           });
@@ -118,8 +119,11 @@ const SearchBox = () => {
     <div className="relative">
       <div
         id="search-container"
-        className="search bg-gray-50 py-2 gap-3 rounded-full  pl-5 pr-2 shrink-0 flex items-center justify-between"
+        className="search bg-gray-50 py-3 gap-3 rounded-full  pl-5 pr-2 shrink-0 flex items-center justify-between"
       >
+        <div className="icon text-xl text-gray-400 rounded-full">
+          <Icon icon="tabler:search" />
+        </div>
         <input
           type="search"
           id="search-input"
@@ -129,9 +133,6 @@ const SearchBox = () => {
           onChange={handleChange}
           onKeyDown={handleKeyDown}
         />
-        <div className="icon p-2 text-2xl bg-primary text-white rounded-full">
-          <Icon icon="tabler:search" />
-        </div>
       </div>
       {suggestionsActive && <Suggestions />}
     </div>

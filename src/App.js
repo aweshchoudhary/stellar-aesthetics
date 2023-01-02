@@ -11,7 +11,6 @@ const Procedure = lazy(() => import("./Pages/Procedure"));
 const Procedures = lazy(() => import("./Pages/Procedures"));
 const Doctors = lazy(() => import("./Pages/Doctors"));
 const Contact = lazy(() => import("./Pages/Contact"));
-const Search = lazy(() => import("./Pages/Search"));
 const Layout = lazy(() => import("./Pages/Layout"));
 const CoursePage = lazy(() => import("./Pages/CoursePage"));
 const WhyChooseUs = lazy(() => import("./Pages/WhyChooseUs"));
@@ -35,7 +34,6 @@ function App() {
           <Route path="procedures" element={<Procedures />} />
           <Route path="doctors" element={<Doctors />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="search" element={<Search />} />
 
           {/* No Page */}
           <Route path="*" element={<NoPage />} />
