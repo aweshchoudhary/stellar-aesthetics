@@ -21,6 +21,7 @@ const SearchBox = ({ setToggle }) => {
           suggestion.label.toLowerCase().indexOf(query) > -1
         );
       });
+      console.log({ filteredData: filterSuggestions, allData: data });
       setSuggestions(filterSuggestions);
       setSuggestionsActive(true);
     } else {
@@ -91,6 +92,7 @@ const SearchBox = ({ setToggle }) => {
       </ul>
     );
   };
+
   useEffect(() => {
     const planeArr = () => {
       menuLink.forEach((item) => {
@@ -109,7 +111,6 @@ const SearchBox = ({ setToggle }) => {
         }
       });
     };
-
     return () => {
       planeArr();
     };

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Section from "../Components/Main/Section";
 import menu from "../Components/Header/menu.json";

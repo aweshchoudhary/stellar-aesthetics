@@ -3,9 +3,7 @@ import Section from "../Components/Main/Section";
 import PageHeader from "../Components/Main/PageHeader";
 import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
-import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import { Helmet } from "react-helmet";
 import PageTitle from "../Components/Main/PageTitle";
 
 const Doctors = () => {

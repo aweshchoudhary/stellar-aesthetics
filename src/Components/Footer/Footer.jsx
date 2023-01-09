@@ -49,9 +49,9 @@ const Footer = () => {
               </Link>
             </li>
             <li className="list-none my-1">
-              <a className="text-h-primary" href="/contact">
+              <Link className="text-h-primary" to="/contact">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </li>

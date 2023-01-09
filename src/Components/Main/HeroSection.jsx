@@ -1,5 +1,4 @@
 import Section from "./Section";
-import LinkBtn from "./LinkBtn";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {

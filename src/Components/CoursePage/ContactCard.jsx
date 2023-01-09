@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import LinkBtn from "../Main/LinkBtn";
 import api from "../../Api/api";
 import { BASE_URL } from "../../config";
 import Bar from "../Loader/Bar";

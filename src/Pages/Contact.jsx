@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import PageHeader from "../Components/Main/PageHeader";
 import Section from "../Components/Main/Section";
 import Heading from "../Components/Main/Heading";
@@ -7,7 +6,7 @@ import Img from "../Components/Main/Img";
 import PageTitle from "../Components/Main/PageTitle";
 
 const Contact = () => {
-  const [addressList, setAddressList] = useState([
+  const addressList = [
     {
       title: "mumbai",
       list: [
@@ -102,7 +101,7 @@ const Contact = () => {
         },
       ],
     },
-  ]);
+  ];
   return (
     <>
       <PageTitle>Contact Us</PageTitle>

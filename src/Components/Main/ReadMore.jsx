@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LinkBtn from "./LinkBtn";
 
 const ReadMore = ({ children }) => {
   let text = children;

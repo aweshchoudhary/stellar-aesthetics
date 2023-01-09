@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import BigSubmenu from "./BigSubmenu";
 import { Icon } from "@iconify/react";
 
-const NavItem = ({ item, depthLevel }) => {
+const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
+  const handleHover = (boolean) => {
+    setIsSubmenuOpen(boolean);
+  };
   return (
     item && (
-      <li className="list-none relative">
+      <li onMouseEnter={() => handleHover(true)} className="list-none relative">
         {item.submenu || item.items ? (
           <>
             {item.label ? (
@@ -42,10 +45,14 @@ const NavItem = ({ item, depthLevel }) => {
                 )}
               </Link>
             )}
-            <BigSubmenu
-              submenu={item.items || item.submenu}
-              depthLevel={depthLevel}
-            />
+            {isSubmenuOpen ? (
+              <BigSubmenu
+                submenu={item.items || item.submenu}
+                depthLevel={depthLevel}
+                isSubmenuOpen={isSubmenuOpen}
+                setIsSubmenuOpen={setIsSubmenuOpen}
+              />
+            ) : null}
           </>
         ) : (
           <Link

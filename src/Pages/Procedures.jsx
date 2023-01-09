@@ -3,7 +3,6 @@ import Section from "../Components/Main/Section";
 import PageHeader from "../Components/Main/PageHeader";
 import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
-import { Helmet } from "react-helmet";
 import PageTitle from "../Components/Main/PageTitle";
 
 const Card = ({ img, title, link }) => {

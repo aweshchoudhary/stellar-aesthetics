@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Heading from "../Components/Main/Heading";
 import Section from "../Components/Main/Section";
-import LinkBtn from "../Components/Main/LinkBtn";
 import useFetch from "../Hooks/useFetch";
 import parser from "html-react-parser";
 import Bar from "../Components/Loader/Bar";
@@ -10,7 +9,6 @@ import Slider from "react-slick";
 import Img from "../Components/Main/Img";
 import { BASE_URL } from "../config";
 import { Icon } from "@iconify/react";
-import { Helmet } from "react-helmet";
 import PageTitle from "../Components/Main/PageTitle";
 
 const Procedure = () => {

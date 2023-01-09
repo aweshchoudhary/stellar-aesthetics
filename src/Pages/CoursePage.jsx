@@ -11,12 +11,11 @@ import CourseHero from "../Components/CoursePage/CourseHero";
 import CourseRoadMap from "../Components/CoursePage/CourseRoadMap";
 import Testimonials from "../Components/Testimonials/Testimonials";
 import Bar from "../Components/Loader/Bar";
-import { Helmet } from "react-helmet";
 import PageTitle from "../Components/Main/PageTitle";
 
 const CoursePage = () => {
   const { name } = useParams();
-  const { setCoursePage, coursePage, setLoading } = useData();
+  const { setCoursePage, coursePage } = useData();
   const { data, loading } = useFetch(
     `/courses?filters[slug][$eq]=${name}&populate=*`
   );

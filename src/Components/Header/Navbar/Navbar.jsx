@@ -3,8 +3,11 @@ import menu from "../menu.json";
 import useData from "../../../Hooks/useContext";
 import NavItem from "./NavItem";
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [openSubmenu, setOpenSubmenu] = useState(false);
+
   const { loading } = useData();
   const handleClick = () => {
     const searchInput = document.getElementById("search-input");
@@ -17,7 +20,15 @@ const Navbar = () => {
         <ul className="flex items-center justify-center gap-5 font-medium font-lg">
           {menu.map((item, i) => {
             const depthLevel = 0;
-            return <NavItem item={item} key={i} depthLevel={depthLevel} />;
+            return (
+              <NavItem
+                isSubmenuOpen={openSubmenu}
+                setIsSubmenuOpen={setOpenSubmenu}
+                item={item}
+                key={i}
+                depthLevel={depthLevel}
+              />
+            );
           })}
         </ul>
         <button onClick={handleClick}>

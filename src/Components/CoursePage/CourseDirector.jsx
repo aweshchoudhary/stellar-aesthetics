@@ -1,6 +1,5 @@
 import Card from "../Main/Card";
 import Heading from "../Main/Heading";
-import LinkBtn from "../Main/LinkBtn";
 import ReadMore from "../Main/ReadMore";
 import Section from "../Main/Section";
 import useFetch from "../../Hooks/useFetch";
