@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import Section from "../Components/Main/Section";
 import menu from "../Components/Header/menu.json";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
 
 const NoPage = () => {
   return (
     <>
-      <PageTitle>404 Page Not Found</PageTitle>
+      <Helmet>
+        <title>404 Page Not Found</title>
+      </Helmet>
       <Section className={"h-[600px]"}>
         <div className="text-center flex items-center flex-col justify-center">
           <h1 className="md:text-6xl text-3xl font-semibold text-primary">

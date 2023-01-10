@@ -1,12 +1,13 @@
-import Heading from "../Components/Main/Heading";
-import Section from "../Components/Main/Section";
-import PageHeader from "../Components/Main/PageHeader";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+// Components Import
+import { PageHeader, Section, Heading } from "../../Components/Main";
 
 export const Content = () => {
   return (
     <>
-      <PageTitle>Why Choose Us</PageTitle>
+      <Helmet>
+        <title>Why Choose Us</title>
+      </Helmet>
       <Section>
         <Heading
           text1={"Why Choose"}

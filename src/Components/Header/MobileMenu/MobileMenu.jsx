@@ -2,9 +2,9 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import menuItems from "../menu.json";
 import SearchBox from "../SearchBox";
-import LinkBtn from "../../Main/LinkBtn";
 import MenuItem from "./MenuItem";
 import useData from "../../../Hooks/useContext";
+import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const { toggleMobileMenu, setToggleMobileMenu } = useData();
@@ -36,16 +36,19 @@ const MobileMenu = () => {
         </ul>
       </nav>
       <div className="buttons py-5 flex items-center gap-5">
-        <LinkBtn
+        {/* <LinkBtn
           varaint={"filled"}
           label="Book Call"
           icon={"material-symbols:call"}
-        />
-        <LinkBtn
-          variant={"outlined"}
-          label="Whatsapp Us"
-          icon={"ic:baseline-whatsapp"}
-        />
+        /> */}
+        <Link className="btn outlined text-primary">
+          Whatsapp Us
+          <Icon icon={"ic:baseline-whatsapp"} />
+        </Link>
+        <Link className="btn filled bg-primary">
+          Book Call
+          <Icon icon={"material-symbols:call"} />
+        </Link>
       </div>
     </div>
   );

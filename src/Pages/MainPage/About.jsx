@@ -1,8 +1,8 @@
-import PageHeader from "../Components/Main/PageHeader";
-import Section from "../Components/Main/Section";
-import Heading from "../Components/Main/Heading";
-import PageTitle from "../Components/Main/PageTitle";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { PageHeader, Section, Heading } from "../../Components/Main";
 
 const About = () => {
   useEffect(() => {
@@ -13,10 +13,12 @@ const About = () => {
     };
 
     scrollToHash();
-  }, []);
+  });
   return (
     <>
-      <PageTitle>About Us | Stellar Aesthetics</PageTitle>
+      <Helmet>
+        <title>About Us | Stellar Aesthetics</title>
+      </Helmet>
       <PageHeader>About Us</PageHeader>
       <div id="company"></div>
       <Section>

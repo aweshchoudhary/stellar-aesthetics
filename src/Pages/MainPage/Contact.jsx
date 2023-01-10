@@ -1,9 +1,7 @@
-import PageHeader from "../Components/Main/PageHeader";
-import Section from "../Components/Main/Section";
-import Heading from "../Components/Main/Heading";
+// Components Import
+import { PageHeader, Section, Heading, Img } from "../../Components/Main";
 import { Icon } from "@iconify/react";
-import Img from "../Components/Main/Img";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const addressList = [
@@ -104,7 +102,9 @@ const Contact = () => {
   ];
   return (
     <>
-      <PageTitle>Contact Us</PageTitle>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
       <PageHeader>Contact Us</PageHeader>
       <Section>
         <Heading text1={"Connect with us"} className="mb-10" />

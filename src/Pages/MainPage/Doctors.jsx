@@ -1,18 +1,19 @@
-import Heading from "../Components/Main/Heading";
-import Section from "../Components/Main/Section";
-import PageHeader from "../Components/Main/PageHeader";
 import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
 import { Icon } from "@iconify/react";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { Section, Heading } from "../../Components/Main";
 
 const Doctors = () => {
   const { data } = useFetch("/doctors?populate=*");
 
   return (
     <>
-      <PageTitle>Doctors</PageTitle>
-      <PageHeader>Doctors</PageHeader>
+      <Helmet>
+        <title>Doctors</title>
+      </Helmet>
       <Section>
         <Heading text1={"Doctors"} className={"mb-10"} />
         <div className="flex flex-wrap">

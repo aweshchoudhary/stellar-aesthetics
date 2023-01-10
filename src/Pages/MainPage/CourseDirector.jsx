@@ -1,18 +1,20 @@
-import Heading from "../Components/Main/Heading";
-import Section from "../Components/Main/Section";
-import PageHeader from "../Components/Main/PageHeader";
 import useFetch from "../Hooks/useFetch";
 import Bar from "../Components/Loader/Bar";
 import { BASE_URL } from "../config";
 import parser from "html-react-parser";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { PageHeader, Section, Heading } from "../../Components/Main";
 
 const CourseDirector = () => {
   const { data, loading } = useFetch("/dr-sapnna-vaderra?populate=*");
 
   return data && !loading ? (
     <>
-      <PageTitle>Dr. Sapnna Vaderra</PageTitle>
+      <Helmet>
+        <title>Dr. Sapnna Vaderra</title>
+      </Helmet>
       <PageHeader>Dr. Sapnna Vaderra</PageHeader>
       <Section>
         <div>

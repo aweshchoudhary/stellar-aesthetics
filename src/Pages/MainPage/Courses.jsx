@@ -1,10 +1,10 @@
-import Section from "../Components/Main/Section";
-import Heading from "../Components/Main/Heading";
-import LinkBtn from "../Components/Main/LinkBtn";
 import { Content } from "../Pages/WhyChooseUs";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { Section, Heading } from "../../Components/Main";
 
 const Courses = () => {
   useEffect(() => {
@@ -14,7 +14,9 @@ const Courses = () => {
   }, []);
   return (
     <>
-      <PageTitle>International Courses</PageTitle>
+      <Helmet>
+        <title>International Courses</title>
+      </Helmet>
       <CourseHero />
       <div id="getcertified"></div>
       <Section>
@@ -50,7 +52,7 @@ const Courses = () => {
               <li> Product & Dealer Guide</li>
             </ul>
             <div className="buttons flex items-center gap-5 my-4">
-              <LinkBtn
+              {/* <LinkBtn
                 label={"Book Call"}
                 others={{ to: "" }}
                 icon="ic:baseline-call"
@@ -61,7 +63,7 @@ const Courses = () => {
                 others={{ to: "" }}
                 icon="ic:baseline-whatsapp"
                 varaint={"outlined"}
-              />
+              /> */}
             </div>
           </div>
           <CourseCard
@@ -102,7 +104,7 @@ const Courses = () => {
               <li>Product & Dealer Guide</li>
             </ul>
             <div className="buttons flex items-center gap-5 my-4">
-              <LinkBtn
+              {/* <LinkBtn
                 label={"Book Call"}
                 others={{ to: "" }}
                 icon="ic:baseline-call"
@@ -113,7 +115,7 @@ const Courses = () => {
                 others={{ to: "" }}
                 icon="ic:baseline-whatsapp"
                 varaint={"outlined"}
-              />
+              /> */}
             </div>
           </div>
           <CourseCard

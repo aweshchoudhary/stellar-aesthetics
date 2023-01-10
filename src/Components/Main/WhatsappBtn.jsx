@@ -3,10 +3,11 @@ import { useState } from "react";
 
 const WhatsappBtn = () => {
   const [fullBtn, setFullBtn] = useState(false);
+  const [message, setMessage] = useState(document.title);
   return (
     <div className="absolute bottom-3 right-8">
       <a
-        href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${document.title}*`}
+        href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${message}*`}
         className={`${
           fullBtn ? "px-5" : "px-3"
         } py-3 flex items-center gap-2 rounded-full bg-green-600 text-white`}

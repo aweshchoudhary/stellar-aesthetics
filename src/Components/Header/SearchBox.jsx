@@ -128,7 +128,7 @@ const SearchBox = ({ setToggle }) => {
         <input
           type="search"
           id="search-input"
-          placeholder="Search Courses, etc..."
+          placeholder={"Search Courses, etc..."}
           className="w-full h-full bg-transparent outline-none"
           value={value}
           onChange={handleChange}

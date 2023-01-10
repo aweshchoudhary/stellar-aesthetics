@@ -1,9 +1,35 @@
 import { Link } from "react-router-dom";
-import Section from "../Components/Main/Section";
-import PageHeader from "../Components/Main/PageHeader";
 import { BASE_URL } from "../config";
 import useFetch from "../Hooks/useFetch";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { PageHeader, Section, Heading } from "../../Components/Main";
+
+const Procedures = () => {
+  const { data } = useFetch("/procedures?populate=*");
+  return (
+    <>
+      <Helmet>
+        <title>Procedures</title>
+      </Helmet>
+      <PageHeader>Procedures</PageHeader>
+      <Section className={"Cards"}>
+        <div className="flex flex-wrap">
+          {data?.map((item) => {
+            return (
+              <Card
+                link={item.attributes.title}
+                title={item.attributes.title}
+                img={item.attributes.img.data.attributes.url}
+              />
+            );
+          })}
+        </div>
+      </Section>
+    </>
+  );
+};
 
 const Card = ({ img, title, link }) => {
   return (
@@ -27,30 +53,6 @@ const Card = ({ img, title, link }) => {
         </Link>
       </div>
     </div>
-  );
-};
-
-const Procedures = () => {
-  const { data } = useFetch("/procedures?populate=*");
-  console.log(data);
-  return (
-    <>
-      <PageTitle>Procedures</PageTitle>
-      <PageHeader>Procedures</PageHeader>
-      <Section className={"Cards"}>
-        <div className="flex flex-wrap">
-          {data?.map((item) => {
-            return (
-              <Card
-                link={item.attributes.title}
-                title={item.attributes.title}
-                img={item.attributes.img.data.attributes.url}
-              />
-            );
-          })}
-        </div>
-      </Section>
-    </>
   );
 };
 

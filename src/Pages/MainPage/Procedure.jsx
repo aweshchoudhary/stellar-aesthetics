@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Heading from "../Components/Main/Heading";
-import Section from "../Components/Main/Section";
 import useFetch from "../Hooks/useFetch";
 import parser from "html-react-parser";
 import Bar from "../Components/Loader/Bar";
 import Slider from "react-slick";
-import Img from "../Components/Main/Img";
 import { BASE_URL } from "../config";
 import { Icon } from "@iconify/react";
-import PageTitle from "../Components/Main/PageTitle";
+import { Helmet } from "react-helmet";
+
+// Components Import
+import { Img, Section, Heading } from "../../Components/Main";
 
 const Procedure = () => {
   const [procedure, setProcedure] = useState({});
@@ -38,14 +38,21 @@ const Procedure = () => {
   }
 
   useEffect(() => {
-    data && setProcedure(...data);
+    let isMounted = false;
+    isMounted && data && setProcedure(...data);
+    return () => {
+      isMounted = true;
+    };
   }, [data, loading]);
 
   return procedure?.attributes && !procedure.loading ? (
     <>
-      <PageTitle>
-        {procedure.attributes.title.toUpperCase() + " Procedure"}
-      </PageTitle>
+      <Helmet>
+        <title>
+          {" "}
+          {procedure.attributes.title.toUpperCase() + " Procedure"}
+        </title>
+      </Helmet>
       <section className="hero-slider relative">
         {sliders?.data?.length > 1 && (
           <>

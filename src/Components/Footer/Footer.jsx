@@ -135,16 +135,24 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-primary">Procedures</h4>
           <ul className="my-5">
             <li className="list-none my-1">
-              <Link className="text-h-primary">Face</Link>
+              <Link to={"/procedures/face"} className="text-h-primary">
+                Face
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Hair</Link>
+              <Link to={"/procedures/hair"} className="text-h-primary">
+                Hair
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Skin</Link>
+              <Link to={"/procedures/skin"} className="text-h-primary">
+                Skin
+              </Link>
             </li>
             <li className="list-none my-1">
-              <Link className="text-h-primary">Body</Link>
+              <Link to={"/procedures/body"} className="text-h-primary">
+                Body
+              </Link>
             </li>
           </ul>
         </li>
