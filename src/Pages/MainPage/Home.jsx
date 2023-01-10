@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { HeroSection } from "../Components/Main";
+import { HeroSection } from "../../Components/Main";
 
 const Home = () => {
   return (

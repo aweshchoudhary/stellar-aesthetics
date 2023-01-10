@@ -1,5 +1,5 @@
-import { BASE_URL } from "../config";
-import useFetch from "../Hooks/useFetch";
+import { BASE_URL } from "../../config";
+import useFetch from "../../Hooks/useFetch";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 

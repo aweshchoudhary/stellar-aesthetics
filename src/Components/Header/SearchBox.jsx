@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import menuLink from "./menu.json";
 
@@ -93,6 +93,9 @@ const SearchBox = ({ setToggle }) => {
     );
   };
 
+  // UseEffect Clean Up
+  const componentWillUnmount = useRef(false);
+
   useEffect(() => {
     const planeArr = () => {
       menuLink.forEach((item) => {
@@ -111,8 +114,9 @@ const SearchBox = ({ setToggle }) => {
         }
       });
     };
+    componentWillUnmount && planeArr();
     return () => {
-      planeArr();
+      componentWillUnmount.current = true;
     };
   }, []);
 

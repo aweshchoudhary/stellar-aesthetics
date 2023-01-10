@@ -1,6 +1,6 @@
-import useFetch from "../Hooks/useFetch";
-import Bar from "../Components/Loader/Bar";
-import { BASE_URL } from "../config";
+import useFetch from "../../Hooks/useFetch";
+import Bar from "../../Components/Loader/Bar";
+import { BASE_URL } from "../../config";
 import parser from "html-react-parser";
 import { Helmet } from "react-helmet";
 

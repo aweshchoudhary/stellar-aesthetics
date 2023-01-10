@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { BASE_URL } from "../config";
-import useFetch from "../Hooks/useFetch";
+import { BASE_URL } from "../../config";
+import useFetch from "../../Hooks/useFetch";
 import { Helmet } from "react-helmet";
 
 // Components Import
-import { PageHeader, Section, Heading } from "../../Components/Main";
+import { PageHeader, Section } from "../../Components/Main";
 
 const Procedures = () => {
   const { data } = useFetch("/procedures?populate=*");

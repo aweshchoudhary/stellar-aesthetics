@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import parser from "html-react-parser";
-import Bar from "../Components/Loader/Bar";
+import Bar from "../../Components/Loader/Bar";
 import Slider from "react-slick";
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../../config";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 
@@ -37,11 +37,13 @@ const Procedure = () => {
     }
   }
 
+  // UseEffect Clean Up
+  const componentWillUnmount = useRef(false);
+
   useEffect(() => {
-    let isMounted = false;
-    isMounted && data && setProcedure(...data);
+    componentWillUnmount && data && setProcedure(...data);
     return () => {
-      isMounted = true;
+      componentWillUnmount.current = true;
     };
   }, [data, loading]);
 
@@ -53,6 +55,7 @@ const Procedure = () => {
           {procedure.attributes.title.toUpperCase() + " Procedure"}
         </title>
       </Helmet>
+      {/* Procedures Slider */}
       <section className="hero-slider relative">
         {sliders?.data?.length > 1 && (
           <>
@@ -124,6 +127,7 @@ const Procedure = () => {
             })}
         </Slider>
       </section>
+      {/* Procedure Content */}
       <Section>
         <Heading
           text1={procedure?.attributes?.title}
