@@ -57,7 +57,7 @@ const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
         ) : (
           <Link
             to={item.link}
-            className="text-h-primary h-full py-2 px-3 hover:bg-gray-50 transition"
+            className="text-h-primary h-full py-3 px-3 hover:bg-gray-50 transition"
           >
             {item.label}
           </Link>

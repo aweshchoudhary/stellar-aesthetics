@@ -22,7 +22,7 @@ const CoursePage = () => {
   );
 
   // UseEffect Clean Up
-  const componentWillUnmount = useRef(false);
+  const isMounted = useRef(false);
 
   // Function To Change The Primary Colors
   useEffect(() => {
@@ -33,9 +33,9 @@ const CoursePage = () => {
           coursePage.attributes.primaryColor
         );
     };
-    componentWillUnmount && changePrimaryColor();
+    isMounted && changePrimaryColor();
     return () => {
-      componentWillUnmount.current = true;
+      isMounted.current = true;
     };
   }, [coursePage]);
 
@@ -44,10 +44,10 @@ const CoursePage = () => {
     const setData = () => {
       data && setCoursePage(...data);
     };
-    componentWillUnmount && setData();
-    componentWillUnmount && console.log("hello from coursePage components");
+    isMounted && setData();
+    isMounted && console.log("hello from coursePage components");
     return () => {
-      componentWillUnmount.current = true;
+      isMounted.current = true;
     };
   }, [data, setCoursePage]);
 

@@ -1,19 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
+import { useParams } from "react-router-dom";
 
 // Components Import
 import { PageHeader, Section, Heading } from "../../Components/Main";
 
 const About = () => {
+  const { scrollelement } = useParams();
+
+  const isMounted = useRef(false);
   useEffect(() => {
     const scrollToHash = () => {
-      let el =
-        window.location.hash && document.querySelector(window.location.hash);
+      let el = scrollelement && document.getElementById(scrollelement);
       el && el.scrollIntoView(true);
     };
-
-    scrollToHash();
-  });
+    isMounted && scrollToHash();
+    return () => {
+      isMounted.current = true;
+    };
+  }, [scrollelement]);
   return (
     <>
       <Helmet>

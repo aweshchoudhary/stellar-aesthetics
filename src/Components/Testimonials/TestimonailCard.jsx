@@ -9,9 +9,10 @@ const TestimonailCard = ({ data }) => {
     <>
       {data && (
         <div className="md:flex mx-3 md:mx-8 md:h-[400px] gap-5">
-          <div className="md:w-[30%] md:h-full h-[400px] shrink-0 bg-gray-50">
+          <div className="md:w-[30%] md:h-full h-[400px] shrink-0 bg-gray-200">
             <Img
               className={"w-full h-full"}
+              imgClass={"object-top w-full h-full object-cover"}
               src={BASE_URL + data.attributes.img.data.attributes.url}
             />
           </div>

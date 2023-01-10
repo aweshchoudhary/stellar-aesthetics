@@ -8,10 +8,27 @@
     },
     {
         "label":"About",
-        "link":"/about",
+        "link":"/about-us",
         "active": false,
         "icon": "material-symbols:check-box-rounded",
-        "search": "about"
+        "search": "about, company, vision, director, course director",
+        "submenu":[
+            {
+                "label": "Company",
+                "link": "/about-us",
+                "active": false
+            },
+            {
+                "label": "Vision",
+                "link": "/about-us/vision",
+                "active": false
+            },
+            {
+                "label": "Company Director",
+                "link": "/about-us/director",
+                "active": false
+            }
+        ]
     },
     {
         "label":"Courses",
@@ -65,6 +82,12 @@
             {
                 "label": "Course Director",
                 "link": "/dr-sapnna-vaderra",
+                "active": false
+            },
+            {
+                "label": "Testimonials",
+                "link": "/testimonials",
+                "search": "reviews, customer words",
                 "active": false
             }
             

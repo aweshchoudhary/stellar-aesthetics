@@ -27,7 +27,7 @@ function BigSubmenu({ submenu, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) {
             key={i}
           >
             <Link
-              className="w-full block px-3 py-4 h-full"
+              className="w-full block px-3 py-3 h-full"
               onClick={() => setIsSubmenuOpen(false)}
               to={item.link}
             >

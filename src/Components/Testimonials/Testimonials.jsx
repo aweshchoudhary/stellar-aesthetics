@@ -4,9 +4,11 @@ import TestimonailCard from "./TestimonailCard";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";
 import api from "../../Api/api";
+import useFetch from "../../Hooks/useFetch";
 
 const Testimonials = () => {
-  const [testimonails, setTestimonials] = useState([]);
+  const { data } = useFetch("/testimonials?populate=*");
+
   const settings = {
     centerMode: true,
     dots: true,
@@ -34,18 +36,6 @@ const Testimonials = () => {
     }
   }
 
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      try {
-        const { data } = await api.get("/testimonials?populate=*");
-        setTestimonials(data.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchTestimonials();
-  }, []);
-
   return (
     <section className="testimonails w-full md:py-16 py-10">
       <div className="md:px-10 px-5">
@@ -72,13 +62,14 @@ const Testimonials = () => {
           </button>
         </div>
         <Slider {...settings} className="w-full">
-          {testimonails.map((item, i) => {
-            return (
-              <div key={i}>
-                <TestimonailCard data={item} />
-              </div>
-            );
-          })}
+          {data &&
+            data.map((item, i) => {
+              return (
+                <div key={i}>
+                  <TestimonailCard data={item} />
+                </div>
+              );
+            })}
         </Slider>
       </div>
     </section>

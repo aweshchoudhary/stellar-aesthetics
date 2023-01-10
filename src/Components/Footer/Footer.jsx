@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import menu from "../Header/menu.json";
 
 const Footer = () => {
   const handleTop = () => {
@@ -23,137 +24,93 @@ const Footer = () => {
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Useful Links</h4>
           <ul className="my-5">
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/"}>
-                Home
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/about"}>
-                About Us
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/courses"}>
-                Courses
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/procedures"}>
-                Procedures
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/doctors"}>
-                Doctors
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to="/contact">
-                Contact Us
-              </Link>
-            </li>
+            {menu.map((item) => {
+              return (
+                <li className="list-none my-1">
+                  <Link className="text-h-primary" to={item.link}>
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </li>
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Company</h4>
           <ul className="my-5">
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/about"}>
-                About
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <HashLink smooth className="text-h-primary" to={"/about#vision"}>
-                Vision
-              </HashLink>
-            </li>
-            <li className="list-none my-1">
-              <Link className="text-h-primary" to={"/dr-sapnna-vaderra"}>
-                Course Director
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <HashLink
-                smooth
-                className="text-h-primary"
-                to={"/about#director"}
-              >
-                Director
-              </HashLink>
-            </li>
+            {menu.map((item) => {
+              return item.label === "about" || item.link === "/about-us" ? (
+                <>
+                  <li className="list-none my-1">
+                    <Link className="text-h-primary" to={item.link}>
+                      {item.label}
+                    </Link>
+                  </li>
+                  {item.submenu.map((subitem) => {
+                    return (
+                      <li className="list-none my-1">
+                        <Link className="text-h-primary" to={subitem.link}>
+                          {subitem.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </>
+              ) : null;
+            })}
           </ul>
         </li>
         <li className="list-none lg:w-[40%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Courses</h4>
           <ul className="my-5">
-            <li className="list-none my-1">
-              <Link
-                className="text-h-primary"
-                to={"/courses/fellowship-in-clinical-cosmetology"}
-              >
-                Fellowship In Clinical Cosmetology
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link
-                className="text-h-primary"
-                to={"/courses/fellowship-in-tricology"}
-              >
-                Fellowship In Trichology
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link
-                className="text-h-primary"
-                to={"/courses/certification-in-facial-cosmetics"}
-              >
-                Certification In Facial Cosmetics
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link
-                className="text-h-primary"
-                to={"/courses/certification-in-hair-restoration"}
-              >
-                Certification In Hair Restoration
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link
-                className="text-h-primary"
-                to={
-                  "/courses/certification-in-micro-pigmentation-micro-blading"
-                }
-              >
-                Certification In Micro Pigmentation & Micro Blading
-              </Link>
-            </li>
+            {menu.map((item) => {
+              return item.label === "course" || item.link === "/courses" ? (
+                <>
+                  {item.submenu.map((subitem) => {
+                    return subitem.heading ? (
+                      <>
+                        {subitem.items.map((subsubitem) => {
+                          return (
+                            <li className="list-none my-1">
+                              <Link
+                                className="text-h-primary"
+                                to={subsubitem.link}
+                              >
+                                {subsubitem.label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <li className="list-none my-1">
+                        <Link className="text-h-primary" to={subitem.link}>
+                          {subitem.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </>
+              ) : null;
+            })}
           </ul>
         </li>
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Procedures</h4>
           <ul className="my-5">
-            <li className="list-none my-1">
-              <Link to={"/procedures/face"} className="text-h-primary">
-                Face
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link to={"/procedures/hair"} className="text-h-primary">
-                Hair
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link to={"/procedures/skin"} className="text-h-primary">
-                Skin
-              </Link>
-            </li>
-            <li className="list-none my-1">
-              <Link to={"/procedures/body"} className="text-h-primary">
-                Body
-              </Link>
-            </li>
+            {menu.map((item) => {
+              return item.label === "procedures" || item.link === "/procedures"
+                ? item.submenu.map((subitem) => (
+                    <>
+                      <li className="list-none my-1">
+                        <Link to={subitem.link} className="text-h-primary">
+                          {subitem.label}
+                        </Link>
+                      </li>
+                    </>
+                  ))
+                : null;
+            })}
           </ul>
         </li>
       </ul>
