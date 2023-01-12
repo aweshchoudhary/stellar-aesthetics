@@ -83,6 +83,56 @@ export const Content = () => {
             fruitful beginning of your career.
           </p>
         </div>
+
+        <h3 className="md:text-3xl text-xl mt-10 text-primary">
+          Even more reasons to
+          <strong>love Stellar Aesthetics.</strong>
+        </h3>
+        <div>
+          <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
+            Real-world Success. Nothing Less.
+          </h3>
+          <p>
+            We train you not only in Cosmetics but also HAND HOLD you into the
+            practice with our EXCLUSIVE PERSONALIZED BUSINESS MENTOR-SHIP. With
+            Stellar Aesthetics get tailor-made growth hacks, strategies, product
+            and equipment know-how, and insights for minimizing investments and
+            maximizing returns. We give you every ounce of Business know-how,
+            Marketing, Patient Acquisition and In practice Management, you will
+            ever need, to ensure you have a healthy flow of patients from your
+            1st day. Be it your existing practice, or even if you just starting
+            out.
+          </p>
+        </div>
+        <div>
+          <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
+            Lifetime Mentor-ship. Lifelong Security.
+          </h3>
+          <p>
+            Our MENTOR-SHIP PROGRAM is a promise for a lifetime. Be it Treatment
+            planning, mid-procedure guidance, 2nd opinion or postoperative
+            complications, our trainers are there to guide you through.
+          </p>
+        </div>
+        <div>
+          <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
+            Build Credibility. Become well-known.
+          </h3>
+          <p>
+            Fellowship at Stellar Aesthetics gives you an EXCLUSIVE opportunity
+            for Research & Publications. Reputed publications not only add value
+            to your name but increase your credibility as well.
+          </p>
+        </div>
+        <div>
+          <h3 className="md:text-2xl text-xl font-bold mt-10 mb-4">
+            Money? No Problem.
+          </h3>
+          <p>
+            Easy payment options, EMI and financial support, not just for
+            training but also for investing in setting up your practice.
+          </p>
+        </div>
         <div>
           <img
             src="https://stellaraesthetics.in/wp-content/uploads/2021/12/Slide12.jpg.webp"

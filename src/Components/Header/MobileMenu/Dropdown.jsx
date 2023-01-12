@@ -21,7 +21,11 @@ const Dropdown = ({ items, dropdown }) => {
               icon="material-symbols:arrow-right-rounded"
               className="text-2xl"
             />
-            <Link onClick={scrollTop} to={subItem.link}>
+            <Link
+              onClick={scrollTop}
+              className="no-underline text-black"
+              to={subItem.link}
+            >
               {subItem.label}
             </Link>
           </li>

@@ -36,11 +36,6 @@ const MobileMenu = () => {
         </ul>
       </nav>
       <div className="buttons py-5 flex items-center gap-5">
-        {/* <LinkBtn
-          varaint={"filled"}
-          label="Book Call"
-          icon={"material-symbols:call"}
-        /> */}
         <Link className="btn outlined text-primary">
           Whatsapp Us
           <Icon icon={"ic:baseline-whatsapp"} />

@@ -18,7 +18,7 @@ const About = () => {
     return () => {
       isMounted.current = true;
     };
-  }, [scrollelement]);
+  });
   return (
     <>
       <Helmet>

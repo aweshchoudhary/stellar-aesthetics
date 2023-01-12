@@ -139,7 +139,7 @@ const Contact = () => {
                   target={"_blank"}
                   rel="noreferrer"
                   href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*Contact Us Page*`}
-                  className="text-xl"
+                  className="text-xl no-underline text-black"
                 >
                   +91 79995-06817
                 </a>
@@ -152,7 +152,7 @@ const Contact = () => {
                     target={"_blank"}
                     rel="noreferrer"
                     href={"https://www.instagram.com/stellaraesthetics.india/"}
-                    className="text-xl"
+                    className="text-xl no-underline text-black"
                   >
                     www.stellaraesthetics.in
                   </a>
@@ -163,7 +163,7 @@ const Contact = () => {
                     target={"_blank"}
                     rel="noreferrer"
                     href={"https://www.instagram.com/stellaraesthetics.india/"}
-                    className="text-xl"
+                    className="text-xl no-underline text-black"
                   >
                     stellaraesthetics.india
                   </a>
@@ -176,7 +176,7 @@ const Contact = () => {
                     href={
                       "https://www.linkedin.com/company/stellar-aesthetics/"
                     }
-                    className="text-xl"
+                    className="text-xl no-underline text-black"
                   >
                     Stellar Aesthetics
                   </a>
@@ -189,7 +189,7 @@ const Contact = () => {
                     href={
                       "https://api.whatsapp.com/send/?phone=917999506817&text=Hello+Team+Stellar+Aesthetics.+I+would+like+to+get+more+info+about+*Best+Cosmetics+Courses+in+India*"
                     }
-                    className="text-xl"
+                    className="text-xl no-underline text-black"
                   >
                     Stellar Aesthetics
                   </a>

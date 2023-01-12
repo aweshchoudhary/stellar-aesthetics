@@ -27,7 +27,10 @@ const Footer = () => {
             {menu.map((item) => {
               return (
                 <li className="list-none my-1">
-                  <Link className="text-h-primary" to={item.link}>
+                  <Link
+                    className="text-h-primary no-underline text-black"
+                    to={item.link}
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -42,14 +45,20 @@ const Footer = () => {
               return item.label === "about" || item.link === "/about-us" ? (
                 <>
                   <li className="list-none my-1">
-                    <Link className="text-h-primary" to={item.link}>
+                    <Link
+                      className="text-h-primary no-underline text-black"
+                      to={item.link}
+                    >
                       {item.label}
                     </Link>
                   </li>
                   {item.submenu.map((subitem) => {
                     return (
                       <li className="list-none my-1">
-                        <Link className="text-h-primary" to={subitem.link}>
+                        <Link
+                          className="text-h-primary no-underline text-black"
+                          to={subitem.link}
+                        >
                           {subitem.label}
                         </Link>
                       </li>
@@ -73,7 +82,7 @@ const Footer = () => {
                           return (
                             <li className="list-none my-1">
                               <Link
-                                className="text-h-primary"
+                                className="text-h-primary no-underline text-black"
                                 to={subsubitem.link}
                               >
                                 {subsubitem.label}
@@ -84,7 +93,10 @@ const Footer = () => {
                       </>
                     ) : (
                       <li className="list-none my-1">
-                        <Link className="text-h-primary" to={subitem.link}>
+                        <Link
+                          className="text-h-primary no-underline text-black"
+                          to={subitem.link}
+                        >
                           {subitem.label}
                         </Link>
                       </li>
@@ -103,7 +115,10 @@ const Footer = () => {
                 ? item.submenu.map((subitem) => (
                     <>
                       <li className="list-none my-1">
-                        <Link to={subitem.link} className="text-h-primary">
+                        <Link
+                          to={subitem.link}
+                          className="text-h-primary no-underline text-black"
+                        >
                           {subitem.label}
                         </Link>
                       </li>

@@ -25,7 +25,11 @@ const MenuItem = ({ items }) => {
                   {items.label}
                 </button>
                 <div className="icon flex justify-end w-1/2">
-                  <Link to={items.link} onClick={scrollTop}>
+                  <Link
+                    className="no-underline text-black"
+                    to={items.link}
+                    onClick={scrollTop}
+                  >
                     <Icon
                       icon="ri:external-link-fill"
                       className="text-h-primary text-2xl"
@@ -49,7 +53,11 @@ const MenuItem = ({ items }) => {
             />
           </>
         ) : (
-          <Link onClick={scrollTop} to={items.link}>
+          <Link
+            onClick={scrollTop}
+            className="no-underline text-black"
+            to={items.link}
+          >
             {items.label}
           </Link>
         )}

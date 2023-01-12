@@ -13,6 +13,7 @@ import CourseGlimpses from "../../Components/CoursePage/CourseGlimpses";
 import CourseHero from "../../Components/CoursePage/CourseHero";
 import CourseRoadMap from "../../Components/CoursePage/CourseRoadMap";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import FAQ from "../../Components/CoursePage/FAQ";
 
 const CoursePage = () => {
   const { name } = useParams();
@@ -72,6 +73,8 @@ const CoursePage = () => {
           <CourseGlimpses />
           <ContactCard />
           <Testimonials />
+          <ContactCard />
+          <FAQ />
         </>
       ) : (
         <Bar />

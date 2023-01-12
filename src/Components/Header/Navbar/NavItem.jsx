@@ -14,7 +14,7 @@ const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
             {item.label ? (
               <Link
                 to={item.link}
-                className="flex items-center text-h-primary py-2 px-3 hover:bg-gray-50 transition"
+                className="flex items-center no-underline text-black text-h-primary py-2 px-3 hover:bg-gray-50 transition"
               >
                 {item.label}
                 {depthLevel > 0 ? (
@@ -29,7 +29,7 @@ const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
             ) : (
               <Link
                 to={item.link}
-                className="flex items-center justify-between text-h-primary  py-2 px-3 hover:bg-gray-50 transition w-full mt-1"
+                className="flex no-underline text-black items-center justify-between text-h-primary  py-2 px-3 hover:bg-gray-50 transition w-full mt-1"
               >
                 {item.heading}
                 {depthLevel > 0 ? (
@@ -57,7 +57,7 @@ const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
         ) : (
           <Link
             to={item.link}
-            className="text-h-primary h-full py-3 px-3 hover:bg-gray-50 transition"
+            className="text-h-primary no-underline text-black h-full py-3 px-3 hover:bg-gray-50 transition"
           >
             {item.label}
           </Link>

@@ -27,6 +27,11 @@
                 "label": "Company Director",
                 "link": "/about-us/director",
                 "active": false
+            },
+            {
+                "label": "Dr. Sapnna Vaderra",
+                "link": "/dr-sapnna-vaderra",
+                "active": false
             }
         ]
     },

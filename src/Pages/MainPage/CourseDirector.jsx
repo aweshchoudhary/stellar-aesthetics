@@ -5,10 +5,11 @@ import parser from "html-react-parser";
 import { Helmet } from "react-helmet";
 
 // Components Import
-import { PageHeader, Section, Heading } from "../../Components/Main";
+import { PageHeader, Section, Heading, Img, Card } from "../../Components/Main";
 
 const CourseDirector = () => {
-  const { data, loading } = useFetch("/dr-sapnna-vaderra?populate=*");
+  const { data, loading } = useFetch("/dr-sapnna-vaderra?populate=deep");
+  console.log(data);
 
   return data && !loading ? (
     <>
@@ -33,6 +34,19 @@ const CourseDirector = () => {
               <div key={i} className="my-10">
                 <h2 className="text-3xl font-bold mb-5">{item.heading}</h2>
                 <p className="text-body">{parser(item.description)}</p>
+                <div className="flex flex-wrap my-10">
+                  {item.imgGroup &&
+                    item.imgGroup.map((img) => {
+                      return (
+                        <Card
+                          horizontal={img.type === "horizontal"}
+                          img={img.img.data.attributes.url}
+                          title={img.caption}
+                          subtitle={img.subCaption}
+                        />
+                      );
+                    })}
+                </div>
               </div>
             );
           })}

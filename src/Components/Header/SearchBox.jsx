@@ -10,6 +10,7 @@ const SearchBox = ({ setToggle }) => {
   const [suggestionsActive, setSuggestionsActive] = useState(false);
   const [value, setValue] = useState("");
   const navigate = useNavigate();
+  const [isFocus, setIsFocus] = useState(false);
 
   const handleChange = (e) => {
     const query = e.target.value.toLowerCase();
@@ -135,11 +136,13 @@ const SearchBox = ({ setToggle }) => {
           placeholder={"Search Courses, etc..."}
           className="w-full h-full bg-transparent outline-none"
           value={value}
+          onFocus={() => setIsFocus(true)}
+          onBlur={() => setIsFocus(false)}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
         />
       </div>
-      {suggestionsActive && <Suggestions />}
+      {suggestionsActive && isFocus && <Suggestions />}
     </div>
   );
 };
