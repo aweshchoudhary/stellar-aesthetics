@@ -1,16 +1,17 @@
-import Section from "./Section";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <Section className="md:h-[600px] sm:h-[400px] h-screen lg:px-0 lg:py-0 w-full bg-black relative">
-      <video
-        className="w-full h-full object-cover opacity-80"
-        autoPlay
-        loop
-        muted={true}
-        src="https://stellaraesthetics.in/wp-content/uploads/2022/01/stellar-hero-bg-1mbps.webm"
-      ></video>
+    <section className="md:h-[600px] sm:h-[400px] h-screen lg:px-0 lg:py-0 w-full bg-black relative">
+      <figure className="w-full h-full">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted={true}
+          src="/assets/videos/homepage-video.mp4"
+        ></video>
+      </figure>
       <div className="absolute top-1/2 left-1/2 z-10 text-center w-full md:px-10 px-5 -translate-x-1/2 -translate-y-1/2">
         <h3 className="md:text-5xl text-2xl text-white">Get Started</h3>
         <h2 className="md:text-7xl sm:text-5xl text-3xl text-white font-bold md:font-medium">
@@ -25,7 +26,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 
