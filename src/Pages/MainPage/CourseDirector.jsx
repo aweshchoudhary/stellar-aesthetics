@@ -1,11 +1,7 @@
-import useFetch from "../../Hooks/useFetch";
-import Bar from "../../Components/Loader/Bar";
-import { BASE_URL } from "../../config";
-import parser from "html-react-parser";
 import { Helmet } from "react-helmet";
 
 // Components Import
-import { PageHeader, Section, Heading, Card, Img } from "../../Components/Main";
+import { Card, Img } from "../../Components/Main";
 
 const CourseDirector = () => {
   // const { data, loading } = useFetch("/dr-sapnna-vaderra?populate=deep");
@@ -28,19 +24,26 @@ const CourseDirector = () => {
           />
         </div>
       </section>
+
+      {/* FIRST SECTION */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
-        <div>
-          <Heading className={"mt-10"} text1={"Dr. Sapnna Vaderra."} />
+        <div className="mb-10">
+          <h2 className="md:text-4xl text-2xl">
+            <strong>Dr. Sapnna Vaderra</strong>
+          </h2>
           <h3 className="sm:text-2xl text-xl text-primary">
             Surgeon. Researcher. Mentor.
           </h3>
         </div>
         <div className="md:flex mb-10">
-          <div className="shrink-0 md:w-[30%]">
+          <div
+            className="shrink-0 md:w-[30%] pt-5 bg-primary"
+            style={{ backgroundColor: "#4c1a59" }}
+          >
             <Img src={"/assets/img/doctor-img.jpg"} />
           </div>
           <div>
-            <p className="text-body text-justify md:pl-10 sm:pt-0 pt-5">
+            <p className="text-body md:pl-10 sm:pt-0 pt-5">
               Surgeon – Researcher – Mentor par excellence. Dr. Sapnna Vaderra
               is a Mumbai-based Facioplastic/Faciocosmetic & Hair Transplant
               Surgeon and co-founder of Stellar Aesthetics, India. Stellar
@@ -60,12 +63,13 @@ const CourseDirector = () => {
           </div>
         </div>
       </section>
+      {/* ACADAMIC QUALIFICATION */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">Academic Qualifications</h2>
 
           <div className="lg:flex">
-            <p className="text-body text-justify md:pr-10">
+            <p className="text-body md:pr-10">
               Dr. Sapnna Vaderra began her journey with the completion of her
               Graduation from Datta Meghe Institute of Medical Sciences, Wardha
               & Post-Graduation in Cranio-Maxillofacial Surgery from VSPM‘s DCRC
@@ -126,77 +130,12 @@ const CourseDirector = () => {
           </div>
         </div>
       </section>
-      <section className="md:my-16 md:mx-10 my-10 mx-5">
-        <div>
-          <h2 className="text-3xl font-bold mb-5">Academic Qualifications</h2>
-
-          <div className="lg:flex">
-            <p className="text-body text-justify md:pr-10">
-              Dr. Sapnna Vaderra began her journey with the completion of her
-              Graduation from Datta Meghe Institute of Medical Sciences, Wardha
-              & Post-Graduation in Cranio-Maxillofacial Surgery from VSPM‘s DCRC
-              and Lata Mangeshkar Hospital Nagpur During her tenure as a
-              resident surgeon, she mastered various skills related to
-              extra-oral and intra-oral surgical procedures and anaesthetic
-              techniques, including but not limited to management of Head and
-              Neck Trauma, Head and Neck Cancers and pathologies, Orofacial
-              space infections, Craniofacial syndromes, and deformities
-              Temporomandibular joint complications, and Aesthetic/Cosmetic
-              rehabilitation of the face. She has witnessed a variety of
-              scenarios where surgical intervention is of utmost necessity and
-              at times lifesaving in nature.
-              <br /> <br />
-              During her learning days, she also honed her skills with her
-              observer-ship training in Head and Neck Cancers at Rashtra Tukdoji
-              tertiary Cancer Center in Nagpur. Followed by extended
-              observer-ship training Cranio-Neurosurgery at Neuron Hospital. Her
-              curiosity to dive deep into the subject of Head and Neck Surgery
-              helped her to further enhance her skills with Fellowship in
-              Implantology.
-              <br />
-              <br />
-              Her passion towards Aesthetics was the main driving force for her
-              to enter into the field of Aesthetics. During her advanced
-              training as Cosmetic Surgeon, she learned the art of creating
-              beautiful and well-balanced Noses and Faces with utmost dedication
-              and passion through her Fellowship in Rhinoplasty & Facial Plastic
-              Surgery from the “Indian Society of Facial Plastic and
-              Reconstructive Surgery”.
-              <br />
-              <br />
-              Finally, she went on to master the nuances of Anti-aging, Facial
-              Contouring, Beautification, and Facial Engineering with a
-              Fellowship in Facial Plastic Surgery and Facial Cosmetic Surgery
-              from Mumbai. Additionally, she has attended umpteen workshops to
-              upgrade her skills in the field of Hair Transplantation,
-              Micropigmentation, and Microblading all of which are elective
-              cosmetic procedures, and elevate her skills to encompass nearly
-              all of the cosmetic procedures available today.
-              <br />
-              <br />
-              Dr. Sapnna believes that each patient is different, and no single
-              procedure can be applied to all the patients in similar ways. She
-              uses all these skills beautifully mastered by her, combined with
-              years of experience to treat her precious patients. Dr. Sapnna
-              Vaderra is a life-long student, who loves to be up-to-date on new
-              concepts, technologies, and protocols in the world of surgical and
-              aesthetic procedures, and imparts this knowledge with the same
-              enthusiasm.
-            </p>
-            <div className="shrink-0 md:w-[40%] w-full md:mt-0 mt-10">
-              <Img
-                src="https://stellaraesthetics.in/wp-content/uploads/2021/12/20190927_205052.jpg.webp"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* EXPERTISE AS MENTOR */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         {" "}
         <div>
           <h2 className="text-3xl font-bold mb-5">Expertise as a Mentor</h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             Armed with a sound theoretical background, up-to-date clinical
             skills, and an amalgamation of evidence-based approaches, Dr.Sapnna
             Vaderra is one of the most sought-after mentors in the field of
@@ -242,9 +181,9 @@ const CourseDirector = () => {
           </p>
 
           <div className="flex flex-wrap my-10 gap-5 justify-between">
-            <div className={"md:w-[48%]"}>
-              <div className={"md:h-[500px] sm:h-[450px] h-[300px]"}>
-                <div className="img h-[80%] w-full bg-gray-200">
+            <div className={"md:w-[48%] h-[500px]"}>
+              <div className="w-full h-full">
+                <div className="img h-[90%] w-full bg-gray-200">
                   <Img
                     src={
                       "https://stellaraesthetics.in/wp-content/uploads/2022/12/FB_IMG_1669278790679.jpg"
@@ -258,14 +197,12 @@ const CourseDirector = () => {
                     Participant performing Hands-on for LASER with Dr. Sapnna
                     Vaderra
                   </h5>
-                  {/* {title2 && <h5 className="text-md font-medium">{title2}</h5>}
-              {subtitle && <p className="text-body text-justify">{parser(subtitle)}</p>} */}
                 </div>
               </div>
             </div>
-            <div className={"md:w-[48%]"}>
-              <div className={"md:h-[500px] sm:h-[450px] h-[300px]"}>
-                <div className="img h-[80%] w-full bg-gray-200">
+            <div className={"md:w-[48%] h-[500px]"}>
+              <div className="w-full h-full">
+                <div className="img h-[90%] w-full bg-gray-200">
                   <Img
                     src={
                       "https://stellaraesthetics.in/wp-content/uploads/2022/12/FB_IMG_1669278996452.jpg"
@@ -279,18 +216,17 @@ const CourseDirector = () => {
                     Participant performing Hands-on for LASER with Dr. Sapnna
                     Vaderra
                   </h5>
-                  {/* {title2 && <h5 className="text-md font-medium">{title2}</h5>}
-              {subtitle && <p className="text-body text-justify">{parser(subtitle)}</p>} */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* An Avid Researcher */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">An Avid Researcher</h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             Dr. Sapnna is not just a devoted surgeon but also an extremely
             passionate and keen researcher. She has multiple publications in
             journals of national and international renown. A few of her
@@ -318,10 +254,11 @@ const CourseDirector = () => {
           </p>
         </div>
       </section>
+      {/* Awards & Accolades */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">Awards & Accolades</h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             As one of the best Facio-Plastic and/or Cosmetic Surgeons in Mumbai,
             Dr. Sapnna Vaderra has been awarded by many national and state
             associations for her continuous efforts to improve the ways and
@@ -468,12 +405,13 @@ const CourseDirector = () => {
           </div>
         </div>
       </section>
+      {/* Areas of Surgical Expertise */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">
             Areas of Surgical Expertise
           </h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             As a Highly trained Expert in her field, Dr.Sapnna Vaderra has
             successfully treated thousands of patients using surgical and
             nonsurgical procedures. Some of the various treatments performed by
@@ -541,6 +479,7 @@ const CourseDirector = () => {
           </p>
         </div>
       </section>
+      {/* Media Coverage */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">Media Coverage</h2>
@@ -559,7 +498,7 @@ const CourseDirector = () => {
               </div>
             </div>
             <div className={"md:w-[48%]"}>
-              <div className={"md:h-[500px] sm:h-[450px] h-[300px]"}>
+              <div>
                 <div className="img w-full bg-gray-200">
                   <Img
                     src={
@@ -572,7 +511,7 @@ const CourseDirector = () => {
               </div>
             </div>
             <div className={"md:w-[48%]"}>
-              <div className={"md:h-[500px] sm:h-[450px] h-[300px]"}>
+              <div>
                 <div className="img w-full bg-gray-200">
                   <Img
                     src={
@@ -585,7 +524,7 @@ const CourseDirector = () => {
               </div>
             </div>
             <div className={"md:w-[48%]"}>
-              <div className={"md:h-[500px] sm:h-[450px] h-[300px]"}>
+              <div>
                 <div className="img w-full bg-gray-200">
                   <Img
                     src={
@@ -600,10 +539,11 @@ const CourseDirector = () => {
           </div>
         </div>
       </section>
+      {/* Humanitarian Works */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">Humanitarian Works</h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             Humanitarian Doctors share a passion for improving the quality of
             life for as many people as possible. Dr. Sapnna Vaderra has been
             associated with several NGO/ Non-profit organizations since her
@@ -630,12 +570,13 @@ const CourseDirector = () => {
           </p>
         </div>
       </section>
+      {/* Memberships & Affiliations */}
       <section className="md:my-16 md:mx-10 my-10 mx-5">
         <div>
           <h2 className="text-3xl font-bold mb-5">
             Memberships & Affiliations
           </h2>
-          <p className="text-body text-justify md:pr-10">
+          <p className="text-body md:pr-10">
             Along with the best evidence and clinical guidance, Dr. Sapnna
             believes in keeping herself updated with the latest technology,
             innovations, and practices requires to be in touch with various
