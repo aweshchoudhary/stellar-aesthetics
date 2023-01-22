@@ -1,14 +1,12 @@
 import { BASE_URL } from "../../config";
-import useFetch from "../../Hooks/useFetch";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
+import doctors from "../../data/doctors.json";
 
 // Components Import
 import { Section, Heading } from "../../Components/Main";
 
 const Doctors = () => {
-  const { data } = useFetch("/doctors?populate=*");
-
   return (
     <>
       <Helmet>
@@ -17,8 +15,8 @@ const Doctors = () => {
       <Section>
         <Heading text1={"Doctors"} className={"mb-10"} />
         <div className="flex flex-wrap">
-          {data &&
-            data.map((item, i) => {
+          {doctors &&
+            doctors.map((item, i) => {
               return (
                 <div key={i} className="lg:w-1/3 sm:w-1/2 w-full">
                   <div className="card sm:m-4 mb-4 sm:h-[550px] shrink-0">

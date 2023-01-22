@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar hidden md:block z-40 bg-white border-b sticky top-0 left-0">
       <div className="flex items-center justify-between px-10">
-        <ul className="flex items-center justify-center gap-5 font-medium font-lg">
+        <ul className="flex items-center justify-center font-medium font-lg">
           {menu.map((item, i) => {
             const depthLevel = 0;
             return (

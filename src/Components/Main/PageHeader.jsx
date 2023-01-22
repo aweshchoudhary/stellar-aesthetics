@@ -15,7 +15,10 @@ const PageHeader = ({ children }) => {
               <Link className="no-underline text-white" key={i} to={"/"}>
                 home
               </Link>{" "}
-              <Link to={"/" + item}>{item}</Link> /
+              <Link to={"/" + item} className="text-white no-underline">
+                {item}
+              </Link>
+              /
             </span>
           ) : (
             <Link className="no-underline text-white" key={i} to={"/" + item}>

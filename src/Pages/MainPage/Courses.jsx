@@ -12,6 +12,7 @@ const Courses = () => {
       window.location.hash && document.querySelector(window.location.hash);
     el && el.scrollIntoView(true);
   });
+
   return (
     <>
       <Helmet>

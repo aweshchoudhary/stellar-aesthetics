@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "../../Hooks/useFetch";
 import parser from "html-react-parser";
 import Bar from "../../Components/Loader/Bar";
 import Slider from "react-slick";
 import { BASE_URL } from "../../config";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
+import procedures from "../../data/procedures.json";
+import proceduresSlider from "../../data/procedures-slider.json";
 
 // Components Import
 import { Img, Section, Heading } from "../../Components/Main";
@@ -14,16 +15,11 @@ import { Img, Section, Heading } from "../../Components/Main";
 const Procedure = () => {
   const [procedure, setProcedure] = useState({});
   const { name } = useParams();
-  const { data, loading } = useFetch(
-    `/procedures?filters[type][$eq]=${name}&populate=*`
-  );
-  const sliders = useFetch(
-    `/procedure-sliders?filters[type][$eq]=${procedure?.attributes?.type}&populate=*`
-  );
 
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -38,26 +34,27 @@ const Procedure = () => {
   }
 
   // UseEffect Clean Up
-  const componentWillUnmount = useRef(false);
+  const isMounted = useRef(false);
 
   useEffect(() => {
-    componentWillUnmount && data && setProcedure(...data);
+    const procedure = procedures.filter((item) => {
+      return item.attributes.type === name;
+    });
+    if (isMounted && procedure) setProcedure(...procedure);
     return () => {
-      componentWillUnmount.current = true;
+      isMounted.current = true;
     };
-  }, [data, loading]);
+  }, [name, setProcedure]);
 
   return procedure?.attributes && !procedure.loading ? (
     <>
       <Helmet>
-        <title>
-          {" "}
-          {procedure.attributes.title.toUpperCase() + " Procedure"}
-        </title>
+        <title>{procedure.attributes.title.toUpperCase() + " Procedure"}</title>
       </Helmet>
+
       {/* Procedures Slider */}
       <section className="hero-slider relative">
-        {sliders?.data?.length > 1 && (
+        {proceduresSlider?.length > 1 && (
           <>
             <button
               onClick={() => slide("prev")}
@@ -74,8 +71,8 @@ const Procedure = () => {
           </>
         )}
         <Slider {...settings}>
-          {sliders.data &&
-            sliders.data.map((item) => {
+          {proceduresSlider &&
+            proceduresSlider.map((item) => {
               return (
                 <div>
                   <div className="w-full h-[500px] relative flex items-center justify-center">

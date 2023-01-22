@@ -1,9 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import useData from "../../Hooks/useContext";
 import useFetch from "../../Hooks/useFetch";
 import Bar from "../../Components/Loader/Bar";
 import { Helmet } from "react-helmet";
+import courses from "../../data/courses.json";
 
 // Course Page Components Import
 import AboutCourse from "../../Components/CoursePage/AboutCourse";
@@ -18,9 +19,7 @@ import FAQ from "../../Components/CoursePage/FAQ";
 const CoursePage = () => {
   const { name } = useParams();
   const { setCoursePage, coursePage } = useData();
-  const { data, loading } = useFetch(
-    `/courses?filters[slug][$eq]=${name}&populate=*`
-  );
+  const loading = useRef(false);
 
   // UseEffect Clean Up
   const isMounted = useRef(false);
@@ -40,21 +39,19 @@ const CoursePage = () => {
     };
   }, [coursePage]);
 
-  // Function To Set Filtered Data In State
   useEffect(() => {
-    const setData = () => {
-      data && setCoursePage(...data);
-    };
-    isMounted && setData();
-    isMounted && console.log("hello from coursePage components");
-    return () => {
-      isMounted.current = true;
-    };
-  }, [data, setCoursePage]);
-
+    loading.current = true;
+    const course = courses.filter((item) => {
+      return item.attributes.slug === name;
+    });
+    if (course) {
+      setCoursePage(...course);
+    }
+    loading.current = false;
+  }, [name, setCoursePage]);
   return (
     <>
-      {coursePage?.attributes && !loading ? (
+      {coursePage?.attributes && !loading.current ? (
         <>
           <Helmet>
             <title>{` ${

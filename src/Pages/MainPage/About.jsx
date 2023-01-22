@@ -65,7 +65,7 @@ const About = () => {
           treatment to people belonging to all strata of society including the
           poor, acid attack victims, etc. in a cost-effective manner or
           completely complimentary.
-        </p>{" "}
+        </p>
         <br />
         <p>
           We are out to earn a Stellar reputation in setting a new standard for

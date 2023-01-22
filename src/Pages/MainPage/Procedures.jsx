@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import { BASE_URL } from "../../config";
-import useFetch from "../../Hooks/useFetch";
 import { Helmet } from "react-helmet";
+import procedures from "../../data/procedures.json";
 
 // Components Import
 import { PageHeader, Section } from "../../Components/Main";
 
 const Procedures = () => {
-  const { data } = useFetch("/procedures?populate=*");
   return (
     <>
       <Helmet>
@@ -16,7 +15,7 @@ const Procedures = () => {
       <PageHeader>Procedures</PageHeader>
       <Section className={"Cards"}>
         <div className="flex flex-wrap">
-          {data?.map((item) => {
+          {procedures?.map((item) => {
             return (
               <Card
                 link={item.attributes.title}
