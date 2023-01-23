@@ -24,8 +24,8 @@ const AboutCourse = () => {
         <div className="md:w-1/3 shrink-0">
           <Img
             src={
-              BASE_URL +
-              coursePage.attributes.courseAboutImg.data.attributes.url
+              "/assets/img/" +
+              coursePage.attributes.courseAboutImg.data.attributes.name
             }
             caption={"Participant getting certificate"}
           />

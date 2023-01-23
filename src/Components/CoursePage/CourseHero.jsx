@@ -14,8 +14,8 @@ const CourseHero = () => {
           <div className="bg h-full w-full absolute inset-0 z-0 bg-primary">
             <Img
               src={
-                BASE_URL +
-                coursePage.attributes.courseHeaderImg.data.attributes.url
+                "/assets/img/" +
+                coursePage.attributes.courseHeaderImg.data.attributes.name
               }
               className="opacity-20 blur w-full h-full object-cover"
               alt=""
@@ -64,8 +64,8 @@ const CourseHero = () => {
                 className={"w-full"}
                 imgClass={"border-[5px] border-white"}
                 src={
-                  BASE_URL +
-                  coursePage.attributes.courseHeaderImg.data.attributes.url
+                  "/assets/img/" +
+                  coursePage.attributes.courseHeaderImg.data.attributes.name
                 }
               />
             </div>

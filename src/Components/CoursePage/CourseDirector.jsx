@@ -10,13 +10,15 @@ import Img from "../Main/Img";
 import { Link } from "react-router-dom";
 
 const CourseDirector = () => {
-  const cards = useFetch(
-    "/cards?filters[parentComponent][$eq]=course-director&populate=*"
-  );
-  const { data, loading } = useFetch("/course-director?populate=*");
+  // const cards = useFetch(
+  //   "/cards?filters[parentComponent][$eq]=course-director&populate=*"
+  // );
+  // const { data, loading } = useFetch("/course-director?populate=*");
+  const data = ["1"];
   return (
     <>
-      {cards.data && !cards.loading && !loading ? (
+      {/* {cards.data && !cards.loading && !loading ? ( */}
+      {data ? (
         <Section className="course-director py-20">
           <Heading
             text1={"meet your"}
@@ -56,7 +58,7 @@ const CourseDirector = () => {
               Awards & Achievement
             </h2>
             <div className="flex flex-wrap justify-center items-start">
-              {cards.data.map((card, i) => {
+              {/* {cards.data.map((card, i) => {
                 return (
                   !card.attributes.horizontal && (
                     <Card
@@ -81,7 +83,7 @@ const CourseDirector = () => {
                     />
                   )
                 );
-              })}
+              })} */}
             </div>
           </div>
         </Section>

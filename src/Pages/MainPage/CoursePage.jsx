@@ -49,6 +49,7 @@ const CoursePage = () => {
     }
     loading.current = false;
   }, [name, setCoursePage]);
+
   return (
     <>
       {coursePage?.attributes && !loading.current ? (
@@ -59,6 +60,10 @@ const CoursePage = () => {
                 ? "FELLOWSHIP IN "
                 : "CERTIFICATION IN "
             } ${coursePage.attributes.title.toUpperCase()} `}</title>
+            {coursePage.meta.map((item) => {
+              console.log(item);
+              return <meta {...item} />;
+            })}
           </Helmet>
           <CourseHero />
           <CourseDirector />
