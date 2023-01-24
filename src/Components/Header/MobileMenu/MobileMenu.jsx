@@ -1,10 +1,10 @@
-import React from "react";
 import { Icon } from "@iconify/react";
-import menuItems from "../menu.json";
+import menuItems from "../../../data/menu.json";
 import SearchBox from "../SearchBox";
 import MenuItem from "./MenuItem";
 import useData from "../../../Hooks/useContext";
 import { Link } from "react-router-dom";
+import { Img } from "../../Main";
 
 const MobileMenu = () => {
   const { toggleMobileMenu, setToggleMobileMenu } = useData();
@@ -17,9 +17,9 @@ const MobileMenu = () => {
     >
       <div className="head flex items-center justify-between border-b pb-5 mb-3">
         <div className="logo">
-          <img
-            src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
-            alt=""
+          <Img
+            src="/assets/img/logo.png"
+            alt="logo dark"
             className="w-[130px]"
           />
         </div>
@@ -50,15 +50,3 @@ const MobileMenu = () => {
 };
 
 export default MobileMenu;
-
-// import React from "react";
-// import menuItems from "./menu.json";
-// import MenuItem from "./MenuItem";
-
-// const MobileMenu = () => {
-//   return (
-
-//   );
-// };
-
-// export default MobileMenu;

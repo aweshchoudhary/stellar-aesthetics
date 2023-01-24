@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react";
-import { BASE_URL } from "../../config";
 import ReadMore from "../Main/ReadMore";
 import parser from "html-react-parser";
 import Img from "../Main/Img";
@@ -13,7 +12,7 @@ const TestimonailCard = ({ data }) => {
             <Img
               className={"w-full h-full"}
               imgClass={"object-top w-full h-full object-cover"}
-              src={BASE_URL + data.attributes.img.data.attributes.url}
+              src={"/assets/img/" + data.attributes.img.data.attributes.name}
             />
           </div>
           <div className="md:w-[70%] h-full shrink-0">

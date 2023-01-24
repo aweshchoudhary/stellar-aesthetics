@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
 import Heading from "../Main/Heading";
 import TestimonailCard from "./TestimonailCard";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";
-import api from "../../Api/api";
-import useFetch from "../../Hooks/useFetch";
+import testimonials from "../../data/testimonials.json";
 
 const Testimonials = () => {
-  const { data } = useFetch("/testimonials?populate=*");
-
   const settings = {
     centerMode: true,
     dots: true,
@@ -62,8 +58,8 @@ const Testimonials = () => {
           </button>
         </div>
         <Slider {...settings} className="w-full">
-          {data &&
-            data.map((item, i) => {
+          {testimonials &&
+            testimonials.map((item, i) => {
               return (
                 <div key={i}>
                   <TestimonailCard data={item} />

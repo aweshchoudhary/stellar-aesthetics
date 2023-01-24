@@ -200,7 +200,7 @@
   {
     "id": 2,
     "attributes": {
-      "title": "tricology",
+      "title": "trichology",
       "type": "fellowships",
       "shortDescription": "<ul><li><span style=\"background-color:transparent;\">Complete Hands-On</span></li><li><span style=\"background-color:transparent;\">All Procedures (Basic to Advance)</span></li><li><span style=\"background-color:transparent;\">Lifetime Business Mentorship</span></li><li><span style=\"background-color:transparent;\">Lifetime Trainer Mentorship</span></li><li><span style=\"background-color:transparent;\">Complete Practice Set-Up</span></li><li><span style=\"background-color:transparent;\">Patient Acquisition Strategies</span></li><li><span style=\"background-color:transparent;\">Study Material</span></li><li><span style=\"background-color:transparent;\">Product &amp; Dealer Guide</span></li><li><span style=\"background-color:transparent;\">International Placement Assistance</span></li></ul>",
       "courseAbout": "<p style=\"margin-left:0px;\"><span style=\"background-color:transparent;font-family:Poppins;\">An International Education UK Board Certified, 3-month comprehensive fellowship program conceptualized for aestheticians &amp; doctors to build an 8-figure practice and be recognized as an expert in the field of clinical cosmetology. Our fellows are amongst the most successful cosmetology practitioners in the country and abroad.</span></p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\"><span style=\"background-color:transparent;font-family:Poppins;\">The fellowship is tailor-fit with the prime objective of achieving a successful practice. It is designed keeping in mind the business, professional and practical approach toward cosmetology giving you have the ultimate edge over any competition, present or future.</span></p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\"><span style=\"background-color:transparent;font-family:Poppins;\">The exhaustive Hands-on format, a large variety of patients, multiple mentoring sessions, strategic business development, and patient acquisition and retention strategies empower the fellows to have a stellar cosmetology practice. Module 1 &amp; 2 begins with us giving you the building blocks to immediately start your cosmetology practice. You will be trained on real-time patients and learn to formulate your own treatment plans and perform hands-on for all procedures on those patients.</span></p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\"><span style=\"background-color:transparent;font-family:Poppins;\">During the program, you will find an extensive display of innovative products &amp; equipment of all the major brands complete with product guides and dealer guides that are up-to-date with market trends, economically viable, and safe for the patients. With the ever-updated list of cosmetology procedures, you will be trained with the latest advances in cosmetology with the best and most renowned names in the industry.</span></p><p style=\"margin-left:0px;\">&nbsp;</p><p style=\"margin-left:0px;\"><span style=\"background-color:transparent;font-family:Poppins;\">Module 3 will be completely dedicated to getting one-on-one business mentoring &amp; patient acquisition sessions in all aspects of the practice. This will help you in understanding your roads blocks and stabilizing your practice. Being a fellow gives you an added privilege to join us again for Module 4. Here you will perform Hands-on training for your identified areas of weakness. With this complete program, we ensure that your practice is a roaring success. And we secure your journey with our lifetime mentor-ship and support.</span></p>",
@@ -257,56 +257,7 @@
             "data": {
               "id": 25,
               "attributes": {
-                "name": "14-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 751,
-                "height": 536,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_14-copy-1.jpg",
-                    "hash": "thumbnail_14_copy_1_417458cd07",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 218,
-                    "height": 156,
-                    "size": 11.01,
-                    "url": "/uploads/thumbnail_14_copy_1_417458cd07.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_14-copy-1.jpg",
-                    "hash": "medium_14_copy_1_417458cd07",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 535,
-                    "size": 65.41,
-                    "url": "/uploads/medium_14_copy_1_417458cd07.jpg"
-                  },
-                  "small": {
-                    "name": "small_14-copy-1.jpg",
-                    "hash": "small_14_copy_1_417458cd07",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 357,
-                    "size": 37.92,
-                    "url": "/uploads/small_14_copy_1_417458cd07.jpg"
-                  }
-                },
-                "hash": "14_copy_1_417458cd07",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 64.53,
-                "url": "/uploads/14_copy_1_417458cd07.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:06.180Z",
-                "updatedAt": "2022-12-23T14:52:06.180Z"
+                "name": "14-copy-1.jpg"
               }
             }
           }
@@ -319,67 +270,7 @@
             "data": {
               "id": 28,
               "attributes": {
-                "name": "20-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1080,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_20-copy-1.jpg",
-                    "hash": "thumbnail_20_copy_1_b9a4a33882",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 245,
-                    "height": 138,
-                    "size": 8.07,
-                    "url": "/uploads/thumbnail_20_copy_1_b9a4a33882.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_20-copy-1.jpg",
-                    "hash": "medium_20_copy_1_b9a4a33882",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 422,
-                    "size": 49.05,
-                    "url": "/uploads/medium_20_copy_1_b9a4a33882.jpg"
-                  },
-                  "small": {
-                    "name": "small_20-copy-1.jpg",
-                    "hash": "small_20_copy_1_b9a4a33882",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 281,
-                    "size": 25.58,
-                    "url": "/uploads/small_20_copy_1_b9a4a33882.jpg"
-                  },
-                  "large": {
-                    "name": "large_20-copy-1.jpg",
-                    "hash": "large_20_copy_1_b9a4a33882",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 563,
-                    "size": 78,
-                    "url": "/uploads/large_20_copy_1_b9a4a33882.jpg"
-                  }
-                },
-                "hash": "20_copy_1_b9a4a33882",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 207.83,
-                "url": "/uploads/20_copy_1_b9a4a33882.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:06.977Z",
-                "updatedAt": "2022-12-23T14:52:06.977Z"
+                "name": "20-copy-1.jpg"
               }
             }
           }
@@ -392,56 +283,7 @@
             "data": {
               "id": 26,
               "attributes": {
-                "name": "19-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 823,
-                "height": 566,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_19-copy-1.jpg",
-                    "hash": "thumbnail_19_copy_1_a1d645118c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 227,
-                    "height": 156,
-                    "size": 5.33,
-                    "url": "/uploads/thumbnail_19_copy_1_a1d645118c.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_19-copy-1.jpg",
-                    "hash": "medium_19_copy_1_a1d645118c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 516,
-                    "size": 40.78,
-                    "url": "/uploads/medium_19_copy_1_a1d645118c.jpg"
-                  },
-                  "small": {
-                    "name": "small_19-copy-1.jpg",
-                    "hash": "small_19_copy_1_a1d645118c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 344,
-                    "size": 20.76,
-                    "url": "/uploads/small_19_copy_1_a1d645118c.jpg"
-                  }
-                },
-                "hash": "19_copy_1_a1d645118c",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 46.83,
-                "url": "/uploads/19_copy_1_a1d645118c.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:06.292Z",
-                "updatedAt": "2022-12-23T14:52:06.292Z"
+                "name": "19-copy-1.jpg"
               }
             }
           }
@@ -454,67 +296,7 @@
             "data": {
               "id": 29,
               "attributes": {
-                "name": "17-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1889,
-                "height": 1407,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_17-copy.jpg",
-                    "hash": "thumbnail_17_copy_b44e62f156",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 210,
-                    "height": 156,
-                    "size": 9.07,
-                    "url": "/uploads/thumbnail_17_copy_b44e62f156.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_17-copy.jpg",
-                    "hash": "medium_17_copy_b44e62f156",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 559,
-                    "size": 64.26,
-                    "url": "/uploads/medium_17_copy_b44e62f156.jpg"
-                  },
-                  "small": {
-                    "name": "small_17-copy.jpg",
-                    "hash": "small_17_copy_b44e62f156",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 372,
-                    "size": 35.02,
-                    "url": "/uploads/small_17_copy_b44e62f156.jpg"
-                  },
-                  "large": {
-                    "name": "large_17-copy.jpg",
-                    "hash": "large_17_copy_b44e62f156",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 745,
-                    "size": 100.17,
-                    "url": "/uploads/large_17_copy_b44e62f156.jpg"
-                  }
-                },
-                "hash": "17_copy_b44e62f156",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 290.43,
-                "url": "/uploads/17_copy_b44e62f156.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:06.994Z",
-                "updatedAt": "2022-12-23T14:52:06.994Z"
+                "name": "17-copy.jpg"
               }
             }
           }
@@ -527,67 +309,7 @@
             "data": {
               "id": 27,
               "attributes": {
-                "name": "16-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1748,
-                "height": 1357,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_16-copy.jpg",
-                    "hash": "thumbnail_16_copy_36e98a3036",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 201,
-                    "height": 156,
-                    "size": 8.3,
-                    "url": "/uploads/thumbnail_16_copy_36e98a3036.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_16-copy.jpg",
-                    "hash": "medium_16_copy_36e98a3036",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 582,
-                    "size": 59.08,
-                    "url": "/uploads/medium_16_copy_36e98a3036.jpg"
-                  },
-                  "small": {
-                    "name": "small_16-copy.jpg",
-                    "hash": "small_16_copy_36e98a3036",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 388,
-                    "size": 31.53,
-                    "url": "/uploads/small_16_copy_36e98a3036.jpg"
-                  },
-                  "large": {
-                    "name": "large_16-copy.jpg",
-                    "hash": "large_16_copy_36e98a3036",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 776,
-                    "size": 94.06,
-                    "url": "/uploads/large_16_copy_36e98a3036.jpg"
-                  }
-                },
-                "hash": "16_copy_36e98a3036",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 251.62,
-                "url": "/uploads/16_copy_36e98a3036.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:06.973Z",
-                "updatedAt": "2022-12-23T14:52:06.973Z"
+                "name": "16-copy.jpg"
               }
             }
           }
@@ -600,67 +322,7 @@
             "data": {
               "id": 24,
               "attributes": {
-                "name": "15-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1293,
-                "height": 866,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_15-copy.jpg",
-                    "hash": "thumbnail_15_copy_c3d425ba12",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 233,
-                    "height": 156,
-                    "size": 8.65,
-                    "url": "/uploads/thumbnail_15_copy_c3d425ba12.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_15-copy.jpg",
-                    "hash": "medium_15_copy_c3d425ba12",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 502,
-                    "size": 52.97,
-                    "url": "/uploads/medium_15_copy_c3d425ba12.jpg"
-                  },
-                  "small": {
-                    "name": "small_15-copy.jpg",
-                    "hash": "small_15_copy_c3d425ba12",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 335,
-                    "size": 27.7,
-                    "url": "/uploads/small_15_copy_c3d425ba12.jpg"
-                  },
-                  "large": {
-                    "name": "large_15-copy.jpg",
-                    "hash": "large_15_copy_c3d425ba12",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 670,
-                    "size": 85.47,
-                    "url": "/uploads/large_15_copy_c3d425ba12.jpg"
-                  }
-                },
-                "hash": "15_copy_c3d425ba12",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 135.79,
-                "url": "/uploads/15_copy_c3d425ba12.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:52:05.625Z",
-                "updatedAt": "2022-12-23T14:52:05.625Z"
+                "name": "15-copy.jpg"
               }
             }
           }
@@ -685,67 +347,7 @@
         "data": {
           "id": 30,
           "attributes": {
-            "name": "DSC01691 (1).jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 1230,
-            "height": 1920,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_DSC01691 (1).jpg",
-                "hash": "thumbnail_DSC_01691_1_02c8a68c51",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 99,
-                "height": 156,
-                "size": 4.86,
-                "url": "/uploads/thumbnail_DSC_01691_1_02c8a68c51.jpg"
-              },
-              "small": {
-                "name": "small_DSC01691 (1).jpg",
-                "hash": "small_DSC_01691_1_02c8a68c51",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 320,
-                "height": 500,
-                "size": 31.01,
-                "url": "/uploads/small_DSC_01691_1_02c8a68c51.jpg"
-              },
-              "medium": {
-                "name": "medium_DSC01691 (1).jpg",
-                "hash": "medium_DSC_01691_1_02c8a68c51",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 480,
-                "height": 750,
-                "size": 60.31,
-                "url": "/uploads/medium_DSC_01691_1_02c8a68c51.jpg"
-              },
-              "large": {
-                "name": "large_DSC01691 (1).jpg",
-                "hash": "large_DSC_01691_1_02c8a68c51",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 641,
-                "height": 1000,
-                "size": 96.8,
-                "url": "/uploads/large_DSC_01691_1_02c8a68c51.jpg"
-              }
-            },
-            "hash": "DSC_01691_1_02c8a68c51",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 282.33,
-            "url": "/uploads/DSC_01691_1_02c8a68c51.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T14:56:48.631Z",
-            "updatedAt": "2022-12-23T14:56:48.631Z"
+            "name": "DSC01691.jpg"
           }
         }
       },
@@ -753,67 +355,7 @@
         "data": {
           "id": 31,
           "attributes": {
-            "name": "group-image (1).jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 1700,
-            "height": 943,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_group-image (1).jpg",
-                "hash": "thumbnail_group_image_1_8cff3df232",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 245,
-                "height": 135,
-                "size": 12.33,
-                "url": "/uploads/thumbnail_group_image_1_8cff3df232.jpg"
-              },
-              "small": {
-                "name": "small_group-image (1).jpg",
-                "hash": "small_group_image_1_8cff3df232",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 500,
-                "height": 277,
-                "size": 40.08,
-                "url": "/uploads/small_group_image_1_8cff3df232.jpg"
-              },
-              "large": {
-                "name": "large_group-image (1).jpg",
-                "hash": "large_group_image_1_8cff3df232",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 1000,
-                "height": 555,
-                "size": 127.61,
-                "url": "/uploads/large_group_image_1_8cff3df232.jpg"
-              },
-              "medium": {
-                "name": "medium_group-image (1).jpg",
-                "hash": "medium_group_image_1_8cff3df232",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 750,
-                "height": 416,
-                "size": 78.42,
-                "url": "/uploads/medium_group_image_1_8cff3df232.jpg"
-              }
-            },
-            "hash": "group_image_1_8cff3df232",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 323.08,
-            "url": "/uploads/group_image_1_8cff3df232.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T14:58:47.419Z",
-            "updatedAt": "2022-12-23T14:58:47.419Z"
+            "name": "35.jpg"
           }
         }
       },
@@ -838,56 +380,7 @@
             "data": {
               "id": 40,
               "attributes": {
-                "name": "21-c.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 717,
-                "height": 979,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_21-c.jpg",
-                    "hash": "thumbnail_21_c_f28b0b4939",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 114,
-                    "height": 156,
-                    "size": 4.95,
-                    "url": "/uploads/thumbnail_21_c_f28b0b4939.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_21-c.jpg",
-                    "hash": "medium_21_c_f28b0b4939",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 549,
-                    "height": 750,
-                    "size": 62.61,
-                    "url": "/uploads/medium_21_c_f28b0b4939.jpg"
-                  },
-                  "small": {
-                    "name": "small_21-c.jpg",
-                    "hash": "small_21_c_f28b0b4939",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 366,
-                    "height": 500,
-                    "size": 30.47,
-                    "url": "/uploads/small_21_c_f28b0b4939.jpg"
-                  }
-                },
-                "hash": "21_c_f28b0b4939",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 104.2,
-                "url": "/uploads/21_c_f28b0b4939.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:59.286Z",
-                "updatedAt": "2022-12-27T15:20:35.365Z"
+                "name": "21-c.jpg"
               }
             }
           }
@@ -900,45 +393,7 @@
             "data": {
               "id": 38,
               "attributes": {
-                "name": "16-cop.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 541,
-                "height": 336,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_16-cop.jpg",
-                    "hash": "thumbnail_16_cop_3d5a9c3cef",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 245,
-                    "height": 152,
-                    "size": 8.48,
-                    "url": "/uploads/thumbnail_16_cop_3d5a9c3cef.jpg"
-                  },
-                  "small": {
-                    "name": "small_16-cop.jpg",
-                    "hash": "small_16_cop_3d5a9c3cef",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 311,
-                    "size": 33.37,
-                    "url": "/uploads/small_16_cop_3d5a9c3cef.jpg"
-                  }
-                },
-                "hash": "16_cop_3d5a9c3cef",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 38.11,
-                "url": "/uploads/16_cop_3d5a9c3cef.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:59.181Z",
-                "updatedAt": "2022-12-23T14:59:59.181Z"
+                "name": "16-cop.jpg"
               }
             }
           }
@@ -951,56 +406,7 @@
             "data": {
               "id": 39,
               "attributes": {
-                "name": "17-cop.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 821,
-                "height": 496,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_17-cop.jpg",
-                    "hash": "thumbnail_17_cop_745b8e3fad",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 245,
-                    "height": 148,
-                    "size": 7.05,
-                    "url": "/uploads/thumbnail_17_cop_745b8e3fad.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_17-cop.jpg",
-                    "hash": "medium_17_cop_745b8e3fad",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 453,
-                    "size": 44.48,
-                    "url": "/uploads/medium_17_cop_745b8e3fad.jpg"
-                  },
-                  "small": {
-                    "name": "small_17-cop.jpg",
-                    "hash": "small_17_cop_745b8e3fad",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 302,
-                    "size": 21.9,
-                    "url": "/uploads/small_17_cop_745b8e3fad.jpg"
-                  }
-                },
-                "hash": "17_cop_745b8e3fad",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 53.06,
-                "url": "/uploads/17_cop_745b8e3fad.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:59.207Z",
-                "updatedAt": "2022-12-23T14:59:59.207Z"
+                "name": "17-cop.jpg"
               }
             }
           }
@@ -1013,56 +419,7 @@
             "data": {
               "id": 34,
               "attributes": {
-                "name": "19-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 813,
-                "height": 666,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_19-copy.jpg",
-                    "hash": "thumbnail_19_copy_d510ec520e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 190,
-                    "height": 156,
-                    "size": 8.01,
-                    "url": "/uploads/thumbnail_19_copy_d510ec520e.jpg"
-                  },
-                  "small": {
-                    "name": "small_19-copy.jpg",
-                    "hash": "small_19_copy_d510ec520e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 410,
-                    "size": 35.78,
-                    "url": "/uploads/small_19_copy_d510ec520e.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_19-copy.jpg",
-                    "hash": "medium_19_copy_d510ec520e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 614,
-                    "size": 66.61,
-                    "url": "/uploads/medium_19_copy_d510ec520e.jpg"
-                  }
-                },
-                "hash": "19_copy_d510ec520e",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 77.54,
-                "url": "/uploads/19_copy_d510ec520e.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:58.417Z",
-                "updatedAt": "2022-12-23T14:59:58.417Z"
+                "name": "19-copy.jpg"
               }
             }
           }
@@ -1075,67 +432,7 @@
             "data": {
               "id": 35,
               "attributes": {
-                "name": "23-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1275,
-                "height": 832,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_23-copy.jpg",
-                    "hash": "thumbnail_23_copy_bb0b8d0017",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 239,
-                    "height": 156,
-                    "size": 10.4,
-                    "url": "/uploads/thumbnail_23_copy_bb0b8d0017.jpg"
-                  },
-                  "small": {
-                    "name": "small_23-copy.jpg",
-                    "hash": "small_23_copy_bb0b8d0017",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 326,
-                    "size": 34.61,
-                    "url": "/uploads/small_23_copy_bb0b8d0017.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_23-copy.jpg",
-                    "hash": "medium_23_copy_bb0b8d0017",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 489,
-                    "size": 66.5,
-                    "url": "/uploads/medium_23_copy_bb0b8d0017.jpg"
-                  },
-                  "large": {
-                    "name": "large_23-copy.jpg",
-                    "hash": "large_23_copy_bb0b8d0017",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 653,
-                    "size": 107.61,
-                    "url": "/uploads/large_23_copy_bb0b8d0017.jpg"
-                  }
-                },
-                "hash": "23_copy_bb0b8d0017",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 166.33,
-                "url": "/uploads/23_copy_bb0b8d0017.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:58.507Z",
-                "updatedAt": "2022-12-23T14:59:58.507Z"
+                "name": "23-copy.jpg"
               }
             }
           }
@@ -1148,67 +445,7 @@
             "data": {
               "id": 36,
               "attributes": {
-                "name": "24-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1311,
-                "height": 864,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_24-copy.jpg",
-                    "hash": "thumbnail_24_copy_dd87311c26",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 236,
-                    "height": 156,
-                    "size": 9.48,
-                    "url": "/uploads/thumbnail_24_copy_dd87311c26.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_24-copy.jpg",
-                    "hash": "medium_24_copy_dd87311c26",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 494,
-                    "size": 58.03,
-                    "url": "/uploads/medium_24_copy_dd87311c26.jpg"
-                  },
-                  "small": {
-                    "name": "small_24-copy.jpg",
-                    "hash": "small_24_copy_dd87311c26",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 330,
-                    "size": 30.34,
-                    "url": "/uploads/small_24_copy_dd87311c26.jpg"
-                  },
-                  "large": {
-                    "name": "large_24-copy.jpg",
-                    "hash": "large_24_copy_dd87311c26",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 659,
-                    "size": 96.97,
-                    "url": "/uploads/large_24_copy_dd87311c26.jpg"
-                  }
-                },
-                "hash": "24_copy_dd87311c26",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 160.96,
-                "url": "/uploads/24_copy_dd87311c26.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:58.512Z",
-                "updatedAt": "2022-12-27T15:23:19.677Z"
+                "name": "24-copy.jpg"
               }
             }
           }
@@ -1221,56 +458,7 @@
             "data": {
               "id": 33,
               "attributes": {
-                "name": "26-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 925,
-                "height": 617,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_26-copy.jpg",
-                    "hash": "thumbnail_26_copy_08c1746158",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 8.13,
-                    "url": "/uploads/thumbnail_26_copy_08c1746158.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_26-copy.jpg",
-                    "hash": "medium_26_copy_08c1746158",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 46.41,
-                    "url": "/uploads/medium_26_copy_08c1746158.jpg"
-                  },
-                  "small": {
-                    "name": "small_26-copy.jpg",
-                    "hash": "small_26_copy_08c1746158",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 334,
-                    "size": 24.94,
-                    "url": "/uploads/small_26_copy_08c1746158.jpg"
-                  }
-                },
-                "hash": "26_copy_08c1746158",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 66.52,
-                "url": "/uploads/26_copy_08c1746158.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:58.018Z",
-                "updatedAt": "2022-12-23T14:59:58.018Z"
+                "name": "26-copy.jpg"
               }
             }
           }
@@ -1283,67 +471,7 @@
             "data": {
               "id": 37,
               "attributes": {
-                "name": "29-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1036,
-                "height": 891,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_29-copy.jpg",
-                    "hash": "thumbnail_29_copy_1184420f0c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 182,
-                    "height": 156,
-                    "size": 7.36,
-                    "url": "/uploads/thumbnail_29_copy_1184420f0c.jpg"
-                  },
-                  "small": {
-                    "name": "small_29-copy.jpg",
-                    "hash": "small_29_copy_1184420f0c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 430,
-                    "size": 37.76,
-                    "url": "/uploads/small_29_copy_1184420f0c.jpg"
-                  },
-                  "large": {
-                    "name": "large_29-copy.jpg",
-                    "hash": "large_29_copy_1184420f0c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 860,
-                    "size": 118.02,
-                    "url": "/uploads/large_29_copy_1184420f0c.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_29-copy.jpg",
-                    "hash": "medium_29_copy_1184420f0c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 645,
-                    "size": 74.28,
-                    "url": "/uploads/medium_29_copy_1184420f0c.jpg"
-                  }
-                },
-                "hash": "29_copy_1184420f0c",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 123.8,
-                "url": "/uploads/29_copy_1184420f0c.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:58.503Z",
-                "updatedAt": "2022-12-23T14:59:58.503Z"
+                "name": "29-copy.jpg"
               }
             }
           }
@@ -1356,45 +484,7 @@
             "data": {
               "id": 32,
               "attributes": {
-                "name": "27-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 649,
-                "height": 561,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_27-copy.jpg",
-                    "hash": "thumbnail_27_copy_972f16915d",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 181,
-                    "height": 156,
-                    "size": 7.31,
-                    "url": "/uploads/thumbnail_27_copy_972f16915d.jpg"
-                  },
-                  "small": {
-                    "name": "small_27-copy.jpg",
-                    "hash": "small_27_copy_972f16915d",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 432,
-                    "size": 35.79,
-                    "url": "/uploads/small_27_copy_972f16915d.jpg"
-                  }
-                },
-                "hash": "27_copy_972f16915d",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 52.85,
-                "url": "/uploads/27_copy_972f16915d.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T14:59:57.875Z",
-                "updatedAt": "2022-12-23T14:59:57.875Z"
+                "name": "27-copy.jpg"
               }
             }
           }
@@ -1419,67 +509,7 @@
         "data": {
           "id": 22,
           "attributes": {
-            "name": "23-copy-1.jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 752,
-            "height": 1127,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_23-copy-1.jpg",
-                "hash": "thumbnail_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 104,
-                "height": 156,
-                "size": 4.75,
-                "url": "/uploads/thumbnail_23_copy_1_f3f0a52c96.jpg"
-              },
-              "large": {
-                "name": "large_23-copy-1.jpg",
-                "hash": "large_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 667,
-                "height": 1000,
-                "size": 114.6,
-                "url": "/uploads/large_23_copy_1_f3f0a52c96.jpg"
-              },
-              "small": {
-                "name": "small_23-copy-1.jpg",
-                "hash": "small_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 334,
-                "height": 500,
-                "size": 32.61,
-                "url": "/uploads/small_23_copy_1_f3f0a52c96.jpg"
-              },
-              "medium": {
-                "name": "medium_23-copy-1.jpg",
-                "hash": "medium_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 500,
-                "height": 750,
-                "size": 67.21,
-                "url": "/uploads/medium_23_copy_1_f3f0a52c96.jpg"
-              }
-            },
-            "hash": "23_copy_1_f3f0a52c96",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 144.54,
-            "url": "/uploads/23_copy_1_f3f0a52c96.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T14:44:23.329Z",
-            "updatedAt": "2023-01-12T10:08:39.976Z"
+            "name": "23-copy-1.jpg"
           }
         }
       },
@@ -1487,67 +517,7 @@
         "data": {
           "id": 47,
           "attributes": {
-            "name": "10.jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 1920,
-            "height": 1081,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_10.jpg",
-                "hash": "thumbnail_10_5f1a216f60",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 245,
-                "height": 138,
-                "size": 10.47,
-                "url": "/uploads/thumbnail_10_5f1a216f60.jpg"
-              },
-              "small": {
-                "name": "small_10.jpg",
-                "hash": "small_10_5f1a216f60",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 500,
-                "height": 281,
-                "size": 33.93,
-                "url": "/uploads/small_10_5f1a216f60.jpg"
-              },
-              "large": {
-                "name": "large_10.jpg",
-                "hash": "large_10_5f1a216f60",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 1000,
-                "height": 563,
-                "size": 110.4,
-                "url": "/uploads/large_10_5f1a216f60.jpg"
-              },
-              "medium": {
-                "name": "medium_10.jpg",
-                "hash": "medium_10_5f1a216f60",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 750,
-                "height": 422,
-                "size": 67.16,
-                "url": "/uploads/medium_10_5f1a216f60.jpg"
-              }
-            },
-            "hash": "10_5f1a216f60",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 332.74,
-            "url": "/uploads/10_5f1a216f60.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T15:06:34.570Z",
-            "updatedAt": "2022-12-23T15:06:34.570Z"
+            "name": "10.jpg"
           }
         }
       },
@@ -1572,56 +542,7 @@
             "data": {
               "id": 42,
               "attributes": {
-                "name": "14-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 751,
-                "height": 536,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_14-copy-1.jpg",
-                    "hash": "thumbnail_14_copy_1_cfb4ecac69",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 218,
-                    "height": 156,
-                    "size": 11.01,
-                    "url": "/uploads/thumbnail_14_copy_1_cfb4ecac69.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_14-copy-1.jpg",
-                    "hash": "medium_14_copy_1_cfb4ecac69",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 535,
-                    "size": 65.41,
-                    "url": "/uploads/medium_14_copy_1_cfb4ecac69.jpg"
-                  },
-                  "small": {
-                    "name": "small_14-copy-1.jpg",
-                    "hash": "small_14_copy_1_cfb4ecac69",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 357,
-                    "size": 37.92,
-                    "url": "/uploads/small_14_copy_1_cfb4ecac69.jpg"
-                  }
-                },
-                "hash": "14_copy_1_cfb4ecac69",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 64.53,
-                "url": "/uploads/14_copy_1_cfb4ecac69.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:33.821Z",
-                "updatedAt": "2022-12-23T15:06:33.821Z"
+                "name": "14-copy-1.jpg"
               }
             }
           }
@@ -1634,67 +555,7 @@
             "data": {
               "id": 46,
               "attributes": {
-                "name": "20-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1080,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_20-copy-1.jpg",
-                    "hash": "thumbnail_20_copy_1_fe65f69219",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 245,
-                    "height": 138,
-                    "size": 8.07,
-                    "url": "/uploads/thumbnail_20_copy_1_fe65f69219.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_20-copy-1.jpg",
-                    "hash": "medium_20_copy_1_fe65f69219",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 422,
-                    "size": 49.05,
-                    "url": "/uploads/medium_20_copy_1_fe65f69219.jpg"
-                  },
-                  "small": {
-                    "name": "small_20-copy-1.jpg",
-                    "hash": "small_20_copy_1_fe65f69219",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 281,
-                    "size": 25.58,
-                    "url": "/uploads/small_20_copy_1_fe65f69219.jpg"
-                  },
-                  "large": {
-                    "name": "large_20-copy-1.jpg",
-                    "hash": "large_20_copy_1_fe65f69219",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 563,
-                    "size": 78,
-                    "url": "/uploads/large_20_copy_1_fe65f69219.jpg"
-                  }
-                },
-                "hash": "20_copy_1_fe65f69219",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 207.83,
-                "url": "/uploads/20_copy_1_fe65f69219.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:34.566Z",
-                "updatedAt": "2022-12-23T15:06:34.566Z"
+                "name": "20-copy-1.jpg"
               }
             }
           }
@@ -1707,56 +568,7 @@
             "data": {
               "id": 43,
               "attributes": {
-                "name": "19-copy-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 823,
-                "height": 566,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_19-copy-1.jpg",
-                    "hash": "thumbnail_19_copy_1_176901933d",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 227,
-                    "height": 156,
-                    "size": 5.33,
-                    "url": "/uploads/thumbnail_19_copy_1_176901933d.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_19-copy-1.jpg",
-                    "hash": "medium_19_copy_1_176901933d",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 516,
-                    "size": 40.78,
-                    "url": "/uploads/medium_19_copy_1_176901933d.jpg"
-                  },
-                  "small": {
-                    "name": "small_19-copy-1.jpg",
-                    "hash": "small_19_copy_1_176901933d",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 344,
-                    "size": 20.76,
-                    "url": "/uploads/small_19_copy_1_176901933d.jpg"
-                  }
-                },
-                "hash": "19_copy_1_176901933d",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 46.83,
-                "url": "/uploads/19_copy_1_176901933d.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:33.826Z",
-                "updatedAt": "2022-12-23T15:06:33.826Z"
+                "name": "19-copy-1.jpg"
               }
             }
           }
@@ -1769,67 +581,7 @@
             "data": {
               "id": 45,
               "attributes": {
-                "name": "17-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1889,
-                "height": 1407,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_17-copy.jpg",
-                    "hash": "thumbnail_17_copy_38fbb2b6a6",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 210,
-                    "height": 156,
-                    "size": 9.07,
-                    "url": "/uploads/thumbnail_17_copy_38fbb2b6a6.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_17-copy.jpg",
-                    "hash": "medium_17_copy_38fbb2b6a6",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 559,
-                    "size": 64.26,
-                    "url": "/uploads/medium_17_copy_38fbb2b6a6.jpg"
-                  },
-                  "small": {
-                    "name": "small_17-copy.jpg",
-                    "hash": "small_17_copy_38fbb2b6a6",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 372,
-                    "size": 35.02,
-                    "url": "/uploads/small_17_copy_38fbb2b6a6.jpg"
-                  },
-                  "large": {
-                    "name": "large_17-copy.jpg",
-                    "hash": "large_17_copy_38fbb2b6a6",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 745,
-                    "size": 100.17,
-                    "url": "/uploads/large_17_copy_38fbb2b6a6.jpg"
-                  }
-                },
-                "hash": "17_copy_38fbb2b6a6",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 290.43,
-                "url": "/uploads/17_copy_38fbb2b6a6.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:34.284Z",
-                "updatedAt": "2022-12-23T15:06:34.284Z"
+                "name": "17-copy.jpg"
               }
             }
           }
@@ -1842,67 +594,7 @@
             "data": {
               "id": 44,
               "attributes": {
-                "name": "16-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1748,
-                "height": 1357,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_16-copy.jpg",
-                    "hash": "thumbnail_16_copy_580f2bb4f4",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 201,
-                    "height": 156,
-                    "size": 8.3,
-                    "url": "/uploads/thumbnail_16_copy_580f2bb4f4.jpg"
-                  },
-                  "large": {
-                    "name": "large_16-copy.jpg",
-                    "hash": "large_16_copy_580f2bb4f4",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 776,
-                    "size": 94.06,
-                    "url": "/uploads/large_16_copy_580f2bb4f4.jpg"
-                  },
-                  "small": {
-                    "name": "small_16-copy.jpg",
-                    "hash": "small_16_copy_580f2bb4f4",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 388,
-                    "size": 31.53,
-                    "url": "/uploads/small_16_copy_580f2bb4f4.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_16-copy.jpg",
-                    "hash": "medium_16_copy_580f2bb4f4",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 582,
-                    "size": 59.08,
-                    "url": "/uploads/medium_16_copy_580f2bb4f4.jpg"
-                  }
-                },
-                "hash": "16_copy_580f2bb4f4",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 251.62,
-                "url": "/uploads/16_copy_580f2bb4f4.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:34.263Z",
-                "updatedAt": "2022-12-23T15:06:34.263Z"
+                "name": "16-copy.jpg"
               }
             }
           }
@@ -1915,67 +607,7 @@
             "data": {
               "id": 41,
               "attributes": {
-                "name": "15-copy.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1293,
-                "height": 866,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_15-copy.jpg",
-                    "hash": "thumbnail_15_copy_7320aa2b7c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 233,
-                    "height": 156,
-                    "size": 8.65,
-                    "url": "/uploads/thumbnail_15_copy_7320aa2b7c.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_15-copy.jpg",
-                    "hash": "medium_15_copy_7320aa2b7c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 502,
-                    "size": 52.97,
-                    "url": "/uploads/medium_15_copy_7320aa2b7c.jpg"
-                  },
-                  "small": {
-                    "name": "small_15-copy.jpg",
-                    "hash": "small_15_copy_7320aa2b7c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 335,
-                    "size": 27.7,
-                    "url": "/uploads/small_15_copy_7320aa2b7c.jpg"
-                  },
-                  "large": {
-                    "name": "large_15-copy.jpg",
-                    "hash": "large_15_copy_7320aa2b7c",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 670,
-                    "size": 85.47,
-                    "url": "/uploads/large_15_copy_7320aa2b7c.jpg"
-                  }
-                },
-                "hash": "15_copy_7320aa2b7c",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 135.79,
-                "url": "/uploads/15_copy_7320aa2b7c.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:06:32.902Z",
-                "updatedAt": "2022-12-23T15:06:32.902Z"
+                "name": "15-copy.jpg"
               }
             }
           }
@@ -2000,67 +632,7 @@
         "data": {
           "id": 22,
           "attributes": {
-            "name": "23-copy-1.jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 752,
-            "height": 1127,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_23-copy-1.jpg",
-                "hash": "thumbnail_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 104,
-                "height": 156,
-                "size": 4.75,
-                "url": "/uploads/thumbnail_23_copy_1_f3f0a52c96.jpg"
-              },
-              "large": {
-                "name": "large_23-copy-1.jpg",
-                "hash": "large_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 667,
-                "height": 1000,
-                "size": 114.6,
-                "url": "/uploads/large_23_copy_1_f3f0a52c96.jpg"
-              },
-              "small": {
-                "name": "small_23-copy-1.jpg",
-                "hash": "small_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 334,
-                "height": 500,
-                "size": 32.61,
-                "url": "/uploads/small_23_copy_1_f3f0a52c96.jpg"
-              },
-              "medium": {
-                "name": "medium_23-copy-1.jpg",
-                "hash": "medium_23_copy_1_f3f0a52c96",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 500,
-                "height": 750,
-                "size": 67.21,
-                "url": "/uploads/medium_23_copy_1_f3f0a52c96.jpg"
-              }
-            },
-            "hash": "23_copy_1_f3f0a52c96",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 144.54,
-            "url": "/uploads/23_copy_1_f3f0a52c96.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T14:44:23.329Z",
-            "updatedAt": "2023-01-12T10:08:39.976Z"
+            "name": "28.jpg"
           }
         }
       },
@@ -2068,67 +640,7 @@
         "data": {
           "id": 48,
           "attributes": {
-            "name": "40.jpg",
-            "alternativeText": null,
-            "caption": null,
-            "width": 1920,
-            "height": 920,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_40.jpg",
-                "hash": "thumbnail_40_d607ef2d82",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 245,
-                "height": 117,
-                "size": 9.71,
-                "url": "/uploads/thumbnail_40_d607ef2d82.jpg"
-              },
-              "medium": {
-                "name": "medium_40.jpg",
-                "hash": "medium_40_d607ef2d82",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 750,
-                "height": 359,
-                "size": 58.48,
-                "url": "/uploads/medium_40_d607ef2d82.jpg"
-              },
-              "small": {
-                "name": "small_40.jpg",
-                "hash": "small_40_d607ef2d82",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 500,
-                "height": 240,
-                "size": 30.53,
-                "url": "/uploads/small_40_d607ef2d82.jpg"
-              },
-              "large": {
-                "name": "large_40.jpg",
-                "hash": "large_40_d607ef2d82",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 1000,
-                "height": 479,
-                "size": 91.68,
-                "url": "/uploads/large_40_d607ef2d82.jpg"
-              }
-            },
-            "hash": "40_d607ef2d82",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "size": 260.02,
-            "url": "/uploads/40_d607ef2d82.jpg",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2022-12-23T15:15:34.450Z",
-            "updatedAt": "2022-12-23T15:15:34.450Z"
+            "name": "40.jpg"
           }
         }
       },
@@ -2153,67 +665,7 @@
             "data": {
               "id": 56,
               "attributes": {
-                "name": "20.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1305,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_20.jpg",
-                    "hash": "thumbnail_20_7b209fe847",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 230,
-                    "height": 156,
-                    "size": 10.37,
-                    "url": "/uploads/thumbnail_20_7b209fe847.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_20.jpg",
-                    "hash": "medium_20_7b209fe847",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 510,
-                    "size": 61.33,
-                    "url": "/uploads/medium_20_7b209fe847.jpg"
-                  },
-                  "small": {
-                    "name": "small_20.jpg",
-                    "hash": "small_20_7b209fe847",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 340,
-                    "size": 33.18,
-                    "url": "/uploads/small_20_7b209fe847.jpg"
-                  },
-                  "large": {
-                    "name": "large_20.jpg",
-                    "hash": "large_20_7b209fe847",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 680,
-                    "size": 97.01,
-                    "url": "/uploads/large_20_7b209fe847.jpg"
-                  }
-                },
-                "hash": "20_7b209fe847",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 285.23,
-                "url": "/uploads/20_7b209fe847.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:29.711Z",
-                "updatedAt": "2022-12-23T15:17:29.711Z"
+                "name": "20.jpg"
               }
             }
           }
@@ -2226,67 +678,7 @@
             "data": {
               "id": 52,
               "attributes": {
-                "name": "13.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1280,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_13.jpg",
-                    "hash": "thumbnail_13_4f45ec1145",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 10.59,
-                    "url": "/uploads/thumbnail_13_4f45ec1145.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_13.jpg",
-                    "hash": "medium_13_4f45ec1145",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 63.91,
-                    "url": "/uploads/medium_13_4f45ec1145.jpg"
-                  },
-                  "small": {
-                    "name": "small_13.jpg",
-                    "hash": "small_13_4f45ec1145",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 333,
-                    "size": 34.03,
-                    "url": "/uploads/small_13_4f45ec1145.jpg"
-                  },
-                  "large": {
-                    "name": "large_13.jpg",
-                    "hash": "large_13_4f45ec1145",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 667,
-                    "size": 100.6,
-                    "url": "/uploads/large_13_4f45ec1145.jpg"
-                  }
-                },
-                "hash": "13_4f45ec1145",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 285.82,
-                "url": "/uploads/13_4f45ec1145.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:28.465Z",
-                "updatedAt": "2022-12-23T15:17:28.465Z"
+                "name": "13.jpg"
               }
             }
           }
@@ -2299,67 +691,7 @@
             "data": {
               "id": 53,
               "attributes": {
-                "name": "15.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1734,
-                "height": 1920,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_15.jpg",
-                    "hash": "thumbnail_15_cee243427e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 140,
-                    "height": 156,
-                    "size": 5.24,
-                    "url": "/uploads/thumbnail_15_cee243427e.jpg"
-                  },
-                  "small": {
-                    "name": "small_15.jpg",
-                    "hash": "small_15_cee243427e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 452,
-                    "height": 500,
-                    "size": 34.06,
-                    "url": "/uploads/small_15_cee243427e.jpg"
-                  },
-                  "large": {
-                    "name": "large_15.jpg",
-                    "hash": "large_15_cee243427e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 903,
-                    "height": 1000,
-                    "size": 110.09,
-                    "url": "/uploads/large_15_cee243427e.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_15.jpg",
-                    "hash": "medium_15_cee243427e",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 677,
-                    "height": 750,
-                    "size": 67.32,
-                    "url": "/uploads/medium_15_cee243427e.jpg"
-                  }
-                },
-                "hash": "15_cee243427e",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 345.37,
-                "url": "/uploads/15_cee243427e.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:28.860Z",
-                "updatedAt": "2022-12-23T15:17:28.860Z"
+                "name": "15.jpg"
               }
             }
           }
@@ -2372,67 +704,7 @@
             "data": {
               "id": 57,
               "attributes": {
-                "name": "asfad.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1600,
-                "height": 1302,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_asfad.jpg",
-                    "hash": "thumbnail_asfad_4bd7d2d2f5",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 192,
-                    "height": 156,
-                    "size": 6.97,
-                    "url": "/uploads/thumbnail_asfad_4bd7d2d2f5.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_asfad.jpg",
-                    "hash": "medium_asfad_4bd7d2d2f5",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 610,
-                    "size": 54.36,
-                    "url": "/uploads/medium_asfad_4bd7d2d2f5.jpg"
-                  },
-                  "small": {
-                    "name": "small_asfad.jpg",
-                    "hash": "small_asfad_4bd7d2d2f5",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 407,
-                    "size": 29.37,
-                    "url": "/uploads/small_asfad_4bd7d2d2f5.jpg"
-                  },
-                  "large": {
-                    "name": "large_asfad.jpg",
-                    "hash": "large_asfad_4bd7d2d2f5",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 814,
-                    "size": 84.96,
-                    "url": "/uploads/large_asfad_4bd7d2d2f5.jpg"
-                  }
-                },
-                "hash": "asfad_4bd7d2d2f5",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 189.28,
-                "url": "/uploads/asfad_4bd7d2d2f5.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:30.196Z",
-                "updatedAt": "2022-12-23T15:17:30.196Z"
+                "name": "asfad.jpg"
               }
             }
           }
@@ -2445,67 +717,7 @@
             "data": {
               "id": 51,
               "attributes": {
-                "name": "16-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1280,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_16-1.jpg",
-                    "hash": "thumbnail_16_1_312ec5fc09",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 10.98,
-                    "url": "/uploads/thumbnail_16_1_312ec5fc09.jpg"
-                  },
-                  "small": {
-                    "name": "small_16-1.jpg",
-                    "hash": "small_16_1_312ec5fc09",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 333,
-                    "size": 36.85,
-                    "url": "/uploads/small_16_1_312ec5fc09.jpg"
-                  },
-                  "large": {
-                    "name": "large_16-1.jpg",
-                    "hash": "large_16_1_312ec5fc09",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 667,
-                    "size": 109.24,
-                    "url": "/uploads/large_16_1_312ec5fc09.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_16-1.jpg",
-                    "hash": "medium_16_1_312ec5fc09",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 69.79,
-                    "url": "/uploads/medium_16_1_312ec5fc09.jpg"
-                  }
-                },
-                "hash": "16_1_312ec5fc09",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 295.82,
-                "url": "/uploads/16_1_312ec5fc09.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:28.207Z",
-                "updatedAt": "2022-12-23T15:17:28.207Z"
+                "name": "16-1.jpg"
               }
             }
           }
@@ -2518,67 +730,7 @@
             "data": {
               "id": 49,
               "attributes": {
-                "name": "18-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1598,
-                "height": 1181,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_18-1.jpg",
-                    "hash": "thumbnail_18_1_fca879be68",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 211,
-                    "height": 156,
-                    "size": 6.08,
-                    "url": "/uploads/thumbnail_18_1_fca879be68.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_18-1.jpg",
-                    "hash": "medium_18_1_fca879be68",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 554,
-                    "size": 41.09,
-                    "url": "/uploads/medium_18_1_fca879be68.jpg"
-                  },
-                  "small": {
-                    "name": "small_18-1.jpg",
-                    "hash": "small_18_1_fca879be68",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 369,
-                    "size": 21.51,
-                    "url": "/uploads/small_18_1_fca879be68.jpg"
-                  },
-                  "large": {
-                    "name": "large_18-1.jpg",
-                    "hash": "large_18_1_fca879be68",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 739,
-                    "size": 67.15,
-                    "url": "/uploads/large_18_1_fca879be68.jpg"
-                  }
-                },
-                "hash": "18_1_fca879be68",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 156.8,
-                "url": "/uploads/18_1_fca879be68.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:27.733Z",
-                "updatedAt": "2022-12-23T15:17:27.733Z"
+                "name": "18-1.jpg"
               }
             }
           }
@@ -2591,67 +743,7 @@
             "data": {
               "id": 54,
               "attributes": {
-                "name": "19-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1800,
-                "height": 1200,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_19-1.jpg",
-                    "hash": "thumbnail_19_1_2e95f73782",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 8.17,
-                    "url": "/uploads/thumbnail_19_1_2e95f73782.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_19-1.jpg",
-                    "hash": "medium_19_1_2e95f73782",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 47.18,
-                    "url": "/uploads/medium_19_1_2e95f73782.jpg"
-                  },
-                  "small": {
-                    "name": "small_19-1.jpg",
-                    "hash": "small_19_1_2e95f73782",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 333,
-                    "size": 25.22,
-                    "url": "/uploads/small_19_1_2e95f73782.jpg"
-                  },
-                  "large": {
-                    "name": "large_19-1.jpg",
-                    "hash": "large_19_1_2e95f73782",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 667,
-                    "size": 74.13,
-                    "url": "/uploads/large_19_1_2e95f73782.jpg"
-                  }
-                },
-                "hash": "19_1_2e95f73782",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 187.69,
-                "url": "/uploads/19_1_2e95f73782.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:28.865Z",
-                "updatedAt": "2022-12-23T15:17:28.865Z"
+                "name": "19-1.jpg"
               }
             }
           }
@@ -2664,67 +756,7 @@
             "data": {
               "id": 55,
               "attributes": {
-                "name": "21-1.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1280,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_21-1.jpg",
-                    "hash": "thumbnail_21_1_12e9b00227",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 7.81,
-                    "url": "/uploads/thumbnail_21_1_12e9b00227.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_21-1.jpg",
-                    "hash": "medium_21_1_12e9b00227",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 51.66,
-                    "url": "/uploads/medium_21_1_12e9b00227.jpg"
-                  },
-                  "small": {
-                    "name": "small_21-1.jpg",
-                    "hash": "small_21_1_12e9b00227",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 333,
-                    "size": 26.93,
-                    "url": "/uploads/small_21_1_12e9b00227.jpg"
-                  },
-                  "large": {
-                    "name": "large_21-1.jpg",
-                    "hash": "large_21_1_12e9b00227",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 667,
-                    "size": 80.53,
-                    "url": "/uploads/large_21_1_12e9b00227.jpg"
-                  }
-                },
-                "hash": "21_1_12e9b00227",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 213.39,
-                "url": "/uploads/21_1_12e9b00227.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:29.364Z",
-                "updatedAt": "2022-12-23T15:17:29.364Z"
+                "name": "21-1.jpg"
               }
             }
           }
@@ -2737,67 +769,7 @@
             "data": {
               "id": 58,
               "attributes": {
-                "name": "22.jpg",
-                "alternativeText": null,
-                "caption": null,
-                "width": 1920,
-                "height": 1280,
-                "formats": {
-                  "thumbnail": {
-                    "name": "thumbnail_22.jpg",
-                    "hash": "thumbnail_22_103cda5c4b",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 234,
-                    "height": 156,
-                    "size": 11.48,
-                    "url": "/uploads/thumbnail_22_103cda5c4b.jpg"
-                  },
-                  "large": {
-                    "name": "large_22.jpg",
-                    "hash": "large_22_103cda5c4b",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 1000,
-                    "height": 667,
-                    "size": 139.03,
-                    "url": "/uploads/large_22_103cda5c4b.jpg"
-                  },
-                  "small": {
-                    "name": "small_22.jpg",
-                    "hash": "small_22_103cda5c4b",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 500,
-                    "height": 333,
-                    "size": 40.96,
-                    "url": "/uploads/small_22_103cda5c4b.jpg"
-                  },
-                  "medium": {
-                    "name": "medium_22.jpg",
-                    "hash": "medium_22_103cda5c4b",
-                    "ext": ".jpg",
-                    "mime": "image/jpeg",
-                    "path": null,
-                    "width": 750,
-                    "height": 500,
-                    "size": 84.61,
-                    "url": "/uploads/medium_22_103cda5c4b.jpg"
-                  }
-                },
-                "hash": "22_103cda5c4b",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "size": 409.12,
-                "url": "/uploads/22_103cda5c4b.jpg",
-                "previewUrl": null,
-                "provider": "local",
-                "provider_metadata": null,
-                "createdAt": "2022-12-23T15:17:30.212Z",
-                "updatedAt": "2022-12-23T15:17:30.212Z"
+                "name": "22.jpg"
               }
             }
           }

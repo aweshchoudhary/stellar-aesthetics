@@ -1,7 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import menu from "../Header/menu.json";
+import menu from "../../data/menu.json";
 
 const Footer = () => {
   const handleTop = () => {

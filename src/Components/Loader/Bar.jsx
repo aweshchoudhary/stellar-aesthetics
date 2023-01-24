@@ -1,5 +1,3 @@
-import React from "react";
-
 const Bar = () => {
   return (
     <div className="title-container md:py-[200px] py-10">

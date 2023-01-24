@@ -1,5 +1,3 @@
-import React from "react";
-
 const Heading = ({ text1, text2, className, brNone, white }) => {
   return (
     <h2

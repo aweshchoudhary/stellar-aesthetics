@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import useData from "../../Hooks/useContext";
+import { Img } from "../Main";
 import SearchBox from "./SearchBox";
 
 const Middlebar = () => {
@@ -10,8 +11,8 @@ const Middlebar = () => {
       <div className="middlebar flex items-center justify-between px-10 py-3 border-b ">
         <Link to="/">
           <div className="logo">
-            <img
-              src="https://stellaraesthetics.in/wp-content/uploads/2021/12/logo-177x100-1.png.webp"
+            <Img
+              src="/assets/img/logo.png"
               alt="stellar aesthetics brand logo dark"
               className="w-[120px]"
             />

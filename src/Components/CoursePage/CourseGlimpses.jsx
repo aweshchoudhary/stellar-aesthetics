@@ -1,17 +1,10 @@
 import Card from "../Main/Card";
 import Heading from "../Main/Heading";
 import Section from "../Main/Section";
-import { useParams } from "react-router-dom";
-import useFetch from "../../Hooks/useFetch";
 import Bar from "../Loader/Bar";
 
-const CourseGlimpses = () => {
-  const { name } = useParams();
-  const { data, loading } = useFetch(
-    `/cards?filters[parentComponent][$eq]=${name}&populate=*`
-  );
-
-  return data && !loading ? (
+const CourseGlimpses = ({ items }) => {
+  return items ? (
     <Section className="glimpses">
       <Heading
         text1={"Jam-Packed With"}
@@ -21,12 +14,12 @@ const CourseGlimpses = () => {
         Glimpses Of The Program
       </h2>
       <div className="flex flex-wrap my-10">
-        {data.map((item) => {
+        {items.map((item, key) => {
           return (
             <Card
-              key={item.id}
-              img={item.attributes.img.data.attributes.url}
-              title={item.attributes.title}
+              key={key}
+              img={"/assets/img/" + item.img.data.attributes.name}
+              title={item.title}
             />
           );
         })}

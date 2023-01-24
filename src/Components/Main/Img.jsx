@@ -1,9 +1,12 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const Img = ({ src, alt, caption, className, imgClass }) => {
   return (
     <figure className={className}>
-      <img
+      <motion.img
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.3 }}
         loading="lazy"
         src={src}
         alt={alt || ""}

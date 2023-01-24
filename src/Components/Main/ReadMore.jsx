@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ReadMore = ({ children }) => {
   let text = children;

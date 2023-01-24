@@ -1,12 +1,10 @@
-import React from "react";
 import useData from "../../Hooks/useContext";
-import { BASE_URL } from "../../config";
 import Img from "../Main/Img";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const CourseHero = () => {
   const { coursePage } = useData();
-
   return (
     <>
       {coursePage.attributes && (
@@ -23,25 +21,44 @@ const CourseHero = () => {
           </div>
           <div className="sticky inset-0 gap-5 md:flex-row flex-col-reverse h-full w-full flex justify-between ">
             <div className="content shrink-0 md:w-1/2 text-white">
-              <h2 className="sm:text-4xl uppercase mb-1 text-xl font-semibold">
-                {coursePage?.attributes?.type === "fellowships"
-                  ? "International Fellowship In"
-                  : "Get Internationally Certified In"}
-              </h2>
-              <h1 className="sm:text-4xl uppercase sm:px-5 py-2 px-4 w-fit bg-white text-2xl font-bold sm:font-semibold text-primary">
-                {coursePage?.attributes?.title}
+              <h1>
+                <motion.span
+                  animate={{ y: 0, opacity: 1 }}
+                  initial={{ y: -50, opacity: 0 }}
+                  className="block sm:text-4xl uppercase mb-1 text-xl font-semibold"
+                >
+                  {coursePage?.attributes?.type === "fellowships"
+                    ? "International Fellowship In"
+                    : "Get Internationally Certified In"}
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="block sm:text-4xl uppercase sm:px-5 py-2 px-4 w-fit bg-white text-2xl font-bold sm:font-semibold text-primary"
+                >
+                  {coursePage?.attributes?.title}
+                </motion.span>
               </h1>
               <br />
-              <h3 className="sm:text-2xl text-xl font-medium">
+              <motion.h2
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="overflow-hidden sm:text-2xl text-xl font-medium"
+              >
                 Extremely Insightful. Exceptionally Personal.
-              </h3>
+              </motion.h2>
               <br />
-              <div
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
                 className="list-disc md:pl-5 text-white"
                 dangerouslySetInnerHTML={{
                   __html: coursePage.attributes.shortDescription,
                 }}
-              ></div>
+              ></motion.div>
               <br />
               <a
                 href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${

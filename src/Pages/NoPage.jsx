@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Section from "../Components/Main/Section";
-import menu from "../Components/Header/menu.json";
+import menu from "../data/menu.json";
 import { Helmet } from "react-helmet";
 
 const NoPage = () => {

@@ -1,34 +1,11 @@
-import React, { useEffect, useState } from "react";
-import api from "../../Api/api";
-import { BASE_URL } from "../../config";
 import Bar from "../Loader/Bar";
 import Img from "../Main/Img";
 import useData from "../../Hooks/useContext";
 import { Icon } from "@iconify/react";
 
 const ContactCard = () => {
-  const [data, setData] = useState([]);
   const { coursePage } = useData();
-  useEffect(() => {
-    const query = [71, 72, 73, 74];
-    const controller = new AbortController();
-    query.forEach((e) => {
-      api
-        .get("/upload/files/" + e, { signal: controller.signal })
-        .then((res) => {
-          res.data &&
-            setData((prev) => {
-              return [...prev, res.data.url];
-            });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    });
-    return () => {
-      controller.abort();
-    };
-  }, []);
+  const data = ["cover-1.png", "cover-3.png", "cover-4.png", "cover-5.png"];
 
   return data ? (
     <section className="bg-primary lg:h-[400px] text-white flex justify-between md:py-0 py-10">
@@ -74,7 +51,7 @@ const ContactCard = () => {
                 <Img
                   key={i}
                   className="w-[200px] shrink-0"
-                  src={BASE_URL + item}
+                  src={"/assets/img/" + item}
                 />
               );
             })}

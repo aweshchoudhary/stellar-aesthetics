@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import menuLink from "./menu.json";
+import menuLink from "../../data/menu.json";
 
 const SearchBox = ({ setToggle }) => {
   const [data, setData] = useState([]);

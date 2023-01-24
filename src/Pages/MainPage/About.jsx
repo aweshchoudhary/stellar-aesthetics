@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 
 // Components Import
-import { PageHeader, Section, Heading } from "../../Components/Main";
+import { PageHeader, Section, Heading, Img } from "../../Components/Main";
 
 const About = () => {
   const { scrollelement } = useParams();
@@ -90,10 +90,11 @@ const About = () => {
         />
         <div className="text-white">
           <div className="md:flex gap-5">
-            <img
+            <Img
               src="https://stellaraesthetics.in/wp-content/uploads/2022/11/cropped.jpg.webp"
               alt=""
               className="h-[350px] shrink-0 md:mb-0 mb-5"
+              size={"medium"}
             />
             <p>
               The philosophy of Stellar Aesthetics is not just giving skills and

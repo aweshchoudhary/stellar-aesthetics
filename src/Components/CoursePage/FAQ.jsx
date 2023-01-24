@@ -1,10 +1,8 @@
-import React from "react";
 import { Heading, Section } from "../Main";
 import Accordion from "../Accordion/Accordion";
-import useFetch from "../../Hooks/useFetch";
+import faqs from "../../data/faq.json";
 
 const FAQ = () => {
-  const { data, loading } = useFetch("/faqs?populate=*");
   return (
     <Section>
       <Heading
@@ -13,9 +11,8 @@ const FAQ = () => {
         text2="Questions"
         brNone={true}
       />
-      {data &&
-        !loading &&
-        data.map((item) => {
+      {faqs &&
+        faqs.map((item) => {
           return (
             <Accordion heading={item.attributes.title}>
               {item.attributes.description}

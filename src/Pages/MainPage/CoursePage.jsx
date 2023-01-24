@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import useData from "../../Hooks/useContext";
-import useFetch from "../../Hooks/useFetch";
 import Bar from "../../Components/Loader/Bar";
 import { Helmet } from "react-helmet";
 import courses from "../../data/courses.json";
@@ -60,10 +59,11 @@ const CoursePage = () => {
                 ? "FELLOWSHIP IN "
                 : "CERTIFICATION IN "
             } ${coursePage.attributes.title.toUpperCase()} `}</title>
-            {coursePage.meta.map((item) => {
-              console.log(item);
-              return <meta {...item} />;
-            })}
+            {coursePage.meta &&
+              coursePage.meta.map((item) => {
+                console.log(item);
+                return <meta {...item} />;
+              })}
           </Helmet>
           <CourseHero />
           <CourseDirector />
@@ -72,7 +72,7 @@ const CoursePage = () => {
           <ContactCard />
           <CourseRoadMap />
           <ContactCard />
-          <CourseGlimpses />
+          <CourseGlimpses items={coursePage.attributes.glimpse} />
           <ContactCard />
           <Testimonials />
           <ContactCard />

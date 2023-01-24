@@ -1,9 +1,10 @@
+import { useState } from "react";
 import Bar from "../../Loader/Bar";
-import menu from "../menu.json";
+import menu from "../../../data/menu.json";
 import useData from "../../../Hooks/useContext";
 import NavItem from "./NavItem";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [openSubmenu, setOpenSubmenu] = useState(false);
@@ -15,7 +16,12 @@ const Navbar = () => {
     document.body.scrollTop = 0;
   };
   return (
-    <nav className="navbar hidden md:block z-40 bg-white border-b sticky top-0 left-0">
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="navbar hidden md:block z-40 bg-white border-b sticky top-0 left-0"
+    >
       <div className="flex items-center justify-between px-10">
         <ul className="flex items-center justify-center font-medium font-lg">
           {menu.map((item, i) => {
@@ -36,7 +42,7 @@ const Navbar = () => {
         </button>
       </div>
       {loading && <Bar />}
-    </nav>
+    </motion.nav>
   );
 };
 

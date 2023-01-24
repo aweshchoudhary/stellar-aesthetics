@@ -1,4 +1,3 @@
-import React from "react";
 import useData from "../../Hooks/useContext";
 import Heading from "../Main/Heading";
 import Section from "../Main/Section";
