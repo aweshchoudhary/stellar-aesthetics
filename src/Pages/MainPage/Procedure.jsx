@@ -8,6 +8,7 @@ import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 import procedures from "../../data/procedures.json";
 import proceduresSlider from "../../data/procedures-slider.json";
+import "../../Styles/slider.css";
 
 // Components Import
 import { Img, Section, Heading } from "../../Components/Main";

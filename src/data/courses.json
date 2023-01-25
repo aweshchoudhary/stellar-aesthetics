@@ -170,32 +170,7 @@
         }
       ]
     },
-    "meta": [
-      {
-        "name": "title",
-        "content": "Fellowship In Clinical Cosmetology | Stellar Aesthetics Course"
-      },
-      {
-        "name": "description",
-        "content": "fellowship & certification in aesthetics medicine, cosmetic dermatology, facial aesthetics, medical cosmetology, lasers, botox, fillers, threats chemical peel"
-      },
-      {
-        "name": "keywords",
-        "content": "fellowship in clinical cosmetology, aesthetics medicine, cosmetic dermatology, facial aesthetics, medical cosmetology, lasers, botox, fillers, threats chemical peel, dentist"
-      },
-      {
-        "name": "robots",
-        "content": "index, follow"
-      },
-      {
-        "http-equiv": "Content-Type",
-        "content": "text/html; charset=utf-8"
-      },
-      {
-        "name": "language",
-        "content": "English"
-      }
-    ]
+    "meta": "<meta\n  name=\"title\"\n  content=\"Fellowship In Clinical Cosmetology | Stellar Aesthetics Course\"\n/>\n<meta\n  name=\"description\"\n  content=\"fellowship &amp; certification in aesthetics medicine, cosmetic dermatology, facial aesthetics, medical cosmetology, lasers, botox, fillers, threats chemical peel\"\n/>\n<meta\n  name=\"keywords\"\n  content=\"fellowship in clinical cosmetology, aesthetics medicine, cosmetic dermatology, facial aesthetics, medical cosmetology, lasers, botox, fillers, threats chemical peel, dentist\"\n/>\n<meta name=\"robots\" content=\"index, follow\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<meta name=\"language\" content=\"English\" data-react-helmet=\"true\" />\n<meta\n  property=\"og:title\"\n  content=\"Fellowship In Clinical Cosmetology | Stellar Aesthetics Course\"\n/>\n<meta property=\"og:site_name\" content=\"Stellar Aesthetics\" />\n<meta\n  property=\"og:url\"\n  content=\"https://stellaraesthetics.in/courses/fellowship-in-clinical-cosmetology\"\n/>\n<meta\n  property=\"og:description\"\n  content=\"fellowship in clinical cosmetology, aesthetics medicine, cosmetic dermatology, facial aesthetics, medical cosmetology, lasers, botox, fillers, threats chemical peel, dentist\"\n/>\n<meta property=\"og:type\" content=\"article\" />\n\n<link\nrel=\"canonical\"\nhref=\"https://stellaraesthetics.in/courses/fellowship-in-clinical-cosmetology\"\n/>"
   },
   {
     "id": 2,

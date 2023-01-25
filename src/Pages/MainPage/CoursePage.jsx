@@ -4,6 +4,8 @@ import useData from "../../Hooks/useContext";
 import Bar from "../../Components/Loader/Bar";
 import { Helmet } from "react-helmet";
 import courses from "../../data/courses.json";
+import "../../Styles/slider.css";
+import parser from "html-react-parser";
 
 // Course Page Components Import
 import AboutCourse from "../../Components/CoursePage/AboutCourse";
@@ -59,11 +61,14 @@ const CoursePage = () => {
                 ? "FELLOWSHIP IN "
                 : "CERTIFICATION IN "
             } ${coursePage.attributes.title.toUpperCase()} `}</title>
-            {coursePage.meta &&
-              coursePage.meta.map((item) => {
-                console.log(item);
-                return <meta {...item} />;
-              })}
+            {coursePage.meta && parser(coursePage.meta)}
+            <meta
+              property="og:image"
+              content={
+                "https://stellaraesthetics.in/assets/img/" +
+                coursePage.attributes.courseHeaderImg.data.attributes.name
+              }
+            />
           </Helmet>
           <CourseHero />
           <CourseDirector />

@@ -1,5 +1,4 @@
 import useData from "../../Hooks/useContext";
-import Img from "../Main/Img";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 
@@ -10,14 +9,20 @@ const CourseHero = () => {
       {coursePage.attributes && (
         <section className="hero-slider relative md:min-h-[500px] w-full lg:py-10 md:px-10 p-5">
           <div className="bg h-full w-full absolute inset-0 z-0 bg-primary">
-            <Img
-              src={
-                "/assets/img/" +
-                coursePage.attributes.courseHeaderImg.data.attributes.name
-              }
-              className="opacity-20 blur w-full h-full object-cover"
-              alt=""
-            />
+            <figure className={"opacity-20 blur w-full h-full object-cover"}>
+              <motion.img
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.3 }}
+                src={
+                  "/assets/img/" +
+                  coursePage.attributes.courseHeaderImg.data.attributes.name
+                }
+                alt={"course background"}
+                className={"w-full h-full object-cover"}
+              />
+              <figcaption className="hidden">Background Image</figcaption>
+            </figure>
           </div>
           <div className="sticky inset-0 gap-5 md:flex-row flex-col-reverse h-full w-full flex justify-between ">
             <div className="content shrink-0 md:w-1/2 text-white">
@@ -77,14 +82,22 @@ const CourseHero = () => {
               </a>
             </div>
             <div className="shrink-0 md:w-1/2 w-full">
-              <Img
-                className={"w-full"}
-                imgClass={"border-[5px] border-white"}
-                src={
-                  "/assets/img/" +
-                  coursePage.attributes.courseHeaderImg.data.attributes.name
-                }
-              />
+              <figure className={"w-full"}>
+                <motion.img
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.3 }}
+                  src={
+                    "/assets/img/" +
+                    coursePage.attributes.courseHeaderImg.data.attributes.name
+                  }
+                  alt={"course header featured"}
+                  className={"border-[5px] border-white"}
+                />
+                <figcaption className="hidden">
+                  Course Header or Featured Image
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>

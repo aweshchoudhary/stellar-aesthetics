@@ -157,19 +157,5 @@
       }
     ]
   },
-  "meta": [
-    {
-      "name": "title",
-      "content": "FellowshipInTrichology|StellarAestheticsCourse"
-    },
-    {
-      "name": "description",
-      "content": "HairRestoration,Trichology,RoboticHairTransplantationForDeoratologist,follicularunitextraction,follicularunittransplantation.Course"
-    },
-    {
-      "name": "keywords",
-      "content": "HairRestoration,Trichology,RoboticHairTransplantationForDeoratologist,follicularunitextraction,follicularunittransplantation,stellaraesthetics,fellowship,certification"
-    },
-    { "name": "robots", "content": "index,follow" }
-  ]
+  "meta": ""
 }
