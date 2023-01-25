@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import parser from "html-react-parser";
 import Bar from "../../Components/Loader/Bar";
 import Slider from "react-slick";
-import { BASE_URL } from "../../config";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 import procedures from "../../data/procedures.json";
@@ -73,54 +72,59 @@ const Procedure = () => {
         )}
         <Slider {...settings}>
           {proceduresSlider &&
-            proceduresSlider.map((item) => {
+            proceduresSlider.map((item, key) => {
               return (
-                <div>
-                  <div className="w-full h-[500px] relative flex items-center justify-center">
-                    <div className="content text-white text-center md:px-10">
-                      <h2 className="md:text-6xl sm:text-5xl text-3xl font-semibold mb-3">
-                        {item.attributes.title}
-                      </h2>
-                      <p className="text-lg">
-                        {parser(item.attributes.description)}
-                      </p>
-                      <div>
-                        <div className="flex gap-5 justify-center mt-4">
-                          <a
-                            href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${document.title}*`}
-                            className="btn filled white text-primary"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <Icon
-                              className="text-2xl"
-                              icon="ic:baseline-whatsapp"
-                            />
-                            Get Brochure
-                          </a>
-                          <a
-                            href={"tel:+91-799-950-6817"}
-                            className="btn outlined white text-h-primary"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <Icon
-                              className="text-2xl"
-                              icon="ic:baseline-phone"
-                            />
-                            Book Call
-                          </a>
+                item.attributes.type === name && (
+                  <div key={key}>
+                    <div className="w-full h-[500px] relative flex items-center justify-center">
+                      <div className="content text-white text-center md:px-10">
+                        <h2 className="md:text-6xl sm:text-5xl text-3xl font-semibold mb-3">
+                          {item.attributes.title}
+                        </h2>
+                        <p className="text-lg">
+                          {parser(item.attributes.description)}
+                        </p>
+                        <div>
+                          <div className="flex gap-5 justify-center mt-4">
+                            <a
+                              href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${document.title}*`}
+                              className="btn filled white text-primary"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon
+                                className="text-2xl"
+                                icon="ic:baseline-whatsapp"
+                              />
+                              Get Brochure
+                            </a>
+                            <a
+                              href={"tel:+91-799-950-6817"}
+                              className="btn outlined white text-h-primary"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon
+                                className="text-2xl"
+                                icon="ic:baseline-phone"
+                              />
+                              Book Call
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="background absolute bg-primary inset-0 w-full h-full -z-10">
-                      <Img
-                        src={BASE_URL + item.attributes.img.data.attributes.url}
-                        className="w-full h-full opacity-50"
-                      />
+                      <div className="background absolute bg-primary inset-0 w-full h-full -z-10">
+                        <Img
+                          src={
+                            "/assets/img/" +
+                            item.attributes.img.data.attributes.name
+                          }
+                          className="w-full h-full opacity-50"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
+                )
               );
             })}
         </Slider>

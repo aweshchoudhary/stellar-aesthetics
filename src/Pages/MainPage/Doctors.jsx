@@ -1,4 +1,3 @@
-import { BASE_URL } from "../../config";
 import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 import doctors from "../../data/doctors.json";
@@ -22,7 +21,10 @@ const Doctors = () => {
                   <div className="card sm:m-4 mb-4 sm:h-[550px] shrink-0">
                     <div className="img sm:h-[350px] h-[250px] w-full bg-gray-200">
                       <img
-                        src={BASE_URL + item.attributes.img.data.attributes.url}
+                        src={
+                          "/assets/img/" +
+                          item.attributes.img.data.attributes.name
+                        }
                         alt=""
                         className="w-full h-full object-cover"
                       />
@@ -43,7 +45,7 @@ const Doctors = () => {
                         {item.attributes.socialLinks.map((item) => {
                           return (
                             <a
-                              href={item.url}
+                              href={item.name}
                               target="_blank"
                               rel="noreferrer"
                               className="text-h-primary transition"

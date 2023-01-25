@@ -116,11 +116,7 @@ const Contact = () => {
                 15+ Cities Across INDIA
               </h3>
             </header>
-            <Img
-              src="https://stellaraesthetics.in/wp-content/uploads/2022/11/Group-3.png.webp"
-              alt=""
-              className="w-full"
-            />
+            <Img src="/assets/img/map.webp" alt="" className="w-full" />
             <h1 className="flex items-center font-medium md:text-3xl text-xl mt-5">
               Locations
               <Icon

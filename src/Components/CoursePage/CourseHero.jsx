@@ -92,7 +92,7 @@ const CourseHero = () => {
                     coursePage.attributes.courseHeaderImg.data.attributes.name
                   }
                   alt={"course header featured"}
-                  className={"border-[5px] border-white"}
+                  className={"border-[5px] w-full h-full border-white"}
                 />
                 <figcaption className="hidden">
                   Course Header or Featured Image

@@ -1,3 +1,6 @@
+// Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 // Global Colors
 html:root{
     --primary: #571168;
@@ -51,8 +54,6 @@ html:root{
 .border-primary{
     border-color: var(--primary);
 }
-
-
 
 body, html{
     height: 100vh;

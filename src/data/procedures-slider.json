@@ -1,533 +1,135 @@
 [
-    {
-        "id": 1,
-        "attributes": {
-            "title": "It's never too late to AGE ELEGANTLY",
-            "type": "face",
-            "description": "<p style=\"margin-left:0px;\">With Stellar Aesthetics’ Facial Cosmetic Procedures you can bring out your true beauty, for the world to see.</p>",
-            "createdAt": "2022-12-28T09:05:11.761Z",
-            "updatedAt": "2022-12-28T09:05:14.247Z",
-            "publishedAt": "2022-12-28T09:05:14.235Z",
-            "img": {
-                "data": {
-                    "id": 83,
-                    "attributes": {
-                        "name": "Facial-Treatments-Aesthetics-Services-2-1.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 1920,
-                        "height": 875,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_Facial-Treatments-Aesthetics-Services-2-1.jpg",
-                                "hash": "thumbnail_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 111,
-                                "size": 3.31,
-                                "url": "/uploads/thumbnail_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_Facial-Treatments-Aesthetics-Services-2-1.jpg",
-                                "hash": "medium_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 342,
-                                "size": 16.92,
-                                "url": "/uploads/medium_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225.jpg"
-                            },
-                            "large": {
-                                "name": "large_Facial-Treatments-Aesthetics-Services-2-1.jpg",
-                                "hash": "large_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 1000,
-                                "height": 456,
-                                "size": 26.38,
-                                "url": "/uploads/large_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225.jpg"
-                            },
-                            "small": {
-                                "name": "small_Facial-Treatments-Aesthetics-Services-2-1.jpg",
-                                "hash": "small_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 228,
-                                "size": 9.3,
-                                "url": "/uploads/small_Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225.jpg"
-                            }
-                        },
-                        "hash": "Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 73.58,
-                        "url": "/uploads/Facial_Treatments_Aesthetics_Services_2_1_7ed5f77225.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.532Z",
-                        "updatedAt": "2022-12-26T14:44:19.532Z"
-                    }
-                }
-            }
+  {
+    "id": 1,
+    "attributes": {
+      "title": "It's never too late to AGE ELEGANTLY",
+      "type": "face",
+      "description": "<p style=\"margin-left:0px;\">With Stellar Aesthetics’ Facial Cosmetic Procedures you can bring out your true beauty, for the world to see.</p>",
+      "createdAt": "2022-12-28T09:05:11.761Z",
+      "updatedAt": "2022-12-28T09:05:14.247Z",
+      "publishedAt": "2022-12-28T09:05:14.235Z",
+      "img": {
+        "data": {
+          "id": 83,
+          "attributes": {
+            "name": "Facial-Treatments-Aesthetics-Services-2-1.webp"
+          }
         }
-    },
-    {
-        "id": 2,
-        "attributes": {
-            "title": "Be YOUR BEST Version",
-            "type": "face",
-            "description": "<p style=\"margin-left:0px;\">With Stellar Aesthetics’ Facial Cosmetic Procedures you can bring out your true beauty, for the world to see.</p>",
-            "createdAt": "2022-12-28T09:05:45.831Z",
-            "updatedAt": "2022-12-28T09:05:47.695Z",
-            "publishedAt": "2022-12-28T09:05:47.689Z",
-            "img": {
-                "data": {
-                    "id": 85,
-                    "attributes": {
-                        "name": "Facial-Treatments-Aesthetics-Services-3.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 1920,
-                        "height": 875,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_Facial-Treatments-Aesthetics-Services-3.jpg",
-                                "hash": "thumbnail_Facial_Treatments_Aesthetics_Services_3_91e507f2b5",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 111,
-                                "size": 2.83,
-                                "url": "/uploads/thumbnail_Facial_Treatments_Aesthetics_Services_3_91e507f2b5.jpg"
-                            },
-                            "large": {
-                                "name": "large_Facial-Treatments-Aesthetics-Services-3.jpg",
-                                "hash": "large_Facial_Treatments_Aesthetics_Services_3_91e507f2b5",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 1000,
-                                "height": 456,
-                                "size": 26.03,
-                                "url": "/uploads/large_Facial_Treatments_Aesthetics_Services_3_91e507f2b5.jpg"
-                            },
-                            "small": {
-                                "name": "small_Facial-Treatments-Aesthetics-Services-3.jpg",
-                                "hash": "small_Facial_Treatments_Aesthetics_Services_3_91e507f2b5",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 228,
-                                "size": 7.97,
-                                "url": "/uploads/small_Facial_Treatments_Aesthetics_Services_3_91e507f2b5.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_Facial-Treatments-Aesthetics-Services-3.jpg",
-                                "hash": "medium_Facial_Treatments_Aesthetics_Services_3_91e507f2b5",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 342,
-                                "size": 15.56,
-                                "url": "/uploads/medium_Facial_Treatments_Aesthetics_Services_3_91e507f2b5.jpg"
-                            }
-                        },
-                        "hash": "Facial_Treatments_Aesthetics_Services_3_91e507f2b5",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 84.07,
-                        "url": "/uploads/Facial_Treatments_Aesthetics_Services_3_91e507f2b5.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.545Z",
-                        "updatedAt": "2022-12-26T14:44:19.545Z"
-                    }
-                }
-            }
-        }
-    },
-    {
-        "id": 3,
-        "attributes": {
-            "title": "We're HAIR for you!",
-            "type": "hair",
-            "description": "<p style=\"margin-left:0px;\">Have a Good-Hair-Day, everyday, with Stellar Aesthetics’ Hair Restoration Procedures. Own it. Love it. Enjoy it.</p>",
-            "createdAt": "2022-12-28T09:06:44.125Z",
-            "updatedAt": "2022-12-28T09:06:46.000Z",
-            "publishedAt": "2022-12-28T09:06:45.993Z",
-            "img": {
-                "data": {
-                    "id": 80,
-                    "attributes": {
-                        "name": "hair-banner-1.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 1920,
-                        "height": 875,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_hair-banner-1.jpg",
-                                "hash": "thumbnail_hair_banner_1_7aa5e7a327",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 111,
-                                "size": 3.57,
-                                "url": "/uploads/thumbnail_hair_banner_1_7aa5e7a327.jpg"
-                            },
-                            "large": {
-                                "name": "large_hair-banner-1.jpg",
-                                "hash": "large_hair_banner_1_7aa5e7a327",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 1000,
-                                "height": 456,
-                                "size": 29.11,
-                                "url": "/uploads/large_hair_banner_1_7aa5e7a327.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_hair-banner-1.jpg",
-                                "hash": "medium_hair_banner_1_7aa5e7a327",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 342,
-                                "size": 18.6,
-                                "url": "/uploads/medium_hair_banner_1_7aa5e7a327.jpg"
-                            },
-                            "small": {
-                                "name": "small_hair-banner-1.jpg",
-                                "hash": "small_hair_banner_1_7aa5e7a327",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 228,
-                                "size": 10.02,
-                                "url": "/uploads/small_hair_banner_1_7aa5e7a327.jpg"
-                            }
-                        },
-                        "hash": "hair_banner_1_7aa5e7a327",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 77.54,
-                        "url": "/uploads/hair_banner_1_7aa5e7a327.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:18.138Z",
-                        "updatedAt": "2022-12-26T14:44:18.138Z"
-                    }
-                }
-            }
-        }
-    },
-    {
-        "id": 4,
-        "attributes": {
-            "title": "SELF CARE starts with SKIN CARE",
-            "type": "skin",
-            "description": "<p style=\"margin-left:0px;\">Flaunt your smooth and beautiful skin with Stellar Aesthetics’ Skin Cosmetic Procedures.</p>",
-            "createdAt": "2022-12-28T09:07:29.048Z",
-            "updatedAt": "2022-12-28T09:07:31.116Z",
-            "publishedAt": "2022-12-28T09:07:31.105Z",
-            "img": {
-                "data": {
-                    "id": 84,
-                    "attributes": {
-                        "name": "skin-banner-1.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 1920,
-                        "height": 1080,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_skin-banner-1.jpg",
-                                "hash": "thumbnail_skin_banner_1_852d2f237a",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 138,
-                                "size": 4.96,
-                                "url": "/uploads/thumbnail_skin_banner_1_852d2f237a.jpg"
-                            },
-                            "large": {
-                                "name": "large_skin-banner-1.jpg",
-                                "hash": "large_skin_banner_1_852d2f237a",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 1000,
-                                "height": 563,
-                                "size": 36.79,
-                                "url": "/uploads/large_skin_banner_1_852d2f237a.jpg"
-                            },
-                            "small": {
-                                "name": "small_skin-banner-1.jpg",
-                                "hash": "small_skin_banner_1_852d2f237a",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 281,
-                                "size": 13.58,
-                                "url": "/uploads/small_skin_banner_1_852d2f237a.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_skin-banner-1.jpg",
-                                "hash": "medium_skin_banner_1_852d2f237a",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 422,
-                                "size": 24.27,
-                                "url": "/uploads/medium_skin_banner_1_852d2f237a.jpg"
-                            }
-                        },
-                        "hash": "skin_banner_1_852d2f237a",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 90.8,
-                        "url": "/uploads/skin_banner_1_852d2f237a.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.537Z",
-                        "updatedAt": "2022-12-26T14:44:19.537Z"
-                    }
-                }
-            }
-        }
-    },
-    {
-        "id": 5,
-        "attributes": {
-            "title": "CHANGE the way You Age.",
-            "type": "skin",
-            "description": "<p style=\"margin-left:0px;\">Flaunt your smooth and beautiful skin with Stellar Aesthetics’ Skin Cosmetic Procedures.</p>",
-            "createdAt": "2022-12-28T09:08:04.355Z",
-            "updatedAt": "2022-12-28T09:08:07.706Z",
-            "publishedAt": "2022-12-28T09:08:07.693Z",
-            "img": {
-                "data": {
-                    "id": 82,
-                    "attributes": {
-                        "name": "RednessSensitvityBanner.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 1633,
-                        "height": 726,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_RednessSensitvityBanner.jpg",
-                                "hash": "thumbnail_Redness_Sensitvity_Banner_347706c2ff",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 109,
-                                "size": 5.2,
-                                "url": "/uploads/thumbnail_Redness_Sensitvity_Banner_347706c2ff.jpg"
-                            },
-                            "large": {
-                                "name": "large_RednessSensitvityBanner.jpg",
-                                "hash": "large_Redness_Sensitvity_Banner_347706c2ff",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 1000,
-                                "height": 445,
-                                "size": 45.74,
-                                "url": "/uploads/large_Redness_Sensitvity_Banner_347706c2ff.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_RednessSensitvityBanner.jpg",
-                                "hash": "medium_Redness_Sensitvity_Banner_347706c2ff",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 333,
-                                "size": 28.16,
-                                "url": "/uploads/medium_Redness_Sensitvity_Banner_347706c2ff.jpg"
-                            },
-                            "small": {
-                                "name": "small_RednessSensitvityBanner.jpg",
-                                "hash": "small_Redness_Sensitvity_Banner_347706c2ff",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 222,
-                                "size": 14.72,
-                                "url": "/uploads/small_Redness_Sensitvity_Banner_347706c2ff.jpg"
-                            }
-                        },
-                        "hash": "Redness_Sensitvity_Banner_347706c2ff",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 102.74,
-                        "url": "/uploads/Redness_Sensitvity_Banner_347706c2ff.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.450Z",
-                        "updatedAt": "2022-12-26T14:44:19.450Z"
-                    }
-                }
-            }
-        }
-    },
-    {
-        "id": 6,
-        "attributes": {
-            "title": "Your Body. Envied by Everyone Else.",
-            "type": "body",
-            "description": "<p style=\"margin-left:0px;\">Have the body you always dreamt of with Stellar Aesthetics’ Body Cosmetic Procedures.</p>",
-            "createdAt": "2022-12-28T09:08:45.764Z",
-            "updatedAt": "2022-12-28T09:08:47.610Z",
-            "publishedAt": "2022-12-28T09:08:47.602Z",
-            "img": {
-                "data": {
-                    "id": 86,
-                    "attributes": {
-                        "name": "body-2.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 900,
-                        "height": 466,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_body-2.jpg",
-                                "hash": "thumbnail_body_2_f1d6dccccd",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 127,
-                                "size": 3.88,
-                                "url": "/uploads/thumbnail_body_2_f1d6dccccd.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_body-2.jpg",
-                                "hash": "medium_body_2_f1d6dccccd",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 388,
-                                "size": 21.39,
-                                "url": "/uploads/medium_body_2_f1d6dccccd.jpg"
-                            },
-                            "small": {
-                                "name": "small_body-2.jpg",
-                                "hash": "small_body_2_f1d6dccccd",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 259,
-                                "size": 11.58,
-                                "url": "/uploads/small_body_2_f1d6dccccd.jpg"
-                            }
-                        },
-                        "hash": "body_2_f1d6dccccd",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 28.85,
-                        "url": "/uploads/body_2_f1d6dccccd.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.620Z",
-                        "updatedAt": "2022-12-26T14:44:19.620Z"
-                    }
-                }
-            }
-        }
-    },
-    {
-        "id": 7,
-        "attributes": {
-            "title": "YOUR BODY, deserves to GLOW.",
-            "type": "body",
-            "description": "<p style=\"margin-left:0px;\">Have the body you always dreamt of with Stellar Aesthetics’ Body Cosmetic Procedures.</p>",
-            "createdAt": "2022-12-28T09:09:23.328Z",
-            "updatedAt": "2022-12-28T09:09:28.448Z",
-            "publishedAt": "2022-12-28T09:09:28.433Z",
-            "img": {
-                "data": {
-                    "id": 87,
-                    "attributes": {
-                        "name": "Untitled-design-18.jpg",
-                        "alternativeText": null,
-                        "caption": null,
-                        "width": 900,
-                        "height": 466,
-                        "formats": {
-                            "thumbnail": {
-                                "name": "thumbnail_Untitled-design-18.jpg",
-                                "hash": "thumbnail_Untitled_design_18_ba6fda3526",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 245,
-                                "height": 127,
-                                "size": 3.51,
-                                "url": "/uploads/thumbnail_Untitled_design_18_ba6fda3526.jpg"
-                            },
-                            "small": {
-                                "name": "small_Untitled-design-18.jpg",
-                                "hash": "small_Untitled_design_18_ba6fda3526",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 500,
-                                "height": 259,
-                                "size": 9.7,
-                                "url": "/uploads/small_Untitled_design_18_ba6fda3526.jpg"
-                            },
-                            "medium": {
-                                "name": "medium_Untitled-design-18.jpg",
-                                "hash": "medium_Untitled_design_18_ba6fda3526",
-                                "ext": ".jpg",
-                                "mime": "image/jpeg",
-                                "path": null,
-                                "width": 750,
-                                "height": 388,
-                                "size": 17.56,
-                                "url": "/uploads/medium_Untitled_design_18_ba6fda3526.jpg"
-                            }
-                        },
-                        "hash": "Untitled_design_18_ba6fda3526",
-                        "ext": ".jpg",
-                        "mime": "image/jpeg",
-                        "size": 24.2,
-                        "url": "/uploads/Untitled_design_18_ba6fda3526.jpg",
-                        "previewUrl": null,
-                        "provider": "local",
-                        "provider_metadata": null,
-                        "createdAt": "2022-12-26T14:44:19.720Z",
-                        "updatedAt": "2022-12-26T14:44:19.720Z"
-                    }
-                }
-            }
-        }
+      }
     }
+  },
+  {
+    "id": 2,
+    "attributes": {
+      "title": "Be YOUR BEST Version",
+      "type": "face",
+      "description": "<p style=\"margin-left:0px;\">With Stellar Aesthetics’ Facial Cosmetic Procedures you can bring out your true beauty, for the world to see.</p>",
+      "createdAt": "2022-12-28T09:05:45.831Z",
+      "updatedAt": "2022-12-28T09:05:47.695Z",
+      "publishedAt": "2022-12-28T09:05:47.689Z",
+      "img": {
+        "data": {
+          "id": 85,
+          "attributes": {
+            "name": "Facial-Treatments-Aesthetics-Services-3.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "attributes": {
+      "title": "We're HAIR for you!",
+      "type": "hair",
+      "description": "<p style=\"margin-left:0px;\">Have a Good-Hair-Day, everyday, with Stellar Aesthetics’ Hair Restoration Procedures. Own it. Love it. Enjoy it.</p>",
+      "createdAt": "2022-12-28T09:06:44.125Z",
+      "updatedAt": "2022-12-28T09:06:46.000Z",
+      "publishedAt": "2022-12-28T09:06:45.993Z",
+      "img": {
+        "data": {
+          "id": 80,
+          "attributes": {
+            "name": "hair-banner-1.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "attributes": {
+      "title": "SELF CARE starts with SKIN CARE",
+      "type": "skin",
+      "description": "<p style=\"margin-left:0px;\">Flaunt your smooth and beautiful skin with Stellar Aesthetics’ Skin Cosmetic Procedures.</p>",
+      "createdAt": "2022-12-28T09:07:29.048Z",
+      "updatedAt": "2022-12-28T09:07:31.116Z",
+      "publishedAt": "2022-12-28T09:07:31.105Z",
+      "img": {
+        "data": {
+          "id": 84,
+          "attributes": {
+            "name": "skin-banner-1.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "attributes": {
+      "title": "CHANGE the way You Age.",
+      "type": "skin",
+      "description": "<p style=\"margin-left:0px;\">Flaunt your smooth and beautiful skin with Stellar Aesthetics’ Skin Cosmetic Procedures.</p>",
+      "createdAt": "2022-12-28T09:08:04.355Z",
+      "updatedAt": "2022-12-28T09:08:07.706Z",
+      "publishedAt": "2022-12-28T09:08:07.693Z",
+      "img": {
+        "data": {
+          "id": 82,
+          "attributes": {
+            "name": "RednessSensitvityBanner.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "attributes": {
+      "title": "Your Body. Envied by Everyone Else.",
+      "type": "body",
+      "description": "<p style=\"margin-left:0px;\">Have the body you always dreamt of with Stellar Aesthetics’ Body Cosmetic Procedures.</p>",
+      "createdAt": "2022-12-28T09:08:45.764Z",
+      "updatedAt": "2022-12-28T09:08:47.610Z",
+      "publishedAt": "2022-12-28T09:08:47.602Z",
+      "img": {
+        "data": {
+          "id": 86,
+          "attributes": {
+            "name": "body-2.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "attributes": {
+      "title": "YOUR BODY, deserves to GLOW.",
+      "type": "body",
+      "description": "<p style=\"margin-left:0px;\">Have the body you always dreamt of with Stellar Aesthetics’ Body Cosmetic Procedures.</p>",
+      "createdAt": "2022-12-28T09:09:23.328Z",
+      "updatedAt": "2022-12-28T09:09:28.448Z",
+      "publishedAt": "2022-12-28T09:09:28.433Z",
+      "img": {
+        "data": {
+          "id": 87,
+          "attributes": {
+            "name": "Untitled-design-18.webp"
+          }
+        }
+      }
+    }
+  }
 ]

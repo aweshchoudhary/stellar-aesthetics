@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { BASE_URL } from "../../config";
 import { Helmet } from "react-helmet";
 import procedures from "../../data/procedures.json";
 
 // Components Import
-import { PageHeader, Section } from "../../Components/Main";
+import { Img, PageHeader, Section } from "../../Components/Main";
 
 const Procedures = () => {
   return (
@@ -20,7 +19,7 @@ const Procedures = () => {
               <Card
                 link={item.attributes.title}
                 title={item.attributes.title}
-                img={item.attributes.img.data.attributes.url}
+                img={"/assets/img/" + item.attributes.img.data.attributes.name}
               />
             );
           })}
@@ -37,9 +36,9 @@ const Card = ({ img, title, link }) => {
         <Link to={"/procedures/" + link}>
           <div className="img sm:h-[400px] h-[200px] w-full bg-gray-200">
             {img && (
-              <img
-                src={BASE_URL + img}
-                alt=""
+              <Img
+                src={img}
+                alt="procedure"
                 className="w-full h-full object-cover"
               />
             )}
