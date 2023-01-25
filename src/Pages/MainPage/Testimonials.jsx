@@ -2,10 +2,9 @@ import { Helmet } from "react-helmet";
 import Bar from "../../Components/Loader/Bar";
 import { Heading, Section } from "../../Components/Main";
 import TestimonailCard from "../../Components/Testimonials/TestimonailCard";
-import useFetch from "../../Hooks/useFetch";
+import testimonials from "../../data/testimonials.json";
 
 const Testimonials = () => {
-  const { data, loading } = useFetch("/testimonials?populate=*");
   return (
     <>
       <Helmet>
@@ -22,8 +21,8 @@ const Testimonials = () => {
         </h3>
 
         <div className="my-10 flex flex-col gap-5">
-          {!loading && data ? (
-            data.map((item, index) => {
+          {testimonials ? (
+            testimonials.map((item, index) => {
               return <TestimonailCard data={item} />;
             })
           ) : (

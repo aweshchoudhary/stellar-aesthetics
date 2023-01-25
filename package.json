@@ -4,29 +4,21 @@
   "private": true,
   "dependencies": {
     "@iconify/react": "^4.0.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.1",
     "framer-motion": "^8.5.2",
     "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.5.0",
-    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
-    "web-vitals": "^2.1.4"
+    "react-slick": "^0.29.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "style": "npx tailwindcss -i ./src/Styles/input.css -o ./src/Styles/output.css --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
