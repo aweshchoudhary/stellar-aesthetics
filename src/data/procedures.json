@@ -12,7 +12,7 @@
         "data": {
           "id": 88,
           "attributes": {
-            "name": "face.webp"
+            "name": "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712038/face_edm2og.webp"
           }
         }
       }
@@ -31,7 +31,7 @@
         "data": {
           "id": 89,
           "attributes": {
-            "name": "hair.webp"
+            "name": "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712039/hair_knlq1u.webp"
           }
         }
       }
@@ -50,7 +50,7 @@
         "data": {
           "id": 79,
           "attributes": {
-            "name": "skin.webp"
+            "name": "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712041/skin_yo7w5a.webp"
           }
         }
       }
@@ -69,7 +69,7 @@
         "data": {
           "id": 78,
           "attributes": {
-            "name": "body.webp"
+            "name": "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712035/body_ksaa8a.webp"
           }
         }
       }

@@ -21,10 +21,7 @@ const Doctors = () => {
                   <div className="card sm:m-4 mb-4 sm:h-[550px] shrink-0">
                     <div className="img sm:h-[350px] h-[250px] w-full bg-gray-200">
                       <img
-                        src={
-                          "/assets/img/" +
-                          item.attributes.img.data.attributes.name
-                        }
+                        src={item.attributes.img.data.attributes.name}
                         alt=""
                         className="w-full h-full object-cover"
                       />

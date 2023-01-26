@@ -12,7 +12,7 @@ const TestimonailCard = ({ data }) => {
             <Img
               className={"w-full h-full"}
               imgClass={"object-top w-full h-full object-cover"}
-              src={"/assets/img/" + data.attributes.img.data.attributes.name}
+              src={data.attributes.img.data.attributes.name}
             />
           </div>
           <div className="md:w-[70%] h-full shrink-0">

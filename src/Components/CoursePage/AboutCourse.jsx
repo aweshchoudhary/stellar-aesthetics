@@ -21,10 +21,7 @@ const AboutCourse = () => {
       <div className="md:flex">
         <div className="md:w-1/3 shrink-0">
           <Img
-            src={
-              "/assets/img/" +
-              coursePage.attributes.courseAboutImg.data.attributes.name
-            }
+            src={coursePage.attributes.courseAboutImg.data.attributes.name}
             caption={"Participant getting certificate"}
           />
         </div>

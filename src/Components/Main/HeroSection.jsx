@@ -9,7 +9,7 @@ const HeroSection = () => {
           autoPlay
           loop
           muted={true}
-          src="/assets/videos/homepage-video.mp4"
+          src="https://res.cloudinary.com/dcjhzzypt/video/upload/v1674711536/homepage-video_aker3b.mp4"
         ></video>
       </figure>
       <div className="absolute top-1/2 left-1/2 z-10 text-center w-full md:px-10 px-5 -translate-x-1/2 -translate-y-1/2">

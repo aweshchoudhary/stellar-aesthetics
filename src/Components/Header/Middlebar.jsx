@@ -12,7 +12,7 @@ const Middlebar = () => {
         <Link to="/">
           <div className="logo">
             <Img
-              src="/assets/img/logo.png"
+              src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712040/logo_bafg6y.png"
               alt="stellar aesthetics brand logo dark"
               className="w-[120px]"
             />

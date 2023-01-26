@@ -5,7 +5,12 @@ import { Icon } from "@iconify/react";
 
 const ContactCard = () => {
   const { coursePage } = useData();
-  const data = ["cover-1.png", "cover-3.png", "cover-4.png", "cover-5.png"];
+  const data = [
+    "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712040/cover-1_dj1qp2.png",
+    "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712039/cover-3_n6ltss.png",
+    "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712037/cover-5_o8qcen.png",
+    "https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712037/cover-4_o18eff.png",
+  ];
 
   return data ? (
     <section className="bg-primary lg:h-[400px] text-white flex justify-between md:py-0 py-10">
@@ -47,13 +52,7 @@ const ContactCard = () => {
         <div className="flex items-center flex-wrap justify-center gap-5 -rotate-12 opacity-50">
           {data &&
             data.map((item, i) => {
-              return (
-                <Img
-                  key={i}
-                  className="w-[200px] shrink-0"
-                  src={"/assets/img/" + item}
-                />
-              );
+              return <Img key={i} className="w-[200px] shrink-0" src={item} />;
             })}
         </div>
       </div>
