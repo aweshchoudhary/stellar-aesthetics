@@ -55,6 +55,12 @@ html:root{
     border-color: var(--primary);
 }
 
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-display: swap;
+}
+
 body, html{
     height: 100vh;
     width: 100vw;
@@ -62,6 +68,7 @@ body, html{
     margin: auto;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+    font-display: swap;
     transition: all .2s ease !important;
     scroll-behavior: smooth !important;
 }

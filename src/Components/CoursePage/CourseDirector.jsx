@@ -23,7 +23,10 @@ const CourseDirector = () => {
               <div className="md:w-[30%] w-[90%] mx-auto shrink-0 grow-0">
                 <div className="course-director-image">
                   <Img
-                    src={courseDirector.attributes.img.data.attributes.name}
+                    src={
+                      "/assets/img/" +
+                      courseDirector.attributes.img.data.attributes.name
+                    }
                     alt={
                       courseDirector.attributes.img.data.attributes
                         .alternativeText
@@ -61,7 +64,7 @@ const CourseDirector = () => {
                   !card?.attributes?.horizontal && (
                     <Card
                       key={i}
-                      img={card.img.data.attributes.name}
+                      img={"/assets/img/" + card.img.data.attributes.name}
                       title={card.title}
                       horizontal={card.horizontal}
                       subtitle={card.subtitle}
@@ -74,7 +77,7 @@ const CourseDirector = () => {
                   card?.attributes?.horizontal && (
                     <Card
                       key={i}
-                      img={card.img.courseDirector.attributes.name}
+                      img={"/assets/img/" + card.img.data.attributes.name}
                       title={card.title}
                       horizontal={card.horizontal}
                       subtitle={card.subtitle}

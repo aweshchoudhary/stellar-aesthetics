@@ -14,7 +14,10 @@ const CourseHero = () => {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
-                src={coursePage.attributes.courseHeaderImg.data.attributes.name}
+                src={
+                  "/assets/img/" +
+                  coursePage.attributes.courseHeaderImg.data.attributes.name
+                }
                 alt={"course background"}
                 className={"w-full h-full object-cover"}
               />
@@ -85,6 +88,7 @@ const CourseHero = () => {
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.3 }}
                   src={
+                    "/assets/img/" +
                     coursePage.attributes.courseHeaderImg.data.attributes.name
                   }
                   alt={"course header featured"}

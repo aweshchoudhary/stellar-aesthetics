@@ -18,7 +18,7 @@ const CourseGlimpses = ({ items }) => {
           return (
             <Card
               key={key}
-              img={item.img.data.attributes.name}
+              img={"/assets/img/" + item.img.data.attributes.name}
               title={item.title}
             />
           );

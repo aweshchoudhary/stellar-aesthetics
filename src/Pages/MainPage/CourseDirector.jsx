@@ -4,9 +4,6 @@ import { Helmet } from "react-helmet";
 import { Card, Img } from "../../Components/Main";
 
 const CourseDirector = () => {
-  // const { data, loading } = useFetch("/dr-sapnna-vaderra?populate=deep");
-
-  // return data && !loading ? (
   return (
     <>
       <Helmet>
@@ -14,13 +11,13 @@ const CourseDirector = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="md:my-16 md:mx-10 my-10 mx-5">
+      <section>
         <div>
           <Img
             src={
               "https://stellaraesthetics.in/wp-content/uploads/2022/11/Copy-of-_OOL5537-min.jpg.webp"
             }
-            alt=""
+            alt="dr sapnna vaderra on stage"
           />
         </div>
       </section>
