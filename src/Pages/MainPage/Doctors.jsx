@@ -10,6 +10,18 @@ const Doctors = () => {
     <>
       <Helmet>
         <title>Doctors</title>
+        <meta
+          name="description"
+          content="Surgeon – Researcher – Mentor par excellence. Dr. Sapnna Vaderra
+          is a Mumbai-based Facioplastic/Faciocosmetic & Hair Transplant
+          Surgeon and co-founder of Stellar Aesthetics, India. Stellar
+          Aesthetics is a State-of-the-Art Cosmetic Clinic chain presently
+          in 15+ cities across India"
+        />
+        <meta
+          name="keywords"
+          content="stellar aesthetics, course director, dr sapnna vaderra, stellar aesthetics course mentor"
+        />
       </Helmet>
       <Section>
         <Heading text1={"Doctors"} className={"mb-10"} />

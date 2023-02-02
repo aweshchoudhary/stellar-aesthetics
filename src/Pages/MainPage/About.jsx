@@ -32,6 +32,7 @@ const About = () => {
           content="stellar aesthetics, fellowships and certification, faical cosmetics, clinical cosmetology, trichology, hair restoration, micropigmentation and microblading"
         />
       </Helmet>
+
       <PageHeader>About Us</PageHeader>
       <div id="company"></div>
       <Section>

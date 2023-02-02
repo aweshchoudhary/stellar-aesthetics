@@ -50,6 +50,11 @@ const Procedure = () => {
     <>
       <Helmet>
         <title>{procedure.attributes.title.toUpperCase() + " Procedure"}</title>
+        <meta name="description" content="procedures, face, skin, body, hair" />
+        <meta
+          name="keywords"
+          content="stellar aesthetics, course director, dr sapnna vaderra, stellar aesthetics course mentor"
+        />
       </Helmet>
 
       {/* Procedures Slider */}
