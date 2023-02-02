@@ -104,6 +104,16 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us</title>
+        <meta charset="utf-8" />
+        <link rel="canonical" href="https://stellaraesthetics.in/contact" />
+        <meta
+          name="description"
+          content="stellar aesthetics, contact us with email, phone or mobile number, connect with us on social media platforms"
+        />
+        <meta
+          name="keywords"
+          content="stellar aesthetics, contact us, connect us, stellar aesthetics contact us,"
+        />
       </Helmet>
       <PageHeader>Contact Us</PageHeader>
       <Section>

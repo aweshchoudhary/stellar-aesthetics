@@ -23,6 +23,14 @@ const About = () => {
     <>
       <Helmet>
         <title>About Us | Stellar Aesthetics</title>
+        <meta
+          name="description"
+          content="stellar aesthetics provides international fellowships and certification, faical cosmetics, clinical cosmetology, trichology, hair restoration, micropigmentation and microblading"
+        />
+        <meta
+          name="keywords"
+          content="stellar aesthetics, fellowships and certification, faical cosmetics, clinical cosmetology, trichology, hair restoration, micropigmentation and microblading"
+        />
       </Helmet>
       <PageHeader>About Us</PageHeader>
       <div id="company"></div>

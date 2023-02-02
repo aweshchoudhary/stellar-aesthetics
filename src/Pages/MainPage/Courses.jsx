@@ -18,6 +18,136 @@ const Courses = () => {
       <Helmet>
         <title>International Courses</title>
       </Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: "Stellar Aesthetics Courses",
+          image:
+            "https://stellaraesthetics.in/wp-content/uploads/2021/12/Slide12.jpg.webp",
+          description:
+            "Big Names. Train Under Absolute Experts, Comprehensive Program. Exhaustive Hands-On. Complete Package, Small Batch. Focused Attention, Everything you need. All the time, Real-world Success. Nothing Less etc.",
+          brand: {
+            "@type": "Brand",
+            name: "Stellar Aesthetics",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            bestRating: "5",
+            worstRating: "5",
+            ratingCount: "5032",
+          },
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Stellar Aesthetics",
+              item: "https://stellaraesthetics.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Courses",
+              item: "https://stellaraesthetics.in/courses",
+            },
+          ],
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              item: {
+                "@type": "Course",
+                url: "https://stellaraesthetics.in/courses/fellowship-in-clinical-cosmetolog",
+                name: "INTERNATIONAL FELLOWSHIP IN CLINICAL COSMETOLOGY",
+                description:
+                  "Complete Hands-On, All Procedures (Basic to Advance), Lifetime Mentorship, Lifetime Trainer Mentorship, Complete Practice Set-Up, Patient Strategies, Study Material, Product & Dealer Guide, International Placement Assistance",
+                provider: {
+                  "@type": "Organization",
+                  name: "Stellar Aesthetics",
+                  sameAs: "https://www.stellaraesthetics.in",
+                },
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              item: {
+                "@type": "Course",
+                url: "https://stellaraesthetics.in/courses/fellowship-in-tricology",
+                name: "INTERNATIONAL FELLOWSHIP IN TRICHOLOGY",
+                description:
+                  "Complete Hands-On, All Procedures (Basic to Advance), Lifetime Mentorship, Lifetime Trainer Mentorship, Complete Practice Set-Up, Patient Strategies, Study Material, Product & Dealer Guide, International Placement Assistance",
+                provider: {
+                  "@type": "Organization",
+                  name: "Stellar Aesthetics",
+                  sameAs: "https://www.stellaraesthetics.in",
+                },
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              item: {
+                "@type": "Course",
+                url: "https://stellaraesthetics.in/courses/fellowship-in-faicail-cosmetics",
+                name: "INTERNATIONAL CERTIFICATION IN FACIAL COSMETICS",
+                description:
+                  "Complete Hands-On, Business Mentorship, Trainer Mentorship, Practice Set-Up, Study Material, Product & Dealer Guide",
+                provider: {
+                  "@type": "Organization",
+                  name: "Stellar Aesthetics",
+                  sameAs: "https://www.stellaraesthetics.in",
+                },
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 4,
+              item: {
+                "@type": "Course",
+                url: "https://stellaraesthetics.in/courses/fellowship-in-hair-restoration",
+                name: "INTERNATIONAL CERTIFICATION IN HAIR RESTORATION",
+                description:
+                  "Complete Hands-On, Business Mentorship, Trainer Mentorship, Practice Set-Up, Study Material, Product & Dealer Guide",
+                provider: {
+                  "@type": "Organization",
+                  name: "Stellar Aesthetics",
+                  sameAs: "https://www.stellaraesthetics.in",
+                },
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 4,
+              item: {
+                "@type": "Course",
+                url: "https://stellaraesthetics.in/courses/fellowship-in-micropigmentation-microblading",
+                name: "INTERNATIONAL CERTIFICATION IN MICROPIGMENTATION & MICROBLADING",
+                description:
+                  "Complete Hands-On, Business Mentorship, Trainer Mentorship, Practice Set-Up, Study Material, Product & Dealer Guide",
+                provider: {
+                  "@type": "Organization",
+                  name: "Stellar Aesthetics",
+                  sameAs: "https://www.stellaraesthetics.in",
+                },
+              },
+            },
+          ],
+        })}
+      </script>
       <CourseHero />
       <div id="getcertified"></div>
       <Section>
