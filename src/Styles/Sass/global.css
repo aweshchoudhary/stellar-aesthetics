@@ -1,4 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Poppins";
+  font-weight: normal;
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2") url("../fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../fonts/poppins-medium-webfont.woff2") format("woff2") url("../fonts/poppins-medium-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2") url("../fonts/poppins-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2") url("../fonts/poppins-bold-webfont.woff") format("woff");
+}
 html:root {
   --primary: #571168;
   --color1: var(--primary);
@@ -253,4 +272,4 @@ li {
   to {
     transform: rotate(-1turn);
   }
-}/*# sourceMappingURL=guides.css.map */
+}/*# sourceMappingURL=global.css.map */

@@ -76,6 +76,7 @@ const Courses = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
+          name: "International Courses",
           itemListElement: [
             {
               "@type": "ListItem",
