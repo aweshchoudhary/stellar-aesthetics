@@ -4,7 +4,9 @@ import SearchBox from "../SearchBox";
 import MenuItem from "./MenuItem";
 import useData from "../../../Hooks/useContext";
 import { Link } from "react-router-dom";
-import { Img } from "../../Main";
+import { lazy } from "react";
+
+const Img = lazy(() => import("../../Main/Img"));
 
 const MobileMenu = () => {
   const { toggleMobileMenu, setToggleMobileMenu } = useData();
@@ -18,9 +20,9 @@ const MobileMenu = () => {
       <div className="head flex items-center justify-between border-b pb-5 mb-3">
         <div className="logo">
           <Img
-            src="/assets/img/logo.png"
+            src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1675426319/logo_bafg6y-min_bmqzyd.webp"
             alt="logo dark"
-            className="w-[130px]"
+            className="w-[130px] h-[52.4px]"
           />
         </div>
         <div className="close-btn" onClick={closeMenu}>

@@ -1,9 +1,11 @@
-import Heading from "../Main/Heading";
-import ReadMore from "../Main/ReadMore";
-import Img from "../Main/Img";
-import Section from "../Main/Section";
 import useData from "../../Hooks/useContext";
 import parser from "html-react-parser";
+import { lazy } from "react";
+
+const Section = lazy(() => import("../Main/Section"));
+const Heading = lazy(() => import("../Main/Heading"));
+const Img = lazy(() => import("../Main/Img"));
+const ReadMore = lazy(() => import("../Main/ReadMore"));
 
 const AboutCourse = () => {
   const { coursePage } = useData();

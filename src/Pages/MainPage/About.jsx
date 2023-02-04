@@ -1,9 +1,12 @@
-import { useEffect, useRef } from "react";
+import { lazy, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 
 // Components Import
-import { PageHeader, Section, Heading, Img } from "../../Components/Main";
+const PageHeader = lazy(() => import("../../Components/Main/PageHeader"));
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
+const Img = lazy(() => import("../../Components/Main/Img"));
 
 const About = () => {
   const { scrollelement } = useParams();

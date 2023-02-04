@@ -1,7 +1,9 @@
+import { lazy } from "react";
 import { Helmet } from "react-helmet";
 
 // Components Import
-import { Card, Img } from "../../Components/Main";
+const Img = lazy(() => import("../../Components/Main/Img"));
+const Card = lazy(() => import("../../Components/Main/Card"));
 
 const CourseDirector = () => {
   return (

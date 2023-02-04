@@ -1,6 +1,10 @@
+import { lazy } from "react";
 import { Helmet } from "react-helmet";
+
 // Components Import
-import { PageHeader, Section, Heading } from "../../Components/Main";
+const PageHeader = lazy(() => import("../../Components/Main/PageHeader"));
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
 
 export const Content = () => {
   return (

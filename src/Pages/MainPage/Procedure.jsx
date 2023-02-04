@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import parser from "html-react-parser";
 import Bar from "../../Components/Loader/Bar";
@@ -7,10 +7,11 @@ import { Icon } from "@iconify/react";
 import { Helmet } from "react-helmet";
 import procedures from "../../data/procedures.json";
 import proceduresSlider from "../../data/procedures-slider.json";
-import "../../Styles/slider.css";
 
 // Components Import
-import { Img, Section, Heading } from "../../Components/Main";
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
+const Img = lazy(() => import("../../Components/Main/Img"));
 
 const Procedure = () => {
   const [procedure, setProcedure] = useState({});
@@ -86,9 +87,9 @@ const Procedure = () => {
                         <h2 className="md:text-6xl sm:text-5xl text-3xl font-semibold mb-3">
                           {item.attributes.title}
                         </h2>
-                        <p className="text-lg">
+                        <div className="text-lg">
                           {parser(item.attributes.description)}
-                        </p>
+                        </div>
                         <div>
                           <div className="flex gap-5 justify-center mt-4">
                             <a

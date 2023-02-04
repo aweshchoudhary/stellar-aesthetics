@@ -20,7 +20,7 @@ const Header = () => {
       >
         <Topbar />
         <Middlebar />
-        {toggle && <MobileMenu />}
+        {toggle ? <MobileMenu /> : null}
       </motion.header>
       {!toggle && <Navbar />}
     </>

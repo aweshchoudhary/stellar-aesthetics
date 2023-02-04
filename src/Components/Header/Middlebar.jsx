@@ -1,8 +1,10 @@
 import { Icon } from "@iconify/react";
+import { lazy } from "react";
 import { Link } from "react-router-dom";
 import useData from "../../Hooks/useContext";
-import { Img } from "../Main";
 import SearchBox from "./SearchBox";
+
+const Img = lazy(() => import("../Main/Img"));
 
 const Middlebar = () => {
   const { setToggleMobileMenu } = useData();
@@ -12,9 +14,10 @@ const Middlebar = () => {
         <Link to="/">
           <div className="logo">
             <Img
-              src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1674712040/logo_bafg6y.png"
+              src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1675426319/logo_bafg6y-min_bmqzyd.webp"
               alt="stellar aesthetics brand logo dark"
               className="w-[120px]"
+              imgClass="w-[120px] h-[48.4px]"
             />
           </div>
         </Link>

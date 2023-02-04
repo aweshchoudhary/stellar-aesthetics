@@ -1,7 +1,12 @@
-// Components Import
-import { PageHeader, Section, Heading, Img } from "../../Components/Main";
 import { Icon } from "@iconify/react";
+import { lazy } from "react";
 import { Helmet } from "react-helmet";
+
+// Components Import
+const PageHeader = lazy(() => import("../../Components/Main/PageHeader"));
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
+const Img = lazy(() => import("../../Components/Main/Img"));
 
 const Contact = () => {
   const addressList = [

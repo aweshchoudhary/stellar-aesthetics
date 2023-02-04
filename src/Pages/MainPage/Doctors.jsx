@@ -1,9 +1,11 @@
 import { Icon } from "@iconify/react";
+import { lazy } from "react";
 import { Helmet } from "react-helmet";
 import doctors from "../../data/doctors.json";
 
 // Components Import
-import { Section, Heading } from "../../Components/Main";
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
 
 const Doctors = () => {
   return (

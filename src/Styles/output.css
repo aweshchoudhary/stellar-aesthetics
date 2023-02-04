@@ -872,6 +872,10 @@ a {
   height: 30px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -900,8 +904,8 @@ a {
   height: 500px;
 }
 
-.h-\[80\%\] {
-  height: 80%;
+.h-\[90\%\] {
+  height: 90%;
 }
 
 .h-\[250px\] {
@@ -912,10 +916,6 @@ a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-\[90\%\] {
-  height: 90%;
 }
 
 .w-full {
@@ -1672,10 +1672,6 @@ a {
 
   .md\:h-\[300px\] {
     height: 300px;
-  }
-
-  .md\:h-auto {
-    height: auto;
   }
 
   .md\:h-\[400px\] {

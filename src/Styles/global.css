@@ -1,33 +1,39 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 @font-face {
   font-family: "Poppins";
   font-weight: normal;
-  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2") url("../fonts/poppins-regular-webfont.woff") format("woff");
+  src: url("./fonts/poppins-regular-webfont.woff2") format("woff2")
+    url("./fonts/poppins-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
-  src: url("../fonts/poppins-medium-webfont.woff2") format("woff2") url("../fonts/poppins-medium-webfont.woff") format("woff");
+  src: url("./fonts/poppins-medium-webfont.woff2") format("woff2")
+    url("./fonts/poppins-medium-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
-  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2") url("../fonts/poppins-semibold-webfont.woff") format("woff");
+  src: url("./fonts/poppins-semibold-webfont.woff2") format("woff2")
+    url("./fonts/poppins-semibold-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: 700;
-  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2") url("../fonts/poppins-bold-webfont.woff") format("woff");
+  src: url("./fonts/poppins-bold-webfont.woff2") format("woff2")
+    url("./fonts/poppins-bold-webfont.woff") format("woff");
 }
 html:root {
   --primary: #571168;
   --color1: var(--primary);
-  --color2: #E6DE02;
-  --color3: #00CDE7;
-  --color4: #7EC624;
-  --color5: #E600CB;
+  --color2: #e6de02;
+  --color3: #00cde7;
+  --color4: #7ec624;
+  --color5: #e600cb;
   --text-heading-color: #121212;
   --text-body-color: #646464;
-  --strock-color: #CDCDCD;
+  --strock-color: #cdcdcd;
 }
 
 .bg-primary {
@@ -79,7 +85,8 @@ html:root {
   font-display: swap;
 }
 
-body, html {
+body,
+html {
   height: 100vh;
   width: 100vw;
   max-width: 1440px;
@@ -125,18 +132,13 @@ li {
 }
 
 .text-effect {
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(42, 42, 42) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgb(42, 42, 42) 100%
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-@-webkit-keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spinner {
@@ -152,42 +154,37 @@ li {
 }
 
 .gallery {
-  -moz-column-count: 1;
-       column-count: 1;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-count: 1;
+  column-gap: 10px;
 }
 
 @media (max-width: 1200px) {
   .gallery {
-    -moz-column-count: 3;
-         column-count: 3;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
   }
 }
 @media (max-width: 800px) {
   .gallery {
-    -moz-column-count: 2;
-         column-count: 2;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
   }
 }
 @media (max-width: 600px) {
   .gallery {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
-.gallery img, .gallery video {
+.gallery img,
+.gallery video {
   width: 100%;
   height: auto;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.modal-img, .model-vid {
+.modal-img,
+.model-vid {
   width: 100%;
   height: auto;
 }
@@ -201,10 +198,7 @@ li {
   justify-content: center;
   color: var(--primary);
   font-family: Poppins;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .title-container {
@@ -221,8 +215,7 @@ li {
 
 .loading-svg {
   width: 100px;
-  -webkit-animation: rotate 3.6s linear infinite;
-          animation: rotate 3.6s linear infinite;
+  animation: rotate 3.6s linear infinite;
 }
 
 .loading-svg circle {
@@ -230,20 +223,7 @@ li {
   stroke: var(--primary);
   stroke-width: 6px;
   stroke-dasharray: 300;
-  -webkit-animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
-          animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
-}
-
-@-webkit-keyframes outline {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 300;
-  }
-  100% {
-    stroke-dashoffset: 600;
-  }
+  animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
 }
 
 @keyframes outline {
@@ -257,14 +237,6 @@ li {
     stroke-dashoffset: 600;
   }
 }
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(-1turn);
-  }
-}
 @keyframes rotate {
   from {
     transform: rotate(0turn);
@@ -272,4 +244,4 @@ li {
   to {
     transform: rotate(-1turn);
   }
-}/*# sourceMappingURL=global.css.map */
+}

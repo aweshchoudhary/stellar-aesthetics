@@ -1,10 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { useParams } from "react-router-dom";
 import useData from "../../Hooks/useContext";
 import Bar from "../../Components/Loader/Bar";
 import { Helmet } from "react-helmet";
 import courses from "../../data/courses.json";
-import "../../Styles/slider.css";
 import parser from "html-react-parser";
 
 // Course Page Components Import
@@ -40,16 +39,17 @@ const CoursePage = () => {
     };
   }, [coursePage]);
 
+  const getCourse = useMemo(
+    () =>
+      courses.filter((item) => {
+        return item.attributes.slug === name;
+      }),
+    [name]
+  );
+
   useEffect(() => {
-    loading.current = true;
-    const course = courses.filter((item) => {
-      return item.attributes.slug === name;
-    });
-    if (course) {
-      setCoursePage(...course);
-    }
-    loading.current = false;
-  }, [name, setCoursePage]);
+    if (getCourse) setCoursePage(...getCourse);
+  }, [getCourse, setCoursePage]);
 
   return (
     <>

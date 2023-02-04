@@ -1,12 +1,14 @@
-import Heading from "../Main/Heading";
-import ReadMore from "../Main/ReadMore";
-import Section from "../Main/Section";
 import parser from "html-react-parser";
 import Bar from "../Loader/Bar";
-import Img from "../Main/Img";
 import { Link } from "react-router-dom";
 import courseDirector from "../../data/course-director.json";
-import { Card } from "../../Components/Main";
+import { lazy } from "react";
+
+const Section = lazy(() => import("../Main/Section"));
+const Heading = lazy(() => import("../Main/Heading"));
+const Img = lazy(() => import("../Main/Img"));
+const Card = lazy(() => import("../Main/Card"));
+const ReadMore = lazy(() => import("../Main/ReadMore"));
 
 const CourseDirector = () => {
   return (

@@ -1,8 +1,11 @@
+import { lazy } from "react";
 import { Helmet } from "react-helmet";
 import Bar from "../../Components/Loader/Bar";
-import { Heading, Section } from "../../Components/Main";
 import TestimonailCard from "../../Components/Testimonials/TestimonailCard";
 import testimonials from "../../data/testimonials.json";
+
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Heading = lazy(() => import("../../Components/Main/Heading"));
 
 const Testimonials = () => {
   return (

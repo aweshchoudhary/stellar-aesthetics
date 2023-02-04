@@ -1,6 +1,9 @@
-import { Heading, Section } from "../Main";
 import Accordion from "../Accordion/Accordion";
 import faqs from "../../data/faq.json";
+import { lazy } from "react";
+
+const Section = lazy(() => import("../Main/Section"));
+const Heading = lazy(() => import("../Main/Heading"));
 
 const FAQ = () => {
   return (
@@ -12,9 +15,9 @@ const FAQ = () => {
         brNone={true}
       />
       {faqs &&
-        faqs.map((item) => {
+        faqs.map((item, key) => {
           return (
-            <Accordion heading={item.attributes.title}>
+            <Accordion key={key} heading={item.attributes.title}>
               {item.attributes.description}
             </Accordion>
           );

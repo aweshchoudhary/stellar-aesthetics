@@ -1,9 +1,10 @@
 import { Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { Outlet } from "react-router-dom";
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
 import Bar from "../Components/Loader/Bar";
+
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 import WhatsappBtn from "../Components/Main/WhatsappBtn";
 
 const Layout = () => {
@@ -43,7 +44,7 @@ const Layout = () => {
           </Suspense>
         </article>
       </main>
-      <Footer></Footer>
+      <Footer />
       <WhatsappBtn />
     </>
   );

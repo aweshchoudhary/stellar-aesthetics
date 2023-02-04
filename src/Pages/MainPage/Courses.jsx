@@ -1,10 +1,12 @@
 import { Content } from "./WhyChooseUs";
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 // Components Import
-import { Img, Section } from "../../Components/Main";
 import { Link } from "react-router-dom";
+
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Img = lazy(() => import("../../Components/Main/Img"));
 
 const Courses = () => {
   useEffect(() => {

@@ -1,15 +1,11 @@
 import { useState } from "react";
-import Bar from "../../Loader/Bar";
 import menu from "../../../data/menu.json";
-import useData from "../../../Hooks/useContext";
 import NavItem from "./NavItem";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [openSubmenu, setOpenSubmenu] = useState(false);
-
-  const { loading } = useData();
   const handleClick = () => {
     const searchInput = document.getElementById("search-input");
     searchInput.focus();
@@ -41,7 +37,6 @@ const Navbar = () => {
           <Icon className="text-2xl" icon="tabler:search" />
         </button>
       </div>
-      {loading && <Bar />}
     </motion.nav>
   );
 };

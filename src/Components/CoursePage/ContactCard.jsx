@@ -1,7 +1,9 @@
 import Bar from "../Loader/Bar";
-import Img from "../Main/Img";
 import useData from "../../Hooks/useContext";
 import { Icon } from "@iconify/react";
+import { lazy } from "react";
+
+const Img = lazy(() => import("../Main/Img"));
 
 const ContactCard = () => {
   const { coursePage } = useData();

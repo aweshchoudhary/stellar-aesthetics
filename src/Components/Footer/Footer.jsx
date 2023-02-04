@@ -5,7 +5,6 @@ const Footer = () => {
   const handleTop = () => {
     document.body.scrollTop = 0;
   };
-  console.log(JSON.stringify(``));
   return (
     <footer className="border-t">
       <div className="border-b gap-2 flex items-center justify-between p-5">
@@ -71,7 +70,7 @@ const Footer = () => {
         <li className="list-none lg:w-[40%] shrink-0 sm:px-10 sm:w-1/2 w-full">
           <h4 className="text-lg font-semibold text-primary">Courses</h4>
           <ul className="my-5">
-            {menu.map((item, key) => {
+            {menu.map((item) => {
               return item.label === "course" || item.link === "/courses" ? (
                 <>
                   {item.submenu.map((subitem, key) => {
@@ -91,7 +90,7 @@ const Footer = () => {
                         })}
                       </>
                     ) : (
-                      <li className="list-none my-1">
+                      <li key={key + Math.random()} className="list-none my-1">
                         <Link
                           className="text-h-primary no-underline text-black"
                           to={subitem.link}
@@ -112,16 +111,14 @@ const Footer = () => {
             {menu.map((item, key) => {
               return item.label === "procedures" || item.link === "/procedures"
                 ? item.submenu.map((subitem) => (
-                    <>
-                      <li key={key} className="list-none my-1">
-                        <Link
-                          to={subitem.link}
-                          className="text-h-primary no-underline text-black"
-                        >
-                          {subitem.label}
-                        </Link>
-                      </li>
-                    </>
+                    <li key={key} className="list-none my-1">
+                      <Link
+                        to={subitem.link}
+                        className="text-h-primary no-underline text-black"
+                      >
+                        {subitem.label}
+                      </Link>
+                    </li>
                   ))
                 : null;
             })}

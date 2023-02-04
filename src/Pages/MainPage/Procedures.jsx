@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import procedures from "../../data/procedures.json";
+import { lazy } from "react";
 
 // Components Import
-import { Img, PageHeader, Section } from "../../Components/Main";
+
+const PageHeader = lazy(() => import("../../Components/Main/PageHeader"));
+const Section = lazy(() => import("../../Components/Main/Section"));
+const Img = lazy(() => import("../../Components/Main/Img"));
 
 const Procedures = () => {
   return (
