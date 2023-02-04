@@ -24,6 +24,7 @@ const ReadMore = ({ children }) => {
         {text}
       </div>
       <button
+        aria-label="readmore"
         onClick={toggleIsMore}
         className="read-or-hide btn px-0 text-primary"
       >

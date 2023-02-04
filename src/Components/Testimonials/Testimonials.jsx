@@ -44,13 +44,13 @@ const Testimonials = () => {
       </div>
       <div className="my-10">
         <div className="btns mb-5 md:px-10 px-5">
-          <button onClick={() => slide("prev")}>
+          <button aria-label="previous" onClick={() => slide("prev")}>
             <Icon
               className="text-5xl text-body text-h-primary transition-all"
               icon="material-symbols:arrow-circle-left-rounded"
             />
           </button>
-          <button onClick={() => slide("next")}>
+          <button aria-label="next" onClick={() => slide("next")}>
             <Icon
               className="text-5xl text-body text-h-primary transition-all"
               icon="material-symbols:arrow-circle-right-rounded"
