@@ -21,6 +21,7 @@ const Dropdown = ({ items, dropdown }) => {
               className="text-2xl"
             />
             <Link
+              aria-label="link"
               onClick={scrollTop}
               className="no-underline text-black"
               to={subItem.link}

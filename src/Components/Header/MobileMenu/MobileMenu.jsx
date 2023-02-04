@@ -38,11 +38,11 @@ const MobileMenu = () => {
         </ul>
       </nav>
       <div className="buttons py-5 flex items-center gap-5">
-        <Link className="btn outlined text-primary">
+        <Link aria-label="link" className="btn outlined text-primary">
           Whatsapp Us
           <Icon icon={"ic:baseline-whatsapp"} />
         </Link>
-        <Link className="btn filled bg-primary">
+        <Link aria-label="link" className="btn filled bg-primary">
           Book Call
           <Icon icon={"material-symbols:call"} />
         </Link>

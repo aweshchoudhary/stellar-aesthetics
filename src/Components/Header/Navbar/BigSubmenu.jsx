@@ -27,6 +27,7 @@ function BigSubmenu({ submenu, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) {
             key={i}
           >
             <Link
+              aria-label="link"
               className="w-full no-underline text-black block px-3 py-3 h-full"
               onClick={() => setIsSubmenuOpen(false)}
               to={item.link}

@@ -11,7 +11,7 @@ const Middlebar = () => {
   return (
     <>
       <div className="middlebar flex items-center justify-between px-10 py-3 border-b ">
-        <Link to="/">
+        <Link aria-label="link" to="/">
           <div className="logo">
             <Img
               src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1675426319/logo_bafg6y-min_bmqzyd.webp"
@@ -35,6 +35,7 @@ const Middlebar = () => {
         <div className="right md:flex hidden gap-3">
           <SearchBox />
           <a
+            aria-label="link"
             className="btn filled bg-primary px-6"
             href="tel:+91-799-950-6817"
             target={"_blank"}

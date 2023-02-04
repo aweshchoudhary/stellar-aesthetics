@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import Section from "../Components/Main/Section";
 import menu from "../data/menu.json";
 import { Helmet } from "react-helmet";
+import { lazy } from "react";
+
+const Section = lazy(() => import("../Components/Main/Section"));
 
 const NoPage = () => {
   return (
@@ -24,7 +26,11 @@ const NoPage = () => {
             {menu.map((item) => {
               return (
                 <li className="list-none font-medium text-lg underline text-h-primary">
-                  <Link style={{ textDecoration: "underline" }} to={item.link}>
+                  <Link
+                    aria-label="link"
+                    style={{ textDecoration: "underline" }}
+                    to={item.link}
+                  >
                     {item.label}
                   </Link>
                 </li>

@@ -47,6 +47,7 @@ const CourseDirector = () => {
                 <div>{parser(courseDirector.attributes.awards)}</div>
                 <br />
                 <Link
+                  aria-label="link"
                   className="btn filled bg-primary"
                   to={"/dr-sapnna-vaderra"}
                 >

@@ -282,10 +282,18 @@ const CourseHero = () => {
           The career of your dreams is one click away.
         </p>
         <div className="btns flex items-center gap-5 justify-center my-5">
-          <a href="#getcertified" className="btn filled white text-primary">
+          <a
+            aria-label="link"
+            href="#getcertified"
+            className="btn filled white text-primary"
+          >
             Get Certified
           </a>
-          <a href="#whyus" className="btn outlined white text-h-primary">
+          <a
+            href="#whyus"
+            aria-label="link"
+            className="btn outlined white text-h-primary"
+          >
             why Us
           </a>
         </div>

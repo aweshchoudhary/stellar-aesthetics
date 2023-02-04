@@ -147,6 +147,7 @@ const Contact = () => {
               <p className="flex items-center gap-5 my-5">
                 <Icon icon="ri:whatsapp-fill" className="text-3xl" />
                 <a
+                  aria-label="link"
                   target={"_blank"}
                   rel="noreferrer"
                   href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*Contact Us Page*`}
@@ -160,6 +161,7 @@ const Contact = () => {
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ph:globe" className="text-3xl" />
                   <a
+                    aria-label="link"
                     target={"_blank"}
                     rel="noreferrer"
                     href={"https://www.instagram.com/stellaraesthetics.india/"}
@@ -171,6 +173,7 @@ const Contact = () => {
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ph:instagram-logo-fill" className="text-3xl" />
                   <a
+                    aria-label="link"
                     target={"_blank"}
                     rel="noreferrer"
                     href={"https://www.instagram.com/stellaraesthetics.india/"}
@@ -182,6 +185,7 @@ const Contact = () => {
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="ic:baseline-facebook" className="text-3xl" />
                   <a
+                    aria-label="link"
                     target={"_blank"}
                     rel="noreferrer"
                     href={
@@ -195,6 +199,7 @@ const Contact = () => {
                 <p className="flex items-center gap-5 my-5">
                   <Icon icon="mdi:linkedin" className="text-3xl" />
                   <a
+                    aria-label="link"
                     target={"_blank"}
                     rel="noreferrer"
                     href={

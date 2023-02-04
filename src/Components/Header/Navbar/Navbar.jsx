@@ -24,6 +24,7 @@ const Navbar = () => {
             const depthLevel = 0;
             return (
               <NavItem
+                aria-label="link"
                 isSubmenuOpen={openSubmenu}
                 setIsSubmenuOpen={setOpenSubmenu}
                 item={item}

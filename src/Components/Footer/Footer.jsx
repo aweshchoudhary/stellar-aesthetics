@@ -26,6 +26,7 @@ const Footer = () => {
               return (
                 <li key={key} className="list-none my-1">
                   <Link
+                    aria-label="link"
                     className="text-h-primary no-underline text-black"
                     to={item.link}
                   >
@@ -44,6 +45,7 @@ const Footer = () => {
                 <>
                   <li key={key} className="list-none my-1">
                     <Link
+                      aria-label="link"
                       className="text-h-primary no-underline text-black"
                       to={item.link}
                     >
@@ -54,6 +56,7 @@ const Footer = () => {
                     return (
                       <li key={key} className="list-none my-1">
                         <Link
+                          aria-label="link"
                           className="text-h-primary no-underline text-black"
                           to={subitem.link}
                         >
@@ -80,6 +83,7 @@ const Footer = () => {
                           return (
                             <li key={key} className="list-none my-1">
                               <Link
+                                aria-label="link"
                                 className="text-h-primary no-underline text-black"
                                 to={subsubitem.link}
                               >
@@ -92,6 +96,7 @@ const Footer = () => {
                     ) : (
                       <li key={key + Math.random()} className="list-none my-1">
                         <Link
+                          aria-label="link"
                           className="text-h-primary no-underline text-black"
                           to={subitem.link}
                         >
@@ -113,6 +118,7 @@ const Footer = () => {
                 ? item.submenu.map((subitem) => (
                     <li key={key} className="list-none my-1">
                       <Link
+                        aria-label="link"
                         to={subitem.link}
                         className="text-h-primary no-underline text-black"
                       >

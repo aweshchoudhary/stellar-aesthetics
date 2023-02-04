@@ -56,6 +56,7 @@ const NavItem = ({ item, depthLevel, isSubmenuOpen, setIsSubmenuOpen }) => {
           </>
         ) : (
           <Link
+            aria-label="link"
             to={item.link}
             className="text-h-primary no-underline text-black h-full py-3 px-3 hover:bg-gray-50 transition"
           >

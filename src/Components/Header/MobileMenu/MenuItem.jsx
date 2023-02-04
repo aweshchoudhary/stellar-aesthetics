@@ -26,6 +26,7 @@ const MenuItem = ({ items }) => {
                 </button>
                 <div className="icon flex justify-end w-1/2">
                   <Link
+                    aria-label="link"
                     className="no-underline text-black"
                     to={items.link}
                     onClick={scrollTop}
@@ -54,6 +55,7 @@ const MenuItem = ({ items }) => {
           </>
         ) : (
           <Link
+            aria-label="link"
             onClick={scrollTop}
             className="no-underline text-black"
             to={items.link}

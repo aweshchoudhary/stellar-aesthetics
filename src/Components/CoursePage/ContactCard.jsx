@@ -34,6 +34,7 @@ const ContactCard = () => {
             className="btn filled white text-primary"
             target="_blank"
             rel="noreferrer"
+            aria-label="link"
           >
             <Icon className="text-2xl" icon="ic:baseline-whatsapp" />
             Get Brochure

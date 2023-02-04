@@ -132,7 +132,7 @@ const SearchBox = ({ setToggle }) => {
         </div>
         <input
           type="search"
-          id="search-input"
+          id={`search-input-${Math.random()}`}
           placeholder={"Search Courses, etc..."}
           className="w-full h-full bg-transparent outline-none"
           value={value}

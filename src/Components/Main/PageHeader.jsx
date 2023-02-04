@@ -11,16 +11,30 @@ const PageHeader = ({ children }) => {
         {location.map((item, i) => {
           return i !== location.length - 1 ? (
             <span key={i}>
-              <Link className="no-underline text-white" key={i} to={"/"}>
+              <Link
+                aria-label="link"
+                className="no-underline text-white"
+                key={i}
+                to={"/"}
+              >
                 home
               </Link>{" "}
-              <Link to={"/" + item} className="text-white no-underline">
+              <Link
+                aria-label="link"
+                to={"/" + item}
+                className="text-white no-underline"
+              >
                 {item}
               </Link>
               /
             </span>
           ) : (
-            <Link className="no-underline text-white" key={i} to={"/" + item}>
+            <Link
+              aria-label="link"
+              className="no-underline text-white"
+              key={i}
+              to={"/" + item}
+            >
               {item}
             </Link>
           );

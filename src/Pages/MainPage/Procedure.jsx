@@ -93,6 +93,7 @@ const Procedure = () => {
                         <div>
                           <div className="flex gap-5 justify-center mt-4">
                             <a
+                              aria-label="link"
                               href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${document.title}*`}
                               className="btn filled white text-primary"
                               target="_blank"
@@ -105,6 +106,7 @@ const Procedure = () => {
                               Get Brochure
                             </a>
                             <a
+                              aria-label="link"
                               href={"tel:+91-799-950-6817"}
                               className="btn outlined white text-h-primary"
                               target="_blank"

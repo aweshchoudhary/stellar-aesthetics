@@ -56,6 +56,7 @@ const Doctors = () => {
                         {item.attributes.socialLinks.map((item) => {
                           return (
                             <a
+                              aria-label="link"
                               href={item.name}
                               target="_blank"
                               rel="noreferrer"

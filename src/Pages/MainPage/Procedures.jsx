@@ -37,7 +37,7 @@ const Card = ({ img, title, link }) => {
   return (
     <div className=" sm:w-1/2 w-full">
       <div className="card sm:m-4 mb-4 sm:h-[500px] h-[300px] shrink-0">
-        <Link to={"/procedures/" + link}>
+        <Link aria-label="link" to={"/procedures/" + link}>
           <div className="img sm:h-[400px] h-[200px] w-full bg-gray-200">
             {img && (
               <Img

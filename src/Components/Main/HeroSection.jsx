@@ -18,10 +18,18 @@ const HeroSection = () => {
           Start Your Journey
         </h2>
         <div className="flex items-center mt-5 gap-5 justify-center">
-          <Link className="btn filled bg-primary" to={"/procedures"}>
+          <Link
+            aria-label="link"
+            className="btn filled bg-primary"
+            to={"/procedures"}
+          >
             I'm Patient
           </Link>
-          <Link className="btn filled white text-primary" to={"/courses"}>
+          <Link
+            aria-label="link"
+            className="btn filled white text-primary"
+            to={"/courses"}
+          >
             I'm Doctor
           </Link>
         </div>
