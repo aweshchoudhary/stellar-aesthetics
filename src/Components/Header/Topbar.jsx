@@ -2,8 +2,8 @@ import { Icon } from "@iconify/react";
 
 const Topbar = () => {
   return (
-    <div className="topbar flex md:py-2 py-5 items-center justify-between sm:text-base text-sm h-[30px] bg-primary text-white md:px-10 px-4">
-      <div className="social-icons flex items-center text-2xl gap-1">
+    <div className="topbar flex md:py-4 py-5 items-center justify-between sm:text-base text-sm h-[30px] bg-primary text-white md:px-10 px-4">
+      <div className="social-icons flex items-center text-3xl gap-2">
         <a
           aria-label="facebook link"
           href={"https://www.facebook.com/Stellar-Aesthetics-100540252464505/"}
@@ -39,8 +39,7 @@ const Topbar = () => {
           className="flex items-center no-underline text-white"
           href={"tel:+91-799-950-6817"}
         >
-          <Icon icon="ic:baseline-call" className="md:text-2xl text-xl" /> +91
-          79995-06817
+          <Icon icon="ic:baseline-call" className="text-3xl" /> +91 79995-06817
         </a>
       </div>
     </div>
