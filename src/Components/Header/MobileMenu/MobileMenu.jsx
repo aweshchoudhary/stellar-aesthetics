@@ -22,7 +22,7 @@ const MobileMenu = () => {
           <Img
             src="https://res.cloudinary.com/dcjhzzypt/image/upload/v1675426319/logo_bafg6y-min_bmqzyd.webp"
             alt="logo dark"
-            className="w-[130px] h-[52.4px]"
+            imgClass="w-[130px] h-[52.4px]"
           />
         </div>
         <div className="close-btn" onClick={closeMenu}>

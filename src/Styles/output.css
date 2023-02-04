@@ -872,8 +872,8 @@ a {
   height: 30px;
 }
 
-.h-auto {
-  height: auto;
+.h-\[48\.4px\] {
+  height: 48.4px;
 }
 
 .h-\[300px\] {
@@ -910,6 +910,10 @@ a {
 
 .h-\[250px\] {
   height: 250px;
+}
+
+.h-\[52\.4px\] {
+  height: 52.4px;
 }
 
 .h-fit {
