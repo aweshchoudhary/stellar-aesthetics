@@ -7,6 +7,7 @@ const WhatsappBtn = () => {
   return (
     <div className="absolute bottom-3 right-8">
       <a
+        aria-label="whatsapp chat link"
         href={`https://api.whatsapp.com/send?phone=917999506817&text=Hello%20Team%20Stellar%20Aesthetics.I%20would%20like%20to%20get%20more%20info%20about%3A%20*${message.current}*`}
         className={`${
           fullBtn ? "px-5" : "px-3"

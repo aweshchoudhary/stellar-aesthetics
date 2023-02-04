@@ -33,7 +33,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <button onClick={handleClick}>
+        <button aria-label="search" onClick={handleClick}>
           <Icon className="text-2xl" icon="tabler:search" />
         </button>
       </div>

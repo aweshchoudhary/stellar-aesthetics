@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <ul className="sm:p-10 p-4 sm:flex justify-between">
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Useful Links</h4>
+          <h3 className="text-lg font-semibold text-primary">Useful Links</h3>
           <ul className="my-5">
             {menu.map((item, key) => {
               return (
@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </li>
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Company</h4>
+          <h3 className="text-lg font-semibold text-primary">Company</h3>
           <ul className="my-5">
             {menu.map((item, key) => {
               return item.label === "about" || item.link === "/about-us" ? (
@@ -68,7 +68,7 @@ const Footer = () => {
           </ul>
         </li>
         <li className="list-none lg:w-[40%] shrink-0 sm:px-10 sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Courses</h4>
+          <h3 className="text-lg font-semibold text-primary">Courses</h3>
           <ul className="my-5">
             {menu.map((item) => {
               return item.label === "course" || item.link === "/courses" ? (
@@ -106,7 +106,7 @@ const Footer = () => {
           </ul>
         </li>
         <li className="list-none lg:w-[20%] shrink-0 sm:px-10 sm:w-1/2 w-full">
-          <h4 className="text-lg font-semibold text-primary">Procedures</h4>
+          <h3 className="text-lg font-semibold text-primary">Procedures</h3>
           <ul className="my-5">
             {menu.map((item, key) => {
               return item.label === "procedures" || item.link === "/procedures"
